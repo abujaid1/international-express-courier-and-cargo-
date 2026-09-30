@@ -1057,12 +1057,12 @@ tailwind.config={
 <button class="flex-1 min-w-[140px] h-10 bg-primary hover:bg-primary-container text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="alert('Exporting IATA Consignee PDF manifest...')">
 <span class="material-symbols-outlined text-base">download</span> Export PDF Manifest
         </button>
-<button class="px-3 h-10 bg-surface-container hover:bg-surface-variant text-on-surface font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="checkBluetoothPrinter()">
-<span class="material-symbols-outlined text-base text-blue-600">bluetooth</span> Bluetooth Status
+<button class="px-3 h-10 bg-surface-container hover:bg-surface-variant text-on-surface font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="checkThermalPrinterStatus()">
+<span class="material-symbols-outlined text-base text-blue-600">print</span> Thermal Printer Status
         </button>
 </div>
-<div class="hidden p-2.5 rounded-lg bg-blue-50 border border-blue-200 text-[11px] text-blue-800" id="bt-printer-status">
-        Bluetooth Direct Thermal Status: <strong>Zebra ZD420 / TSC TE200 Ready (Connected via Sahar Hub BT-01)</strong>
+<div class="hidden p-2.5 rounded-lg bg-blue-50 border border-blue-200 text-[11px] text-blue-800" id="thermal-printer-status">
+        Browser Print Status: <strong>Ready for browser print preview</strong>
 </div>
 </div>
 <!-- Tab 3: Quotes -->
@@ -1490,11 +1490,11 @@ function selectStudioPiece(pcNum, totalPieces, btn) {
 }
 
 function triggerThermalPrint() {
-  alert('Sending 4" × 6" label to Direct Thermal printer (Zebra/TSC emulation)...');
+  window.print();
 }
 
-function checkBluetoothPrinter() {
-  const box = document.getElementById('bt-printer-status');
+function checkThermalPrinterStatus() {
+  const box = document.getElementById('thermal-printer-status');
   box.classList.toggle('hidden');
 }
 
