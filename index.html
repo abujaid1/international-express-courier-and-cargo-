@@ -2241,3 +2241,45 @@
   }
 }
 </style>
+<style>
+@media (max-width: 640px) {
+  html, body {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    position: static !important;
+    touch-action: pan-y !important;
+  }
+
+  body {
+    display: block !important;
+  }
+}
+</style>
+<style>
+@media (max-width: 640px) {
+  html {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    overflow-y: auto !important;
+  }
+
+  body {
+    height: auto !important;
+    min-height: 100vh !important;
+    max-height: none !important;
+    overflow: visible !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    touch-action: pan-y !important;
+    overscroll-behavior-y: auto !important;
+  }
+
+  body > * {
+    max-height: none !important;
+  }
+}
+</style>
