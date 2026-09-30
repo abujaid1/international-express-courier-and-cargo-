@@ -2410,3 +2410,56 @@
   }
 }
 </style>
+
+<style>
+@media (max-width: 640px) {
+  header {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  header > div,
+  header nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  header nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    padding: 8px 10px !important;
+  }
+
+  header nav img {
+    max-width: 52px !important;
+    max-height: 52px !important;
+    width: auto !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  header nav a {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex-shrink: 1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  header nav [data-path="track-shipment"],
+  header nav [data-path="get-quote"] {
+    font-size: 10px !important;
+    padding: 8px 10px !important;
+    flex-shrink: 1 !important;
+  }
+}
+</style>
