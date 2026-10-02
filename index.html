@@ -1420,9 +1420,7 @@ async function handleAdminLogin(e) {
     
     setTimeout(() => {
       msgBox.classList.add('hidden');
-      document.getElementById('admin-auth-view').classList.add('hidden');
-      document.getElementById('admin-dashboard-view').classList.remove('hidden');
-      document.getElementById('admin-user-badge').textContent = `Logged in: ${emailInput}`;
+      window.location.href = "https://ixc-operations-studio.vercel.app/login";
     }, 600);
   } else {
     msgBox.className = "p-3 rounded-lg text-xs font-medium bg-red-100 text-red-800 border border-red-300";
