@@ -447,7 +447,7 @@ tailwind.config={
 <form class="flex flex-col sm:flex-row items-stretch gap-2.5 w-full" onsubmit="handleTrackSearch(event)">
 <div class="relative flex-1 w-full min-w-0">
 <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-xl pointer-events-none">barcode_scanner</span>
-<input class="w-full min-w-0 h-12 pl-11 pr-4 bg-surface rounded-xl text-on-surface text-sm font-bold focus:outline-none focus:ring-2 focus:ring-secondary uppercase placeholder:normal-case placeholder:font-normal border border-outline-variant/30 transition-all" id="track-input" placeholder="e.g. IXCDEMO123456 or IXC-DOM-7701" required="" type="text" value="IXCDEMO123456"/>
+<input class="w-full min-w-0 h-12 pl-11 pr-4 bg-surface rounded-xl text-on-surface text-sm font-bold focus:outline-none focus:ring-2 focus:ring-secondary uppercase placeholder:normal-case placeholder:font-normal border border-outline-variant/30 transition-all" id="track-input" placeholder="Enter your Waybill / Consignment number" required="" type="text" />
 </div>
 <button class="w-full sm:w-auto h-12 px-6 bg-secondary hover:bg-secondary-container text-white rounded-xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all shadow-md flex items-center justify-center gap-2 shrink-0 btn-lift" type="submit">
 <span class="material-symbols-outlined text-base">search</span>
@@ -455,20 +455,8 @@ tailwind.config={
 </button>
 </form>
 <!-- Clickable Sample Waybill Chips -->
-<div class="flex flex-wrap items-center gap-1.5 pt-1 text-xs w-full overflow-hidden">
-<span class="text-on-surface-variant font-semibold text-[11px] sm:text-xs w-full sm:w-auto mb-1 sm:mb-0">Try Demo Waybills:</span>
-<button class="px-2 py-1 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 rounded-lg text-[11px] font-bold transition-all truncate max-w-full hover:scale-102 active:scale-95" onclick="quickFillTrack('IXCDEMO123456')" type="button">
-            ⚡ IXCDEMO123456 (Mumbai → Dubai)
-          </button>
-<button class="px-2 py-1 bg-surface-container hover:bg-primary hover:text-white rounded-lg text-[11px] font-bold text-primary transition-all truncate max-w-full hover:scale-102 active:scale-95" onclick="quickFillTrack('IXC-DOM-7701')" type="button">
-            IXC-DOM-7701 (Domestic Mumbai → BLR)
-          </button>
-<button class="px-2 py-1 bg-surface-container hover:bg-primary hover:text-white rounded-lg text-[11px] font-bold text-primary transition-all truncate max-w-full hover:scale-102 active:scale-95" onclick="quickFillTrack('IXC-DEMO-001')" type="button">
-            IXC-DEMO-001 (Mumbai → London LHR)
-          </button>
-</div>
 <!-- Render Target for Tracking Result -->
-<div class="transition-all duration-300 w-full overflow-hidden" id="track-result-container"><div class="p-4 sm:p-5 rounded-2xl bg-surface-container-low border border-outline-variant/30 space-y-4 w-full overflow-hidden max-w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-surface-container"><div><span class="text-xs text-on-surface-variant font-medium block">Consignment Number</span><span class="text-base sm:text-lg font-black text-primary font-mono break-all">IXCDEMO123456</span></div><div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border bg-amber-100 text-amber-800 border-amber-300"><span class="w-2 h-2 rounded-full bg-current"></span>IN TRANSIT</span></div></div><div class="grid grid-cols-1 gap-2.5 text-xs bg-surface-container-lowest p-3.5 rounded-xl border border-surface-container w-full overflow-hidden max-w-full"><div><span class="text-on-surface-variant font-medium block">Origin Hub</span><span class="font-bold text-primary text-xs block break-words">Mumbai, India (BOM Air Gateway)</span></div><div><span class="text-on-surface-variant font-medium block">Final Destination</span><span class="font-bold text-primary text-xs block break-words">Dubai, UAE (DXB Cargo Village)</span></div><div><span class="text-on-surface-variant font-medium block">Service Level</span><span class="font-bold text-primary block break-words">Express Air Priority Consignment</span></div><div><span class="text-on-surface-variant font-medium block">Estimated Delivery</span><span class="font-bold text-secondary text-sm block">2-3 Business Days</span></div><div class="pt-2 border-t border-surface-container"><span class="text-on-surface-variant font-medium block">Current Milestone Location:</span><span class="font-bold text-primary block leading-tight mt-0.5 break-words">Mumbai Air Gateway (Departed sorting hub, export manifest cleared)</span></div></div><div class="space-y-1.5"><div class="flex justify-between text-xs font-bold text-primary"><span>Transit Progress</span><span>65%</span></div><div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 65%"></div></div></div><div class="space-y-3 pt-2"><span class="text-xs font-bold text-primary uppercase tracking-wider block">Milestone Tracking History</span><div class="space-y-3 pl-1 border-l-2 border-surface-container ml-2.5"><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">✓</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Manifest &amp; Flight Boarding (AI-901)</div><div class="text-on-surface-variant text-[11px] break-words">CSMI Airport Sahar T2, BOM</div><div class="text-[10px] text-secondary font-medium">Today, 14:30 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Customs Clearance Passed (CSB-V)</div><div class="text-on-surface-variant text-[11px] break-words">Mumbai Air Customs Hub</div><div class="text-[10px] text-secondary font-medium">Today, 11:15 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Security &amp; X-ray Screening Verified</div><div class="text-on-surface-variant text-[11px] break-words">Sahar Cargo Terminal, Mumbai</div><div class="text-[10px] text-secondary font-medium">Today, 08:45 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Picked up &amp; Inward Scanned</div><div class="text-on-surface-variant text-[11px] break-words">IXC Sahar Road Andheri Hub</div><div class="text-[10px] text-secondary font-medium">Yesterday, 19:20 IST</div></div></div></div></div><div class="pt-3 border-t border-surface-container flex flex-col gap-2 text-xs"><span class="text-on-surface-variant">Need direct gateway assistance for this waybill?</span><a class="text-[#25D366] hover:underline font-bold flex items-center gap-1.5 transition-colors" href="https://wa.me/919570821019?text=Hello%20IXC%20Dispatch%2C%20inquiring%20about%20waybill%20IXCDEMO123456" target="_blank"><span class="material-symbols-outlined text-base">chat</span> WhatsApp Dispatch Desk</a></div></div></div>
+<div class="transition-all duration-300 w-full overflow-hidden" id="track-result-container"><div class="p-4 sm:p-5 rounded-2xl bg-surface-container-low border border-outline-variant/30 space-y-4 w-full overflow-hidden max-w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-surface-container"><div><span class="text-xs text-on-surface-variant font-medium block">Consignment Number</span><span class="text-base sm:text-lg font-black text-primary font-mono break-all"></span></div><div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border bg-amber-100 text-amber-800 border-amber-300"><span class="w-2 h-2 rounded-full bg-current"></span>IN TRANSIT</span></div></div><div class="grid grid-cols-1 gap-2.5 text-xs bg-surface-container-lowest p-3.5 rounded-xl border border-surface-container w-full overflow-hidden max-w-full"><div><span class="text-on-surface-variant font-medium block">Origin Hub</span><span class="font-bold text-primary text-xs block break-words">Mumbai, India (BOM Air Gateway)</span></div><div><span class="text-on-surface-variant font-medium block">Final Destination</span><span class="font-bold text-primary text-xs block break-words">Dubai, UAE (DXB Cargo Village)</span></div><div><span class="text-on-surface-variant font-medium block">Service Level</span><span class="font-bold text-primary block break-words">Express Air Priority Consignment</span></div><div><span class="text-on-surface-variant font-medium block">Estimated Delivery</span><span class="font-bold text-secondary text-sm block">2-3 Business Days</span></div><div class="pt-2 border-t border-surface-container"><span class="text-on-surface-variant font-medium block">Current Milestone Location:</span><span class="font-bold text-primary block leading-tight mt-0.5 break-words">Mumbai Air Gateway (Departed sorting hub, export manifest cleared)</span></div></div><div class="space-y-1.5"><div class="flex justify-between text-xs font-bold text-primary"><span>Transit Progress</span><span>65%</span></div><div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 65%"></div></div></div><div class="space-y-3 pt-2"><span class="text-xs font-bold text-primary uppercase tracking-wider block">Milestone Tracking History</span><div class="space-y-3 pl-1 border-l-2 border-surface-container ml-2.5"><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">✓</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Manifest &amp; Flight Boarding (AI-901)</div><div class="text-on-surface-variant text-[11px] break-words">CSMI Airport Sahar T2, BOM</div><div class="text-[10px] text-secondary font-medium">Today, 14:30 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Customs Clearance Passed (CSB-V)</div><div class="text-on-surface-variant text-[11px] break-words">Mumbai Air Customs Hub</div><div class="text-[10px] text-secondary font-medium">Today, 11:15 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Security &amp; X-ray Screening Verified</div><div class="text-on-surface-variant text-[11px] break-words">Sahar Cargo Terminal, Mumbai</div><div class="text-[10px] text-secondary font-medium">Today, 08:45 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Picked up &amp; Inward Scanned</div><div class="text-on-surface-variant text-[11px] break-words">IXC Sahar Road Andheri Hub</div><div class="text-[10px] text-secondary font-medium">Yesterday, 19:20 IST</div></div></div></div></div><div class="pt-3 border-t border-surface-container flex flex-col gap-2 text-xs"><span class="text-on-surface-variant">Need direct gateway assistance for this waybill?</span><a class="text-[#25D366] hover:underline font-bold flex items-center gap-1.5 transition-colors" href="https://wa.me/919570821019?text=Hello%20IXC%20Dispatch%2C%20inquiring%20about%20waybill%20" target="_blank"><span class="material-symbols-outlined text-base">chat</span> WhatsApp Dispatch Desk</a></div></div></div>
 </div>
 </div>
 </section>
@@ -842,7 +830,7 @@ tailwind.config={
 <span class="material-symbols-outlined text-secondary transition-transform duration-300" id="faq-3-icon">expand_more</span>
 </button>
 <div class="hidden px-4 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed" id="faq-3">
-            Simply input your Waybill / Consignment number (e.g., IXCDEMO123456 or IXC-DOM-7701) into our Track Consignment engine above or contact our Sahar dispatch team on WhatsApp (+91 9570821019) for instant flight status updates.
+            Simply input your Waybill / Consignment number (e.g.,  or ) into our Track Consignment engine above or contact our Sahar dispatch team on WhatsApp (+91 9570821019) for instant flight status updates.
           </div>
 </div>
 </div>
@@ -975,19 +963,19 @@ tailwind.config={
 </thead>
 <tbody class="divide-y divide-surface-container">
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary">IXCDEMO123456</td>
+<td class="p-2.5 font-mono font-bold text-primary"></td>
 <td class="p-2.5">Dubai (DXB)</td>
 <td class="p-2.5">Air Priority</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold text-[10px]">In Transit</span></td>
 </tr>
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary">IXC-DOM-7701</td>
+<td class="p-2.5 font-mono font-bold text-primary"></td>
 <td class="p-2.5">Bengaluru (BLR)</td>
 <td class="p-2.5">Domestic Flight</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-green-100 text-green-800 font-bold text-[10px]">In Flight</span></td>
 </tr>
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary">IXC-DEMO-001</td>
+<td class="p-2.5 font-mono font-bold text-primary"></td>
 <td class="p-2.5">London (LHR)</td>
 <td class="p-2.5">International Express</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 font-bold text-[10px]">Customs Cleared</span></td>
@@ -1043,7 +1031,7 @@ tailwind.config={
 <div class="w-2 h-2 bg-white"></div>
 </div>
 <div class="text-left font-sans">
-<div class="tracking-widest font-black text-sm text-primary font-mono">* IXCDEMO123456 *</div>
+<div class="tracking-widest font-black text-sm text-primary font-mono">*  *</div>
 <div class="text-[10px] text-on-surface-variant font-medium">CSMI BOM Airport Gateway Priority Air Cargo</div>
 <div class="text-[9px] text-slate-500">Routing: BOM-DXB • Flight AI-901</div>
 </div>
@@ -1096,56 +1084,6 @@ tailwind.config={
 <script>
 // --- CONSIGNMENT REPOSITORY DICTIONARY ---
 const CONSIGNMENTS_DB = {
-  "IXCDEMO123456": {
-    waybill: "IXCDEMO123456",
-    status: "In Transit",
-    statusCode: "transit",
-    origin: "Mumbai, India (BOM Air Gateway)",
-    destination: "Dubai, UAE (DXB Cargo Village)",
-    currentLocation: "Mumbai Air Gateway (Departed sorting hub, export manifest cleared)",
-    service: "Express Air Priority Consignment",
-    estimatedDelivery: "2-3 Business Days",
-    progress: 65,
-    milestones: [
-      { title: "Export Manifest & Flight Boarding (AI-901)", location: "CSMI Airport Sahar T2, BOM", time: "Today, 14:30 IST", done: true },
-      { title: "Export Customs Clearance Passed (CSB-V)", location: "Mumbai Air Customs Hub", time: "Today, 11:15 IST", done: true },
-      { title: "Security & X-ray Screening Verified", location: "Sahar Cargo Terminal, Mumbai", time: "Today, 08:45 IST", done: true },
-      { title: "Picked up & Inward Scanned", location: "IXC Sahar Road Andheri Hub", time: "Yesterday, 19:20 IST", done: true },
-      { title: "Booking Confirmed & Waybill Generated", location: "IXC Central Booking Desk", time: "Yesterday, 17:00 IST", done: true }
-    ]
-  },
-  "IXC-DOM-7701": {
-    waybill: "IXC-DOM-7701",
-    status: "In Flight Transit",
-    statusCode: "inflight",
-    origin: "Mumbai Gateway (BOM)",
-    destination: "Bengaluru (BLR)",
-    currentLocation: "En route - AI Express Priority Air Freight Flight 512",
-    service: "Domestic Express Same-Day / Next-Day",
-    estimatedDelivery: "Expected Today by 20:00 IST",
-    progress: 75,
-    milestones: [
-      { title: "Air Freight Departed BOM Airport", location: "CSMI Cargo Terminal BOM", time: "Today, 13:10 IST", done: true },
-      { title: "Domestic Security Screen & Airline Transfer", location: "Sahar Domestic Cargo Apron", time: "Today, 10:20 IST", done: true },
-      { title: "Package Received & Barcode Tagged", location: "IXC Andheri East Center", time: "Today, 07:30 IST", done: true }
-    ]
-  },
-  "IXC-DEMO-001": {
-    waybill: "IXC-DEMO-001",
-    status: "Export Customs Cleared",
-    statusCode: "cleared",
-    origin: "Mumbai Air Gateway (BOM)",
-    destination: "London Heathrow, UK (LHR)",
-    currentLocation: "Sahar International Air Cargo Lounge",
-    service: "International Express Priority Courier",
-    estimatedDelivery: "3 Days",
-    progress: 50,
-    milestones: [
-      { title: "Customs CSB-IV Out of Charge (OOC) Granted", location: "Sahar Air Cargo Complex, BOM", time: "Today, 12:00 IST", done: true },
-      { title: "Volumetric Audit & Tare Weight Validation", location: "IXC Sahar Processing Floor", time: "Today, 09:10 IST", done: true },
-      { title: "Consignment Lodged at Hub", location: "Sahar Road, Andheri East Hub", time: "Yesterday, 18:00 IST", done: true }
-    ]
-  }
 };
 
 // --- MOBILE NAVIGATION DRAWER ---
@@ -1189,40 +1127,40 @@ function scrollToTracking() {
 }
 
 // --- TRACKING ENGINE LOGIC ---
-function handleTrackSearch(e) {
-  if (e) e.preventDefault();
-  const inputEl = document.getElementById('track-input');
-  const query = inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g, '');
-  const container = document.getElementById('track-result-container');
+async function handleTrackSearch(e) {
+  if(e) e.preventDefault();
+  const inputEl=document.getElementById('track-input');
+  const query=inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g,'');
+  const container=document.getElementById('track-result-container');
   container.classList.remove('hidden');
-
-  if (!query) {
-    return;
+  if(query.length===0) return;
+  try {
+    const res=await fetch('https://ixc-operations-studio.vercel.app/api/track?awb='+encodeURIComponent(query));
+    if(res.ok===false) throw new Error('not_found');
+    const data=await res.json();
+    const events=Array.isArray(data.events)?data.events:[];
+    const status=String(data.status||'Unknown');
+    const latest=events[0];
+    const found={
+      waybill:data.awbNumber,
+      statusCode:status.toLowerCase().includes('transit')?'transit':status.toLowerCase().includes('deliver')?'delivered':'pending',
+      status,
+      origin:data.origin,
+      destination:data.destination,
+      service:data.serviceType,
+      estimatedDelivery:latest?.eventDate||data.bookingDate,
+      currentLocation:latest?.location||data.origin,
+      progress:status.toLowerCase().includes('deliver')?100:status.toLowerCase().includes('transit')?60:25,
+      milestones:events.map(e=>({
+        title:e.status,
+        location:e.location,
+        time:e.eventDate+' '+e.eventTime+(e.remark?' — '+e.remark:'')
+      }))
+    };
+    renderSuccessTracking(found,container);
+  } catch(err) {
+    renderNotFoundTracking(query,container);
   }
-
-  let found = CONSIGNMENTS_DB[query];
-  if (!found) {
-    const cleanQuery = query.replace(/[^A-Z0-9]/g, '');
-    if (cleanQuery === "IXCDEMO123456") {
-      found = CONSIGNMENTS_DB["IXCDEMO123456"];
-    } else if (cleanQuery.includes("7701")) {
-      found = CONSIGNMENTS_DB["IXC-DOM-7701"];
-    } else if (cleanQuery.includes("DEMO001")) {
-      found = CONSIGNMENTS_DB["IXC-DEMO-001"];
-    }
-  }
-
-  if (found) {
-    renderSuccessTracking(found, container);
-  } else {
-    renderNotFoundTracking(query, container);
-  }
-}
-
-function quickFillTrack(num) {
-  const inputEl = document.getElementById('track-input');
-  inputEl.value = num;
-  handleTrackSearch();
 }
 
 function renderSuccessTracking(data, container) {
@@ -1333,8 +1271,7 @@ function renderNotFoundTracking(query, container) {
         <a href="tel:+919570821019" class="px-3.5 py-2 bg-primary hover:bg-secondary text-white rounded-xl font-bold flex items-center gap-1 text-xs btn-lift">
           <span class="material-symbols-outlined text-base">call</span> Call Desk
         </a>
-        <button onclick="quickFillTrack('IXCDEMO123456')" class="text-secondary font-bold underline px-2 py-1 text-xs">
-          Try Demo: IXCDEMO123456
+        <button onclick="quickFillTrack('')" class="text-secondary font-bold underline px-2 py-1 text-xs">
         </button>
       </div>
     </div>
