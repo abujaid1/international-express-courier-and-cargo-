@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-stitch.html
+
+Sitemap: https://international-express-courier-and-c.vercel.app/sitemap.xml
