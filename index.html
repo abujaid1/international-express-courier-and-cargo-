@@ -1143,30 +1143,40 @@ function scrollToTracking() {
 }
 
 // --- TRACKING ENGINE LOGIC ---
-function handleTrackSearch(e) {
-  if (e) e.preventDefault();
-  const inputEl = document.getElementById('track-input');
-  const query = inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g, '');
-  const container = document.getElementById('track-result-container');
-  container.classList.remove('hidden');
-
-  if (!query) {
-    return;
+async function handleTrackSearch(e) {
+  if(e) e.preventDefault();
+  const inputEl=document.getElementById("track-input");
+  const query=inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g,"");
+  const container=document.getElementById("track-result-container");
+  container.classList.remove("hidden");
+  if(query.length===0) return;
+  try {
+    const res=await fetch("https://ixc-operations-studio.vercel.app/api/track?awb="+encodeURIComponent(query));
+    if(res.ok===false) throw new Error("not_found");
+    const data=await res.json();
+    const events=Array.isArray(data.events)?data.events:[];
+    const status=String(data.status||"Unknown");
+    const latest=events[0];
+    const found={
+      waybill:data.awbNumber,
+      statusCode:status.toLowerCase().includes("transit")?"transit":status.toLowerCase().includes("deliver")?"delivered":"pending",
+      status,
+      origin:data.origin,
+      destination:data.destination,
+      service:data.serviceType,
+      estimatedDelivery:latest?.eventDate||data.bookingDate,
+      currentLocation:latest?.location||data.origin,
+      progress:status.toLowerCase().includes("deliver")?100:status.toLowerCase().includes("transit")?60:25,
+      milestones:events.map(e=>({
+        title:e.status,
+        location:e.location,
+        time:e.eventDate+" "+e.eventTime+(e.remark?" — "+e.remark:"")
+      }))
+    };
+    renderSuccessTracking(found,container);
+  } catch(err) {
+    renderNotFoundTracking(query,container);
   }
-
-  const found = CONSIGNMENTS_DB[query];
-
-  if (found) {
-    renderSuccessTracking(found, container);
-  } else {
-    renderNotFoundTracking(query, container);
-  }
-}
-
-function quickFillTrack(num) {
-  const inputEl = document.getElementById('track-input');
-  inputEl.value = num;
-  handleTrackSearch();
 }
 
 function renderSuccessTracking(data, container) {
