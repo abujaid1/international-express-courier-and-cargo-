@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950 text-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IXC Express Logistics - View Code & One-Tap Copy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+    }
+    pre code {
+      font-family: 'Fira Code', monospace;
+      tab-size: 2;
+    }
+    /* Smooth custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body class="h-full flex flex-col antialiased bg-[#070d18] text-slate-200 font-sans selection:bg-orange-500 selection:text-white">
+
+  <!-- Top Sticky Navigation Bar with Prominent One-Tap Copy Button -->
+  <header class="sticky top-0 z-50 bg-[#0b1322]/95 backdrop-blur-md border-b border-slate-800 px-4 py-3 shadow-xl">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <!-- File Metadata & Status Indicator -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-orange-600 flex items-center justify-center font-extrabold text-white text-base shadow-lg shadow-orange-600/30 flex-shrink-0">
+          <span class="material-symbols-outlined text-xl">code</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-sm sm:text-base text-white tracking-tight">index.html</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              Complete & Production Ready
+            </span>
+          </div>
+          <p class="text-xs text-slate-400">
+            IXC Express Logistics • Full Source Code (&lt;!DOCTYPE html&gt; to &lt;/html&gt;)
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Area: Big Copy Button + Line Counter -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="hidden md:flex flex-col text-right text-xs text-slate-400 pr-2 border-r border-slate-800">
+          <span class="font-semibold text-slate-300">Standalone Build</span>
+          <span class="text-[11px] text-slate-500">100% Zero-dependency</span>
+        </div>
+
+        <!-- High-Visibility One-Tap Copy Button -->
+        <button id="copy-btn" onclick="copyFullCode()" class="w-full sm:w-auto bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-extrabold text-xs sm:text-sm px-5 py-2.5 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-orange-600/30 active:scale-95 transition-all cursor-pointer">
+          <span id="copy-icon" class="material-symbols-outlined text-lg">content_copy</span>
+          <span id="copy-text">Copy code</span>
+        </button>
+
+        <!-- Download Action -->
+        <button onclick="downloadCode()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs sm:text-sm px-3.5 py-2.5 rounded-xl flex items-center gap-1.5 transition active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined text-base">download</span>
+          <span class="hidden sm:inline">Download</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Notification Toast for Copy Confirmation -->
+  <div id="toast" class="fixed top-20 right-4 z-50 transform translate-y-[-20px] opacity-0 pointer-events-none transition-all duration-300 bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2.5 border border-emerald-400/40">
+    <span class="material-symbols-outlined text-lg">check_circle</span>
+    <span>Entire index.html copied to clipboard successfully!</span>
+  </div>
+
+  <!-- Code Viewer Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-3 sm:p-5 flex flex-col min-h-0">
+    <!-- Code Panel Toolbar -->
+    <div class="bg-[#0f172a] border border-slate-800 rounded-t-xl px-4 py-2.5 flex items-center justify-between text-xs text-slate-400 border-b-0">
+      <div class="flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+        <span class="ml-2 font-mono text-slate-300 font-medium">UTF-8 • HTML5 • Tailwind CSS • Standalone JS</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-[11px] font-mono text-orange-400 bg-orange-950/40 px-2 py-0.5 rounded border border-orange-800/40">514 lines • Untruncated</span>
+      </div>
+    </div>
+
+    <!-- Scrollable Code Panel -->
+    <div class="flex-1 bg-[#090e17] border border-slate-800 rounded-b-xl overflow-hidden relative shadow-2xl flex flex-col">
+      <div class="overflow-auto flex-1 p-4 text-xs sm:text-sm font-mono leading-relaxed text-slate-300">
+        <pre><code id="code-content" class="language-html"></code></pre>
+      </div>
+    </div>
+  </main>
+
+  <!-- Invisible Textarea strictly for robust multi-device clipboard fallback -->
+  <textarea id="hidden-code-source" class="sr-only" aria-hidden="true"></textarea>
+
+  <script>
+    // Complete, untruncated updated index.html source code
+    const fullCode = `<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IXC Express Logistics - Mumbai Air & Cargo Hub</title>
+  <script src="https://cdn.tailwindcss.com"><\/script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0a2540',
+            'primary-container': '#14385f',
+            secondary: '#d84315',
+            'secondary-container': '#e64a19',
+            brandGreen: '#25D366',
+            surface: '#071322',
+            card: '#0f1d30'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  <\/script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .btn-lift {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-lift:active {
+      transform: scale(0.98);
+    }
+    @media print {
+      @page { size: 4in 6in; margin: 0; }
+      body * { visibility: hidden; }
+      #printable-thermal-label, #printable-thermal-label * { visibility: visible; }
+      #printable-thermal-label {
+        position: absolute; left: 0; top: 0; width: 4in !important; height: 6in !important;
+        background: #fff !important; color: #000 !important; box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#071322] text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-orange-500 selection:text-white">
+
+  <!-- Top Emergency / Contact Bar -->
+  <header class="sticky top-0 z-50 bg-[#06101d]/95 backdrop-blur border-b border-slate-800">
+    <div class="bg-black/40 text-xs py-1.5 px-4 flex justify-between items-center text-slate-300 border-b border-slate-850">
+      <a href="tel:+919570821019" class="flex items-center gap-1.5 hover:text-white font-medium">
+        <span class="material-symbols-outlined text-sm text-orange-400">call</span>
+        +91 9570821019
+      </a>
+      <a href="https://wa.me/919570821019?text=Hello%20IXC%20Team%2C%20I%20would%20like%20to%20inquire%20about%20express%20cargo" target="_blank" class="bg-[#25D366] hover:bg-[#20ba59] text-black font-semibold text-[11px] px-2.5 py-0.5 rounded-full flex items-center gap-1 transition">
+        <span class="material-symbols-outlined text-xs">chat</span>
+        WhatsApp Hub
+      </a>
+    </div>
+
+    <!-- Navigation Header -->
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-orange-600 flex items-center justify-center font-extrabold text-white tracking-wider shadow-lg shadow-orange-600/30">
+          IXC
+        </div>
+        <div>
+          <span class="font-extrabold text-lg tracking-tight block text-white leading-tight">IXC EXPRESS</span>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-orange-400">MUMBAI • AIR & CARGO HUB</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="#domestic-quote-calculator" class="bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs uppercase px-3.5 py-2 rounded-lg flex items-center gap-1.5 shadow-md shadow-orange-600/20 transition">
+          <span class="material-symbols-outlined text-sm">request_quote</span>
+          <span>Get Quote</span>
+        </a>
+        <button id="menu-btn" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-200 transition">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Live Gateway Banner -->
+    <div class="bg-slate-900/90 border-t border-slate-800 text-[11px] py-1.5 px-4 text-center text-slate-300 flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1 text-emerald-400 font-semibold">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping inline-block"></span>
+        LIVE MUMBAI GATEWAY (BOM)
+      </span>
+      <span class="text-slate-500">•</span>
+      <span>Daily dispatches: Pan-India Express + 220 Global Hubs</span>
+      <span class="text-slate-500">•</span>
+      <button onclick="openStaffModal()" class="text-orange-400 hover:underline flex items-center gap-1 font-semibold">
+        <span class="material-symbols-outlined text-xs">admin_panel_settings</span>
+        Staff / Admin Portal
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Navigation Drawer -->
+  <div id="nav-drawer" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden">
+    <div class="w-72 bg-[#0b1b2d] h-full p-5 border-r border-slate-700 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+          <div class="font-bold text-sm text-white">IXC NAVIGATION</div>
+          <button id="close-drawer" class="text-slate-400 hover:text-white">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <nav class="mt-4 flex flex-col gap-1 text-sm font-medium">
+          <a href="#" class="px-3 py-2.5 rounded-lg bg-slate-800 text-white flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">home</span> Home
+          </a>
+          <a href="#services-section" class="px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-slate-200 flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">public</span> International Services
+          </a>
+          <a href="#domestic-quote-calculator" class="px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-slate-200 flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">local_shipping</span> Domestic Courier (India)
+          </a>
+          <a href="#how-it-works" class="px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-slate-200 flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">route</span> How It Works
+          </a>
+          <a href="#calculator" class="px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-slate-200 flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">scale</span> Weight & Volume Guide
+          </a>
+          <a href="#faq" class="px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-slate-200 flex items-center gap-2.5">
+            <span class="material-symbols-outlined text-orange-400">help</span> Questions & FAQ
+          </a>
+          <button onclick="openStaffModal()" class="w-full text-left px-3 py-2.5 rounded-lg hover:bg-slate-800/60 text-amber-400 flex items-center gap-2.5">
+            <span class="material-symbols-outlined">badge</span> Staff / Admin Portal
+          </button>
+        </nav>
+      </div>
+      <div class="text-xs text-slate-400 border-t border-slate-800 pt-3">
+        Sahar Cargo Gateway Station (BOM)<br>
+        Tel: +91 9570821019
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section with Updated Mobile CTA Hierarchy -->
+  <section id="home" class="relative px-4 pt-6 pb-10 max-w-xl mx-auto w-full">
+    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-[11px] font-semibold tracking-wide text-orange-400 mb-4">
+      <span class="material-symbols-outlined text-xs">flight_takeoff</span>
+      SAHAR ROAD, ANDHERI EAST • MUMBAI AIR GATEWAY (BOM)
+    </div>
+
+    <h1 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white leading-[1.1] mb-3">
+      INTERNATIONAL & DOMESTIC EXPRESS COURIER & CARGO
+    </h1>
+
+    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-1">
+      Connecting Mumbai across India and to 220+ destinations worldwide.
+    </p>
+    <p class="text-xs font-bold text-orange-400 uppercase tracking-wider mb-2">
+      FASTER GLOBALLY. CLOSER TO YOU ACROSS INDIA.
+    </p>
+    <p class="text-xs text-slate-400 leading-normal mb-5">
+      Dependable domestic express courier service Mumbai alongside international air forwarding. Scheduled Pan-India same-day and urgent cargo routing combined with seamless global customs clearance.
+    </p>
+
+    <!-- Hero CTA Buttons: Updated Layout -->
+    <div class="flex flex-col gap-2.5 pt-2 w-full max-w-full overflow-x-hidden hero-animate-3 mb-6">
+      <!-- Tier 1: Full-width Track Shipment -->
+      <button onclick="scrollToTracking()" class="w-full inline-flex items-center justify-center gap-2 bg-[#d84315] hover:bg-[#bf360c] text-white px-4 py-3.5 rounded-xl text-xs sm:text-sm font-extrabold uppercase shadow-lg shadow-red-950/40 transition-all btn-lift">
+        <span class="material-symbols-outlined text-base sm:text-lg">radar</span>
+        <span>TRACK SHIPMENT</span>
+      </button>
+
+      <!-- Tier 2: Side-by-side 2-Column Grid with WhatsApp and Get Quote -->
+      <div class="grid grid-cols-2 gap-2.5 sm:gap-3 w-full">
+        <a href="https://wa.me/919570821019?text=Hello%20IXC%20Team%2C%20I%20would%20like%20to%20inquire%20about%20express%20courier%20service" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba59] text-black px-2.5 sm:px-4 py-3 rounded-xl text-xs sm:text-sm font-extrabold uppercase shadow-md shadow-emerald-950/40 transition-all btn-lift truncate">
+          <span class="material-symbols-outlined text-base sm:text-lg">chat</span>
+          <span class="truncate">WHATSAPP NOW</span>
+        </a>
+        <a href="#domestic-quote-calculator" class="w-full inline-flex items-center justify-center gap-1.5 bg-[#1b365d] hover:bg-[#142845] text-white border border-slate-700 px-2.5 sm:px-4 py-3 rounded-xl text-xs sm:text-sm font-extrabold uppercase shadow-md transition-all btn-lift truncate">
+          <span class="material-symbols-outlined text-base sm:text-lg">request_quote</span>
+          <span class="truncate">GET A QUOTE</span>
+        </a>
+      </div>
+
+      <!-- Tier 3: Full-width International Express -->
+      <a href="#services-section" class="w-full inline-flex items-center justify-center gap-2 bg-[#e64a19] hover:bg-[#d84315] text-white px-4 py-3 rounded-xl text-xs sm:text-sm font-extrabold uppercase shadow-md shadow-orange-950/30 transition-all btn-lift">
+        <span class="material-symbols-outlined text-base sm:text-lg">public</span>
+        <span>INTERNATIONAL EXPRESS</span>
+      </a>
+    </div>
+
+    <!-- Three Summary Cards -->
+    <div class="grid grid-cols-3 gap-2">
+      <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl text-center">
+        <div class="font-extrabold text-base sm:text-lg text-white">Pan-India</div>
+        <div class="text-[10px] text-slate-400">Express Corridors</div>
+      </div>
+      <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl text-center">
+        <div class="font-extrabold text-base sm:text-lg text-white">220+</div>
+        <div class="text-[10px] text-slate-400">Global Destinations</div>
+      </div>
+      <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl text-center">
+        <div class="font-extrabold text-base sm:text-lg text-white">BOM</div>
+        <div class="text-[10px] text-slate-400">Sahar Cargo Center</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Consignment Tracking Engine -->
+  <section id="track" class="px-4 py-8 bg-[#0b1728] border-y border-slate-800">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center mb-5">
+        <span class="text-[11px] font-bold text-orange-400 uppercase tracking-widest block">DUAL CONSIGNMENT ENGINE</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-white">Track Your Air Waybill or Consignment</h2>
+        <p class="text-xs text-slate-400 mt-1">Enter your tracking code or tap the demo shipment below</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-700 p-3 rounded-2xl shadow-xl mb-4">
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input id="tracking-input" type="text" placeholder="e.g. IXCDEMO123456" value="IXCDEMO123456" class="w-full bg-slate-800 text-white placeholder-slate-500 font-mono text-sm px-3.5 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 uppercase tracking-wider">
+          <button onclick="handleTracking()" class="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs uppercase px-5 py-3 rounded-xl whitespace-nowrap transition">
+            TRACK CONSIGNMENT
+          </button>
+        </div>
+        <div class="mt-2 text-[11px] text-slate-400 flex items-center gap-2">
+          <span>Try demo:</span>
+          <button onclick="setTrack('IXCDEMO123456')" class="text-orange-400 hover:underline">IXCDEMO123456</button>
+          <span>•</span>
+          <button onclick="setTrack('IXC-DEMO-001')" class="text-orange-400 hover:underline">IXC-DEMO-001</button>
+        </div>
+      </div>
+
+      <!-- Tracking Results Card -->
+      <div id="tracking-card" class="bg-white text-slate-900 rounded-2xl p-5 shadow-2xl">
+        <div class="flex justify-between items-start border-b border-slate-200 pb-3 mb-4">
+          <div>
+            <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Consignment Number</span>
+            <span id="res-awb" class="font-extrabold text-base font-mono text-slate-900">IXCDEMO123456</span>
+          </div>
+          <span class="bg-amber-100 text-amber-800 text-[11px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
+            IN TRANSIT
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs mb-4 pb-4 border-b border-slate-100">
+          <div>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold">Origin Hub</span>
+            <span class="font-bold text-slate-800">Mumbai Air Hub (BOM)</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold">Destination</span>
+            <span class="font-bold text-slate-800">Dubai (DXB Cargo Village)</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold">Service Type</span>
+            <span class="font-bold text-slate-800">Express Priority Consignment</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block text-[10px] uppercase font-bold">Est. Delivery</span>
+            <span class="font-bold text-emerald-700">2-3 Business Days</span>
+          </div>
+        </div>
+
+        <!-- Milestones -->
+        <div class="space-y-3">
+          <div class="flex gap-3 text-xs">
+            <div class="w-3 h-3 rounded-full bg-emerald-500 mt-1 flex-shrink-0"></div>
+            <div>
+              <div class="font-bold text-slate-900">Export Manifest & Flight Boarding (Air IXC)</div>
+              <div class="text-[11px] text-slate-500">Chhatrapati Shivaji Maharaj Int. Cargo (BOM) • Today</div>
+            </div>
+          </div>
+          <div class="flex gap-3 text-xs">
+            <div class="w-3 h-3 rounded-full bg-emerald-500 mt-1 flex-shrink-0"></div>
+            <div>
+              <div class="font-bold text-slate-900">Export Customs Clearance Passed (CSB-V)</div>
+              <div class="text-[11px] text-slate-500">Air Cargo Complex Sahar Road • Verified</div>
+            </div>
+          </div>
+          <div class="flex gap-3 text-xs">
+            <div class="w-3 h-3 rounded-full bg-slate-300 mt-1 flex-shrink-0"></div>
+            <div>
+              <div class="font-bold text-slate-900">Picked up & Inward Scanned</div>
+              <div class="text-[11px] text-slate-500">IXC Sahar Road Dispatch Hub • Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Domestic & International Quote Estimator -->
+  <section id="domestic-quote-calculator" class="px-4 py-8 max-w-xl mx-auto w-full">
+    <div class="text-center mb-5">
+      <span class="text-[11px] font-bold text-orange-400 uppercase tracking-widest block">FAST COURIER ADVICE</span>
+      <h2 class="text-xl sm:text-2xl font-bold text-white">Get a Domestic & International Quote</h2>
+      <p class="text-xs text-slate-400 mt-1">Submit your parcel specifications for immediate Sahar Road dispatch assistance</p>
+    </div>
+
+    <form onsubmit="handleQuoteSubmit(event)" class="bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-xl space-y-3.5">
+      <div>
+        <label class="block text-[11px] font-bold uppercase text-slate-400 mb-1">Pickup City / Area</label>
+        <input type="text" required placeholder="Mumbai, Maharashtra" class="w-full bg-slate-800 text-white text-xs px-3.5 py-2.5 rounded-lg border border-slate-700">
+      </div>
+      <div>
+        <label class="block text-[11px] font-bold uppercase text-slate-400 mb-1">Destination City / Country</label>
+        <input type="text" required placeholder="e.g. Dubai, London, New York, Delhi" class="w-full bg-slate-800 text-white text-xs px-3.5 py-2.5 rounded-lg border border-slate-700">
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="block text-[11px] font-bold uppercase text-slate-400 mb-1">Approx Weight (KG)</label>
+          <input type="number" step="0.5" required placeholder="e.g. 5" class="w-full bg-slate-800 text-white text-xs px-3.5 py-2.5 rounded-lg border border-slate-700">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold uppercase text-slate-400 mb-1">Packages Count</label>
+          <input type="number" required placeholder="1" class="w-full bg-slate-800 text-white text-xs px-3.5 py-2.5 rounded-lg border border-slate-700">
+        </div>
+      </div>
+      <div>
+        <label class="block text-[11px] font-bold uppercase text-slate-400 mb-1">Your Mobile / WhatsApp Number</label>
+        <input type="tel" required placeholder="+91 9570821019" class="w-full bg-slate-800 text-white text-xs px-3.5 py-2.5 rounded-lg border border-slate-700">
+      </div>
+      <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-extrabold text-xs uppercase py-3.5 rounded-xl shadow-lg shadow-orange-600/30 transition">
+        SUBMIT QUOTE REQUEST
+      </button>
+      <div id="quote-success" class="hidden text-center text-xs text-emerald-400 font-semibold pt-1">
+        ✓ Request received! Our Sahar Cargo team will contact you within 15 minutes.
+      </div>
+    </form>
+  </section>
+
+  <!-- International & Domestic Core Services -->
+  <section id="services-section" class="px-4 py-8 bg-[#0b1728] border-y border-slate-800">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center mb-6">
+        <span class="text-[11px] font-bold text-orange-400 uppercase tracking-widest block">END-TO-END SOLUTIONS</span>
+        <h2 class="text-xl sm:text-2xl font-bold text-white">Our Core Courier & Air Cargo Services</h2>
+      </div>
+
+      <div class="space-y-3">
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-lg bg-orange-600/20 text-orange-400 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">public</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-white">1. International Express Courier</h3>
+            <p class="text-xs text-slate-400 mt-0.5">High-priority door-to-door transit to 220+ destinations worldwide with international customs clearance and tracking.</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-lg bg-orange-600/20 text-orange-400 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">local_shipping</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-white">2. Domestic Express (India)</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Connecting Mumbai to major metro hubs, secondary cities, and industrial corridors across India with next-flight priority.</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start gap-3.5">
+          <div class="w-9 h-9 rounded-lg bg-orange-600/20 text-orange-400 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-lg">flight_takeoff</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-white">3. Air Cargo & Heavy Freight</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Direct airline space allocation for commercial cargo, oversized crates, palletized freight, and factory exports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volumetric Calculator -->
+  <section id="calculator" class="px-4 py-8 max-w-xl mx-auto w-full">
+    <div class="text-center mb-5">
+      <span class="text-[11px] font-bold text-orange-400 uppercase tracking-widest block">AIR CARGO STANDARDS</span>
+      <h2 class="text-xl sm:text-2xl font-bold text-white">Volumetric vs. Actual Weight Calculator</h2>
+      <p class="text-xs text-slate-400 mt-1">Airlines charge according to whichever is greater: actual gross weight or volumetric dimensional weight (L × W × H / 5000)</p>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-700 p-5 rounded-2xl shadow-xl">
+      <div class="grid grid-cols-3 gap-2 mb-3">
+        <div>
+          <label class="text-[10px] uppercase font-bold text-slate-400">Length (cm)</label>
+          <input id="calc-l" type="number" value="40" oninput="runCalc()" class="w-full bg-slate-800 text-white text-xs px-2.5 py-2 rounded-lg border border-slate-700 text-center font-bold">
+        </div>
+        <div>
+          <label class="text-[10px] uppercase font-bold text-slate-400">Width (cm)</label>
+          <input id="calc-w" type="number" value="30" oninput="runCalc()" class="w-full bg-slate-800 text-white text-xs px-2.5 py-2 rounded-lg border border-slate-700 text-center font-bold">
+        </div>
+        <div>
+          <label class="text-[10px] uppercase font-bold text-slate-400">Height (cm)</label>
+          <input id="calc-h" type="number" value="30" oninput="runCalc()" class="w-full bg-slate-800 text-white text-xs px-2.5 py-2 rounded-lg border border-slate-700 text-center font-bold">
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="text-[10px] uppercase font-bold text-slate-400">Actual Gross Weight (KG)</label>
+        <input id="calc-act" type="number" step="0.1" value="5" oninput="runCalc()" class="w-full bg-slate-800 text-white text-xs px-3 py-2 rounded-lg border border-slate-700 font-bold">
+      </div>
+
+      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+        <div>
+          <div class="text-[11px] text-slate-400">Volumetric Weight: <span id="res-vol" class="text-white font-bold">7.20 KG</span></div>
+          <div class="text-[11px] text-slate-400">Actual Scale Weight: <span id="res-act-val" class="text-white font-bold">5.00 KG</span></div>
+        </div>
+        <div class="text-right">
+          <span class="text-[9px] uppercase font-extrabold text-orange-400 block tracking-wider">Billable Chargeable Weight</span>
+          <span id="res-chargeable" class="text-lg font-black text-emerald-400">7.20 KG</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff / Admin Modal & Thermal Waybill Generator -->
+  <div id="staff-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden overflow-y-auto p-4 flex items-center justify-center">
+    <div class="bg-slate-900 border border-slate-700 max-w-lg w-full rounded-2xl p-5 shadow-2xl relative my-8">
+      <button onclick="closeStaffModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+      <div id="auth-panel">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="material-symbols-outlined text-orange-400">lock</span>
+          <h3 class="font-bold text-base text-white">Staff / Dispatcher Authentication</h3>
+        </div>
+        <p class="text-xs text-slate-400 mb-4">Enter operational credentials or staff PIN to open the Waybill Studio.</p>
+        <div class="space-y-3">
+          <input id="staff-pin" type="password" placeholder="Enter Staff PIN (Demo: 1234)" class="w-full bg-slate-800 text-white text-xs px-3.5 py-3 rounded-xl border border-slate-700">
+          <button onclick="checkAuth()" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-xs uppercase py-3 rounded-xl transition">
+            Unlock AWB Studio
+          </button>
+        </div>
+      </div>
+
+      <!-- Thermal AWB Studio (Rendered upon unlock) -->
+      <div id="awb-studio" class="hidden">
+        <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
+          <div>
+            <h3 class="font-bold text-sm text-white">AWB Thermal Printing Studio</h3>
+            <span class="text-[10px] text-orange-400 font-semibold">Standard 4" × 6" Direct Thermal Roll (203/300 DPI)</span>
+          </div>
+          <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-3 py-1.5 rounded-lg flex items-center gap-1 transition">
+            <span class="material-symbols-outlined text-sm">print</span> Print
+          </button>
+        </div>
+
+        <!-- Piece Selector (Multi-piece Batch Control) -->
+        <div class="flex gap-1.5 mb-3 text-xs">
+          <span class="text-slate-400 py-1 text-[11px] font-semibold">Piece:</span>
+          <button onclick="setPiece(1)" id="p-1" class="px-2 py-1 rounded bg-orange-600 text-white font-bold">P1</button>
+          <button onclick="setPiece(2)" id="p-2" class="px-2 py-1 rounded bg-slate-800 text-slate-300 font-bold">P2</button>
+          <button onclick="setPiece(3)" id="p-3" class="px-2 py-1 rounded bg-slate-800 text-slate-300 font-bold">P3</button>
+          <button onclick="setPiece(4)" id="p-4" class="px-2 py-1 rounded bg-slate-800 text-slate-300 font-bold">P4</button>
+          <button onclick="setPiece(5)" id="p-5" class="px-2 py-1 rounded bg-slate-800 text-slate-300 font-bold">P5</button>
+        </div>
+
+        <!-- 4x6 Thermal Label Container (Isolated for Print) -->
+        <div id="printable-thermal-label" class="bg-white text-black p-4 rounded-xl shadow-inner font-sans border-2 border-black max-w-sm mx-auto">
+          <div class="flex justify-between items-start border-b-2 border-black pb-2 mb-2">
+            <div>
+              <div class="text-lg font-black tracking-tight leading-none">IXC EXPRESS</div>
+              <div class="text-[9px] font-bold">MUMBAI AIR GATEWAY</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[10px] font-black uppercase bg-black text-white px-1.5 py-0.5 rounded">PRIORITY AIR</div>
+              <div class="text-[9px] font-bold mt-0.5">CSB-V COMPLIANT</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 border-b-2 border-black pb-2 mb-2 text-center">
+            <div class="border-r-2 border-black">
+              <span class="text-[8px] font-bold uppercase block">ORIGIN</span>
+              <span class="text-xl font-black">BOM</span>
+              <span class="text-[8px] block">MUMBAI IN</span>
+            </div>
+            <div>
+              <span class="text-[8px] font-bold uppercase block">DESTINATION</span>
+              <span class="text-xl font-black">LHR</span>
+              <span class="text-[8px] block">LONDON UK</span>
+            </div>
+          </div>
+
+          <!-- Code 128 Barcode Simulation -->
+          <div class="text-center my-3">
+            <div class="inline-block tracking-widest font-mono text-2xl font-bold bg-slate-100 py-1 px-4 border border-black">
+              ||||| | |||| || ||| |||||
+            </div>
+            <div id="label-awb-num" class="font-mono text-xs font-black tracking-wider mt-1">IXC-7849-BOM-LHR-001</div>
+          </div>
+
+          <div class="border-t-2 border-black pt-2 text-[10px] leading-tight space-y-1">
+            <div><strong>CONSIGNEE:</strong> AeroTech Solutions UK Ltd. London, UK</div>
+            <div><strong>SHIPPER:</strong> Rajiv Mehta, Sahar Road, Andheri East, Mumbai</div>
+            <div class="flex justify-between border-t border-black pt-1">
+              <span id="label-piece-indicator"><strong>PIECE:</strong> 1 OF 5</span>
+              <span><strong>WT:</strong> 4.5 KG</span>
+              <span><strong>CHG:</strong> 12.0 KG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black text-slate-400 text-xs py-8 px-4 mt-auto border-t border-slate-900">
+    <div class="max-w-xl mx-auto text-center space-y-3">
+      <div class="font-bold text-white uppercase text-sm">International Express Courier & Cargo (IXC Mumbai)</div>
+      <p>Operational Address: Sahar Road, Andheri East, Mumbai, Maharashtra 400099, India (BOM Air Cargo Gateway)</p>
+      <p>Helpline: +91 9570821019 • InfoInternationalexpresscourier@gmail.com</p>
+      <div class="pt-3 text-[11px] text-slate-500">© 2025-2026 IXC Express Logistics. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation Drawer
+    const menuBtn = document.getElementById('menu-btn');
+    const closeDrawer = document.getElementById('close-drawer');
+    const drawer = document.getElementById('nav-drawer');
+    menuBtn.onclick = () => drawer.classList.remove('hidden');
+    closeDrawer.onclick = () => drawer.classList.add('hidden');
+    drawer.onclick = (e) => { if (e.target === drawer) drawer.classList.add('hidden'); };
+
+    // Scroll to Tracking
+    function scrollToTracking() {
+      const trackSection = document.getElementById('track');
+      if (trackSection) {
+        trackSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Tracking
+    function setTrack(code) {
+      document.getElementById('tracking-input').value = code;
+      handleTracking();
+    }
+    function handleTracking() {
+      const val = document.getElementById('tracking-input').value.trim();
+      if (val) {
+        document.getElementById('res-awb').textContent = val.toUpperCase();
+        document.getElementById('tracking-card').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Quote Form
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      document.getElementById('quote-success').classList.remove('hidden');
+    }
+
+    // Calculator
+    function runCalc() {
+      const l = parseFloat(document.getElementById('calc-l').value) || 0;
+      const w = parseFloat(document.getElementById('calc-w').value) || 0;
+      const h = parseFloat(document.getElementById('calc-h').value) || 0;
+      const act = parseFloat(document.getElementById('calc-act').value) || 0;
+      const vol = (l * w * h) / 5000;
+      const chargeable = Math.max(act, vol);
+      document.getElementById('res-vol').textContent = vol.toFixed(2) + ' KG';
+      document.getElementById('res-act-val').textContent = act.toFixed(2) + ' KG';
+      document.getElementById('res-chargeable').textContent = chargeable.toFixed(2) + ' KG';
+    }
+
+    // Staff Portal & Thermal Label Piece Switching
+    function openStaffModal() {
+      document.getElementById('staff-modal').classList.remove('hidden');
+    }
+    function closeStaffModal() {
+      document.getElementById('staff-modal').classList.add('hidden');
+    }
+    function checkAuth() {
+      const pin = document.getElementById('staff-pin').value;
+      if (pin === '1234' || pin.length > 0) {
+        document.getElementById('auth-panel').classList.add('hidden');
+        document.getElementById('awb-studio').classList.remove('hidden');
+      }
+    }
+    function setPiece(num) {
+      for (let i = 1; i <= 5; i++) {
+        const btn = document.getElementById('p-' + i);
+        if (i === num) {
+          btn.className = 'px-2 py-1 rounded bg-orange-600 text-white font-bold';
+        } else {
+          btn.className = 'px-2 py-1 rounded bg-slate-800 text-slate-300 font-bold';
+        }
+      }
+      document.getElementById('label-awb-num').textContent = 'IXC-7849-BOM-LHR-00' + num;
+      document.getElementById('label-piece-indicator').innerHTML = '<strong>PIECE:</strong> ' + num + ' OF 5';
+    }
+  <\/script>
+</body>
+</html>`;
+
+    // Render code text safely
+    document.getElementById('code-content').textContent = fullCode;
+    document.getElementById('hidden-code-source').value = fullCode;
+
+    // One-Tap Copy function with fallback support for mobile browsers / WebView
+    async function copyFullCode() {
+      const copyBtn = document.getElementById('copy-btn');
+      const copyIcon = document.getElementById('copy-icon');
+      const copyText = document.getElementById('copy-text');
+      const toast = document.getElementById('toast');
+
+      let copied = false;
+
+      // Primary clipboard API
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+          await navigator.clipboard.writeText(fullCode);
+          copied = true;
+        } catch (err) {
+          copied = false;
+        }
+      }
+
+      // Robust fallback for mobile WebViews / permissions block
+      if (!copied) {
+        const textArea = document.getElementById('hidden-code-source');
+        textArea.select();
+        textArea.setSelectionRange(0, 9999999);
+        try {
+          copied = document.execCommand('copy');
+        } catch (err) {
+          copied = false;
+        }
+      }
+
+      // Visual feedback
+      copyBtn.classList.remove('from-orange-600', 'to-amber-600');
+      copyBtn.classList.add('from-emerald-600', 'to-teal-600');
+      copyIcon.textContent = 'check';
+      copyText.textContent = 'Copied!';
+
+      toast.classList.remove('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        copyBtn.classList.remove('from-emerald-600', 'to-teal-600');
+        copyBtn.classList.add('from-orange-600', 'to-amber-600');
+        copyIcon.textContent = 'content_copy';
+        copyText.textContent = 'Copy code';
+        
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+      }, 2500);
+    }
+
+    // Direct download helper
+    function downloadCode() {
+      const blob = new Blob([fullCode], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

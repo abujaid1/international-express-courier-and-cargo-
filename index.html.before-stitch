@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>IXC Mumbai | International &amp; Domestic Express Courier &amp; Air Cargo</title>
+<meta content="Domestic courier service Mumbai, express courier Mumbai, urgent courier Mumbai, same day courier Mumbai, airport pickup courier Mumbai, air express courier Mumbai, door to door courier Mumbai." name="keywords"/>
+<meta content="Leading Mumbai air cargo &amp; express courier gateway. Domestic express same-day &amp; 24-hr routing across India alongside international courier to 220+ countries." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config={
+  darkMode:"class",
+  theme:{
+    extend:{
+      colors:{
+        "primary":"#000f22",
+        "primary-container":"#0a2540",
+        "on-primary":"#ffffff",
+        "on-primary-container":"#768dad",
+        "primary-fixed":"#d2e4ff",
+        "primary-fixed-dim":"#b0c8eb",
+        "secondary":"#c2410c",
+        "secondary-container":"#ea580c",
+        "on-secondary":"#ffffff",
+        "on-secondary-fixed":"#341100",
+        "secondary-fixed":"#ffdbca",
+        "tertiary-container":"#192436",
+        "surface":"#f7f9fb",
+        "surface-container-lowest":"#ffffff",
+        "surface-container-low":"#f2f4f6",
+        "surface-container":"#eceef0",
+        "surface-container-high":"#e6e8ea",
+        "surface-variant":"#e0e3e5",
+        "on-surface":"#191c1e",
+        "on-surface-variant":"#43474d",
+        "outline":"#74777e",
+        "outline-variant":"#c4c6ce",
+        "error":"#ba1a1a",
+        "error-container":"#ffdad6",
+        "on-error":"#ffffff"
+      },
+      fontFamily:{
+        "headline-lg":["Plus Jakarta Sans", "sans-serif"],
+        "headline-md":["Plus Jakarta Sans", "sans-serif"],
+        "headline-sm":["Plus Jakarta Sans", "sans-serif"],
+        "body-lg":["Plus Jakarta Sans", "sans-serif"],
+        "body-md":["Plus Jakarta Sans", "sans-serif"],
+        "body-sm":["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+<style>
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+  .drawer-transition {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .accordion-content {
+    transition: max-height 0.3s ease-out, opacity 0.2s ease-out;
+  }
+</style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary selection:text-white">
+<!-- TOP HEADER -->
+<header class="fixed top-0 left-0 w-full z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
+<!-- Top Utility Bar (Wrapped & Responsive) -->
+<div class="bg-primary text-on-primary py-2 px-3 sm:px-6">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-medium">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1 text-center sm:text-left">
+<a class="flex items-center gap-1 text-on-primary hover:text-secondary-fixed transition-colors" href="tel:+919570821019">
+<span class="material-symbols-outlined text-[15px]">call</span>
+<span>+91 9570821019</span>
+</a>
+<span class="text-on-primary-container hidden md:inline">•</span>
+<a class="hidden xs:flex items-center gap-1 text-on-primary hover:text-secondary-fixed transition-colors truncate max-w-[240px] sm:max-w-none" href="mailto:InfoInternationalexpress07@gmail.com">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+<span class="truncate">InfoInternationalexpress07@gmail.com</span>
+</a>
+<span class="text-on-primary-container hidden lg:inline">•</span>
+<div class="hidden lg:flex items-center gap-1 text-slate-300">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+<span>Sahar Road, Andheri East, Mumbai 400099</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="hidden xl:flex items-center bg-primary-container rounded-full p-0.5 border border-on-primary-container/30 text-xs">
+<button class="px-2.5 py-0.5 rounded-full bg-secondary-container text-white font-semibold flex items-center gap-1" onclick="navigateToSection('services-section')">
+<span class="material-symbols-outlined text-[13px]">public</span> International
+          </button>
+<button class="px-2.5 py-0.5 rounded-full text-on-primary-container hover:text-white font-semibold flex items-center gap-1" onclick="navigateToSection('domestic-section')">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Domestic India
+          </button>
+</div>
+<a class="inline-flex items-center gap-1 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-bold transition-all shadow-sm" href="https://wa.me/919570821019" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+<span>WhatsApp Hub</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Navbar -->
+<div class="h-16 sm:h-20 max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-3">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2.5 sm:gap-3 shrink-0" href="#home">
+<div class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-primary flex items-center justify-center text-secondary-container font-extrabold text-lg sm:text-xl shadow-inner border border-secondary/30">
+        IXC
+      </div>
+<div class="flex flex-col">
+<span class="text-base sm:text-xl font-black text-primary tracking-tight leading-tight">IXC EXPRESS</span>
+<span class="text-[10px] sm:text-[11px] text-secondary tracking-wider uppercase font-bold leading-none">Mumbai • Air &amp; Cargo Hub</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-1 text-[13px] xl:text-sm font-semibold text-on-surface-variant">
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#home">Home</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#domestic-section">Domestic India</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#services-section">Services</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#how-it-works-section">How It Works</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#weight-volume-guide">Weight Guide</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#countries-section">Countries</a>
+<a class="px-2.5 py-2 hover:text-primary transition-colors" href="#faq-section">FAQ</a>
+</nav>
+<!-- Desktop & Mobile Right Actions -->
+<div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+<button class="hidden md:inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-variant transition-colors text-xs font-bold border border-outline-variant/40" onclick="scrollToTracking()">
+<span class="material-symbols-outlined mr-1 text-[17px] text-secondary">radar</span>Track Consignment
+      </button>
+<a class="inline-flex items-center justify-center px-3 sm:px-4 py-2 rounded-lg bg-secondary hover:bg-secondary-container text-white text-xs sm:text-sm font-bold shadow transition-all" href="#domestic-quote-calculator">
+<span class="material-symbols-outlined mr-1 text-[17px]">request_quote</span>Get Quote
+      </a>
+<!-- Admin Portal Trigger Button -->
+<button class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-primary hover:bg-primary-container text-white flex items-center justify-center transition-colors shadow-sm" onclick="openAdminModal()" title="Staff &amp; Admin Portal">
+<span class="material-symbols-outlined text-[19px]">admin_panel_settings</span>
+</button>
+<!-- Mobile Hamburger Button -->
+<button aria-label="Toggle Navigation Menu" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-surface-container hover:bg-surface-variant flex items-center justify-center text-primary border border-outline-variant/40 transition-colors" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- MOBILE MENU DRAWER & BACKDROP -->
+<div class="fixed inset-0 bg-primary/70 z-40 hidden opacity-0 transition-opacity duration-300" id="mobile-menu-backdrop" onclick="toggleMobileMenu()"></div>
+<aside class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-surface-container-lowest z-50 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full drawer-transition overflow-y-auto" id="mobile-drawer">
+<div class="space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-secondary-container font-extrabold text-sm">IXC</div>
+<div>
+<span class="font-black text-primary text-base block">IXC EXPRESS</span>
+<span class="text-[10px] text-secondary font-bold uppercase block">Mumbai Cargo Gateway</span>
+</div>
+</div>
+<button aria-label="Close menu" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Quick Action in Drawer -->
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 rounded-xl bg-primary text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm" onclick="scrollToTracking(); toggleMobileMenu();">
+<span class="material-symbols-outlined text-base text-secondary-container">radar</span>
+<span>Track Parcel</span>
+</button>
+<a class="py-2.5 px-3 rounded-xl bg-secondary text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm" href="#domestic-quote-calculator" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-base">request_quote</span>
+<span>Get Quote</span>
+</a>
+</div>
+<!-- Navigation List -->
+<nav class="flex flex-col space-y-2 text-sm font-semibold text-on-surface">
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#home" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">home</span> Home
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#domestic-section" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">local_shipping</span> Domestic Courier (India)
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#services-section" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">flight_takeoff</span> International Services
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#how-it-works-section" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">conversion_path</span> How It Works
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#weight-volume-guide" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">scale</span> Weight &amp; Volume Guide
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#countries-section" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">public</span> Global Hubs (220+)
+      </a>
+<a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5" href="#faq-section" onclick="toggleMobileMenu()">
+<span class="material-symbols-outlined text-primary text-lg">quiz</span> Questions &amp; FAQ
+      </a>
+<button class="p-2.5 rounded-lg hover:bg-primary/10 text-left text-primary font-bold flex items-center gap-2.5 border border-primary/20 mt-2" onclick="toggleMobileMenu(); openAdminModal();">
+<span class="material-symbols-outlined text-primary text-lg">admin_panel_settings</span> Staff &amp; Admin Portal
+      </button>
+</nav>
+</div>
+<div class="pt-6 border-t border-surface-container space-y-3">
+<div class="text-xs text-on-surface-variant">
+<div class="font-bold text-primary">Sahar Air Cargo Complex, BOM</div>
+<div>Andheri East, Mumbai 400099</div>
+<div class="mt-1 font-semibold text-primary">Tel: +91 9570821019</div>
+</div>
+<a class="w-full py-2.5 rounded-xl bg-[#25D366] text-white text-xs font-bold flex items-center justify-center gap-2" href="https://wa.me/919570821019" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span> Instant WhatsApp Dispatch
+    </a>
+</div>
+</aside>
+<!-- MAIN CONTENT -->
+<main class="w-full pt-24 sm:pt-28 bg-surface">
+<!-- Operational Gateway Status Banner -->
+<section class="w-full bg-primary-container text-on-primary py-2.5 px-4 sm:px-6 shadow-inner">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-xs">
+<div class="flex items-center gap-2 text-center md:text-left flex-wrap justify-center">
+<span class="relative flex h-2.5 w-2.5 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+<span class="font-extrabold text-secondary-fixed">LIVE MUMBAI GATEWAY (BOM)</span>
+<span class="text-on-primary-container hidden sm:inline">•</span>
+<span>Active priority dispatches: Pan-India Domestic Express + 220 Global Cargo Hubs.</span>
+</div>
+<button class="text-xs font-bold text-secondary-fixed hover:text-white flex items-center gap-1 transition-colors" onclick="openAdminModal()">
+<span class="material-symbols-outlined text-[16px]">admin_panel_settings</span> Staff / Admin Portal
+      </button>
+</div>
+</section>
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-12 sm:py-20" id="home">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container border border-on-primary-container/20 text-secondary-fixed text-xs font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm text-secondary-container">flight_takeoff</span>
+<span>Sahar Road, Andheri East • Mumbai Air Gateway (BOM)</span>
+</div>
+<div class="space-y-3">
+<h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+            INTERNATIONAL &amp; DOMESTIC EXPRESS COURIER &amp; CARGO
+          </h1>
+<p class="text-lg sm:text-xl text-primary-fixed-dim font-normal">
+            Connecting Mumbai across India and to 220+ destinations worldwide.
+          </p>
+<p class="text-xs sm:text-sm font-bold text-secondary-container uppercase tracking-wider">
+            Faster Globally. Closer to You Across India.
+          </p>
+</div>
+<p class="text-sm sm:text-base text-surface-container max-w-xl leading-relaxed">
+          Dependable domestic express courier service Mumbai alongside international air forwarding. Scheduled Pan-India same-day and urgent cargo routing combined with seamless global customs clearance.
+        </p>
+<!-- Hero Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<button class="inline-flex items-center gap-2 bg-secondary hover:bg-secondary-container text-white px-5 sm:px-6 py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all" onclick="scrollToTracking()">
+<span class="material-symbols-outlined text-lg">radar</span>
+<span>TRACK SHIPMENT</span>
+</button>
+<a class="inline-flex items-center gap-2 bg-secondary-container hover:bg-secondary text-white px-5 sm:px-6 py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all" href="#domestic-section">
+<span class="material-symbols-outlined text-lg">local_shipping</span>
+<span>DOMESTIC EXPRESS</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-white px-4 sm:px-5 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all" href="#domestic-quote-calculator">
+<span class="material-symbols-outlined text-lg">request_quote</span>
+<span>GET A QUOTE</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-4 sm:px-5 py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all" href="https://wa.me/919570821019" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span>WhatsApp Now</span>
+</a>
+</div>
+<!-- Quick Stats -->
+<div class="grid grid-cols-3 gap-3 pt-4 max-w-lg">
+<div class="p-3 bg-primary-container/80 rounded-xl border border-white/5">
+<div class="text-xl sm:text-2xl font-black text-white">Pan-India</div>
+<div class="text-[11px] text-on-primary-container mt-0.5">Express Corridors</div>
+</div>
+<div class="p-3 bg-primary-container/80 rounded-xl border border-white/5">
+<div class="text-xl sm:text-2xl font-black text-white">220+</div>
+<div class="text-[11px] text-on-primary-container mt-0.5">Global Destinations</div>
+</div>
+<div class="p-3 bg-primary-container/80 rounded-xl border border-white/5">
+<div class="text-xl sm:text-2xl font-black text-white">BOM</div>
+<div class="text-[11px] text-on-primary-container mt-0.5">Sahar Cargo Center</div>
+</div>
+</div>
+</div>
+<!-- Hero Fast Contact Desk Card -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-5 sm:p-7 shadow-2xl space-y-4 border border-outline-variant/30">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div>
+<span class="text-xs text-secondary font-bold uppercase tracking-wider block">Direct Dispatch Desk</span>
+<h3 class="text-lg sm:text-xl font-extrabold text-primary">Mumbai Logistics Hub</h3>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+</div>
+<div class="space-y-2.5">
+<a class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors group" href="tel:+919570821019">
+<div class="w-10 h-10 rounded-lg bg-primary text-white flex items-center justify-center shrink-0 group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-lg">call</span>
+</div>
+<div class="min-w-0">
+<span class="text-[10px] text-on-surface-variant block uppercase font-bold tracking-wider">Phone Helpline</span>
+<span class="text-sm font-bold text-primary group-hover:text-secondary truncate block">+91 9570821019</span>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors group" href="https://wa.me/919570821019" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-[#25D366] text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">chat</span>
+</div>
+<div class="min-w-0">
+<span class="text-[10px] text-on-surface-variant block uppercase font-bold tracking-wider">WhatsApp Dispatcher</span>
+<span class="text-sm font-bold text-primary truncate block">Instant Chat (+91 9570821019)</span>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors group" href="mailto:InfoInternationalexpress07@gmail.com">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">mail</span>
+</div>
+<div class="min-w-0">
+<span class="text-[10px] text-on-surface-variant block uppercase font-bold tracking-wider">Email Commercial Desk</span>
+<span class="text-xs sm:text-sm font-bold text-primary truncate block">InfoInternationalexpress07@gmail.com</span>
+</div>
+</a>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-surface-variant text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+<div class="min-w-0">
+<span class="text-[10px] text-on-surface-variant block uppercase font-bold tracking-wider">Operational Address</span>
+<span class="text-xs text-on-surface font-medium block leading-tight mt-0.5">Sahar Road, Andheri East, Mumbai, Maharashtra 400099, India</span>
+</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">verified</span> Doorstep Pickup Mumbai</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">shield</span> Compliant Processing</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LIVE DUAL TRACKING ENGINE SECTION -->
+<section class="w-full py-14 px-4 sm:px-6 bg-surface scroll-mt-24" id="quick-tracker">
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="text-center space-y-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-secondary-fixed text-xs font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm text-secondary-container">radar</span>
+<span>Dual Consignment Engine</span>
+</div>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">Track Your Air Waybill or Domestic Consignment</h2>
+<p class="text-xs sm:text-sm text-on-surface-variant max-w-xl mx-auto">
+          Milestone tracking for Pan-India Domestic Express and International Air Waybills. Enter your tracking code below:
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-5 sm:p-7 rounded-2xl shadow-xl border border-outline-variant/30 space-y-4">
+<!-- Search Form -->
+<form class="flex flex-col sm:flex-row items-stretch gap-2.5" onsubmit="handleTrackSearch(event)">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl">barcode_scanner</span>
+<input class="w-full h-12 sm:h-14 pl-12 pr-4 bg-surface rounded-xl text-on-surface text-sm sm:text-base font-bold focus:outline-none focus:ring-2 focus:ring-secondary uppercase placeholder:normal-case placeholder:font-normal border border-outline-variant/30" id="track-input" placeholder="e.g. IXCDEMO123456 or IXC-DOM-7701" required="" type="text"/>
+</div>
+<button class="h-12 sm:h-14 px-6 sm:px-8 bg-secondary hover:bg-secondary-container text-white rounded-xl text-sm font-bold whitespace-nowrap transition-all shadow-md flex items-center justify-center gap-2 shrink-0" type="submit">
+<span class="material-symbols-outlined text-lg">search</span>
+<span>TRACK CONSIGNMENT</span>
+</button>
+</form>
+<!-- Clickable Sample Waybill Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1 text-xs">
+<span class="text-on-surface-variant font-semibold">Try Demo Waybills:</span>
+<button class="px-2.5 py-1 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 rounded-lg text-xs font-bold transition-colors" onclick="quickFillTrack('IXCDEMO123456')" type="button">
+            ⚡ IXCDEMO123456 (Mumbai → Dubai)
+          </button>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-white rounded-lg text-xs font-bold text-primary transition-colors" onclick="quickFillTrack('IXC-DOM-7701')" type="button">
+            IXC-DOM-7701 (Domestic Mumbai → BLR)
+          </button>
+<button class="px-2.5 py-1 bg-surface-container hover:bg-primary hover:text-white rounded-lg text-xs font-bold text-primary transition-colors" onclick="quickFillTrack('IXC-DEMO-001')" type="button">
+            IXC-DEMO-001 (Mumbai → London LHR)
+          </button>
+</div>
+<!-- Render Target for Tracking Result -->
+<div class="hidden transition-all duration-300" id="track-result-container">
+<!-- Dynamically populated -->
+</div>
+</div>
+</div>
+</section>
+<!-- DOMESTIC EXPRESS SECTION -->
+<section class="w-full py-14 px-4 sm:px-6 bg-surface-container-low border-b border-surface-container-high scroll-mt-20" id="domestic-section">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="space-y-2 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-sm text-secondary">local_shipping</span>
+<span>Pan-India Priority Network</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-black text-primary tracking-tight">
+            DOMESTIC EXPRESS COURIER FROM MUMBAI
+          </h2>
+<p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+            Urgent documents, parcels and commercial shipments across India with pickup, air express, door-to-door delivery and time-critical shipping options.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="px-5 py-3 rounded-xl bg-secondary hover:bg-secondary-container text-white text-xs sm:text-sm font-bold transition-all shadow-md flex items-center gap-2" href="#domestic-quote-calculator">
+<span class="material-symbols-outlined text-lg">calculate</span>
+<span>GET DOMESTIC QUOTE</span>
+</a>
+<a class="px-5 py-3 rounded-xl bg-primary hover:bg-primary-container text-white text-xs sm:text-sm font-bold transition-all shadow-md flex items-center gap-2" href="#urgent-domestic-form">
+<span class="material-symbols-outlined text-lg text-secondary-container">alarm_on</span>
+<span>URGENT PICKUP</span>
+</a>
+</div>
+</div>
+<!-- Time Critical Desk Callout Banner -->
+<div class="p-5 sm:p-7 rounded-2xl bg-primary-container text-on-primary shadow-lg border-l-4 border-secondary-container">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary-fixed font-bold uppercase tracking-wider text-xs">
+<span class="material-symbols-outlined text-lg text-secondary-container">flash_on</span>
+<span>Time-Critical Dispatch Desk</span>
+</div>
+<h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">NEED IT THERE FAST?</h3>
+<p class="text-xs sm:text-sm text-surface-container max-w-2xl">
+              Ask us about same-day, next-flight and 24-hour delivery options, subject to destination, flight availability and shipment acceptance.
+            </p>
+</div>
+<div class="shrink-0 flex flex-wrap items-center gap-3">
+<a class="px-4 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5" href="tel:+919570821019">
+<span class="material-symbols-outlined text-base">call</span> +91 9570821019
+            </a>
+<a class="px-4 py-2.5 rounded-lg bg-secondary hover:bg-secondary-container text-white text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5" href="#urgent-domestic-form">
+<span>Check Route Availability</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUOTE CALCULATOR & URGENT DISPATCH SECTION -->
+<section class="w-full py-14 px-4 sm:px-6 bg-surface-container-low scroll-mt-24" id="domestic-quote-calculator">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Quote Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-5 sm:p-8 rounded-2xl shadow-md border border-outline-variant/30 space-y-5">
+<div>
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">Fast Courier Advice</span>
+<h3 class="text-xl sm:text-2xl font-black text-primary tracking-tight">GET A DOMESTIC &amp; INTERNATIONAL QUOTE</h3>
+<p class="text-xs text-on-surface-variant mt-1">Submit your parcel specifications for immediate calculation by our Sahar cargo operations desk.</p>
+</div>
+<form class="space-y-4" onsubmit="handleQuoteSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Pickup City / Area</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm text-on-surface border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-secondary" id="quote-origin" required="" type="text" value="Mumbai, Maharashtra"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Destination City / Hub / Country</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm text-on-surface border border-outline-variant/30 focus:outline-none focus:ring-2 focus:ring-secondary" id="quote-dest" placeholder="e.g. Bengaluru / Dubai, UAE / London, UK" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Shipment Type</label>
+<select class="w-full h-11 px-2.5 bg-surface rounded-lg text-xs font-medium border border-outline-variant/30" id="quote-type">
+<option>Urgent Document</option>
+<option>Commercial Parcel</option>
+<option>Air Cargo / Heavy Freight</option>
+<option>Spare Parts &amp; Machinery</option>
+<option>Commercial Samples</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Packages / Boxes</label>
+<input class="w-full h-11 px-3 bg-surface rounded-lg text-xs border border-outline-variant/30" id="quote-boxes" min="1" required="" type="number" value="1"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Approx Weight (KG)</label>
+<input class="w-full h-11 px-3 bg-surface rounded-lg text-xs border border-outline-variant/30" id="quote-weight" min="0.1" required="" step="0.1" type="number" value="2.5"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Your Name / Company</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm border border-outline-variant/30" id="quote-name" placeholder="e.g. Rahul Sharma" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Phone / WhatsApp Number</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm border border-outline-variant/30" id="quote-phone" placeholder="e.g. +91 9570821019" required="" type="tel"/>
+</div>
+</div>
+<button class="w-full h-12 bg-secondary hover:bg-secondary-container text-white font-bold text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-lg">send</span>
+<span>SUBMIT QUOTE REQUEST</span>
+</button>
+</form>
+<div class="hidden p-4 rounded-xl bg-primary-container text-white space-y-2 text-xs" id="quote-success-box">
+<div class="flex items-center gap-2 text-secondary-container font-bold text-sm">
+<span class="material-symbols-outlined">check_circle</span>
+<span>Quote Request Logged Successfully!</span>
+</div>
+<p class="text-surface-container leading-relaxed">
+            Our Sahar operations team will review your specifications and contact your phone/WhatsApp within 15 minutes with competitive transit options.
+          </p>
+</div>
+</div>
+<!-- Urgent Dispatch Quick Card -->
+<div class="lg:col-span-5 bg-primary text-on-primary p-6 sm:p-8 rounded-2xl shadow-xl space-y-5" id="urgent-domestic-form">
+<div class="space-y-1">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary text-white text-xs font-bold uppercase tracking-wider">Fast Action Desk</span>
+<h3 class="text-xl sm:text-2xl font-bold text-white tracking-tight">URGENT PICKUP DISPATCH</h3>
+<p class="text-xs text-surface-container leading-relaxed">
+            Need a courier collected in Mumbai within 60 to 90 minutes for next-flight connection?
+          </p>
+</div>
+<div class="space-y-3">
+<a class="w-full py-3.5 px-4 bg-[#25D366] hover:bg-[#1ebd5a] text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md flex items-center justify-center gap-2 text-center" href="https://wa.me/919570821019?text=Hello%20IXC%20Team%2C%20I%20need%20urgent%20dispatch%20pickup%20in%20Mumbai" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>WhatsApp Fast Dispatch (+91 9570821019)</span>
+</a>
+<a class="w-full py-3.5 px-4 bg-secondary hover:bg-secondary-container text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md flex items-center justify-center gap-2 text-center" href="tel:+919570821019">
+<span class="material-symbols-outlined text-xl">call</span>
+<span>Call Sahar Hub: +91 9570821019</span>
+</a>
+<div class="p-4 rounded-xl bg-primary-container border border-outline-variant/20 text-xs space-y-1">
+<span class="font-bold text-secondary-fixed block">Official Commercial Desk:</span>
+<a class="text-white hover:text-secondary-fixed underline block truncate font-medium" href="mailto:InfoInternationalexpress07@gmail.com">
+              InfoInternationalexpress07@gmail.com
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES OVERVIEW SECTION -->
+<section class="w-full py-16 px-4 sm:px-6 bg-surface scroll-mt-24" id="services-section">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="text-center space-y-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">End-to-End Solutions</span>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">Our Core Courier &amp; Air Cargo Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-secondary-fixed">public</span>
+</div>
+<h3 class="text-lg font-bold text-primary">1. International Express Courier</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            High-priority door-to-door transit to 220+ destinations worldwide with international customs clearance and tracking.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<h3 class="text-lg font-bold text-primary">2. Domestic Express (India)</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Connecting Mumbai to major metro hubs, secondary cities, and industrial pin codes across India with next-flight priority.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-secondary-container">flight_takeoff</span>
+</div>
+<h3 class="text-lg font-bold text-primary">3. Air Cargo &amp; Heavy Freight</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Direct airline space allocation for commercial cargo, oversized crates, palletized freight, and factory exports.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-secondary-fixed">emergency_heat</span>
+</div>
+<h3 class="text-lg font-bold text-primary">4. Urgent Airport Pickup</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Direct collection and rapid processing for airport terminal cargo, flight transfers, and critical spare parts.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-secondary">markunread_mailbox</span>
+</div>
+<h3 class="text-lg font-bold text-primary">5. Document Courier</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            Passports, tender submissions, corporate contracts, and university admissions delivered with tamper-evident security.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-outline-variant/20 space-y-3">
+<div class="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">assured_workload</span>
+</div>
+<h3 class="text-lg font-bold text-primary">6. Customs &amp; Regulatory Guidance</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            CSB-IV / CSB-V export invoice filing, KYC validation, MSDS compliance, and tariff classification assistance.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS SECTION -->
+<section class="w-full py-16 px-4 sm:px-6 bg-surface-container-low scroll-mt-24" id="how-it-works-section">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="text-center space-y-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Workflow Transparency</span>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">How IXC Dispatch Works</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 space-y-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-black text-sm flex items-center justify-center">1</div>
+<h4 class="font-bold text-primary text-base">Booking &amp; Collection</h4>
+<p class="text-xs text-on-surface-variant">Submit pickup request or hand over cargo at our Sahar Road, Andheri East terminal.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 space-y-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-black text-sm flex items-center justify-center">2</div>
+<h4 class="font-bold text-primary text-base">Weighing &amp; Screening</h4>
+<p class="text-xs text-on-surface-variant">Certified dimensional scanning, volumetric weight check, and security x-ray.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 space-y-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-black text-sm flex items-center justify-center">3</div>
+<h4 class="font-bold text-primary text-base">Direct Air Lodgement</h4>
+<p class="text-xs text-on-surface-variant">Export customs manifest pass or domestic air priority boarding from CSMI BOM Airport.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest border border-outline-variant/20 space-y-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-black text-sm flex items-center justify-center">4</div>
+<h4 class="font-bold text-primary text-base">Final Destination Delivery</h4>
+<p class="text-xs text-on-surface-variant">Doorstep delivery to recipient with digital signature proof and milestone SMS/email updates.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WEIGHT & VOLUME CALCULATOR GUIDE SECTION -->
+<section class="w-full py-16 px-4 sm:px-6 bg-surface scroll-mt-24" id="weight-volume-guide">
+<div class="max-w-5xl mx-auto space-y-8">
+<div class="text-center space-y-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Air Cargo Standards</span>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">Volumetric vs. Actual Weight Calculator</h2>
+<p class="text-xs sm:text-sm text-on-surface-variant max-w-xl mx-auto">
+          Airlines charge according to whichever is greater: actual gross weight or volumetric dimensional weight (L × W × H ÷ 5000 in cm).
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-2xl shadow-md border border-outline-variant/30 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<div class="grid grid-cols-3 gap-3">
+<div>
+<label class="text-[11px] font-bold text-on-surface">Length (cm)</label>
+<input class="w-full h-10 px-3 bg-surface rounded-lg text-sm border border-outline-variant/30" id="calc-len" min="1" oninput="calculateVolumetricWeight()" type="number" value="40"/>
+</div>
+<div>
+<label class="text-[11px] font-bold text-on-surface">Width (cm)</label>
+<input class="w-full h-10 px-3 bg-surface rounded-lg text-sm border border-outline-variant/30" id="calc-wid" min="1" oninput="calculateVolumetricWeight()" type="number" value="30"/>
+</div>
+<div>
+<label class="text-[11px] font-bold text-on-surface">Height (cm)</label>
+<input class="w-full h-10 px-3 bg-surface rounded-lg text-sm border border-outline-variant/30" id="calc-hgt" min="1" oninput="calculateVolumetricWeight()" type="number" value="30"/>
+</div>
+</div>
+<div>
+<label class="text-[11px] font-bold text-on-surface">Actual Scale Weight (KG)</label>
+<input class="w-full h-10 px-3 bg-surface rounded-lg text-sm border border-outline-variant/30" id="calc-act" min="0.1" oninput="calculateVolumetricWeight()" step="0.1" type="number" value="5"/>
+</div>
+</div>
+<div class="bg-surface-container p-5 rounded-xl space-y-3 border border-outline-variant/20">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Volumetric Weight (L×W×H÷5000):</span>
+<span class="font-bold text-primary" id="vol-result">7.20 KG</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Actual Scale Weight:</span>
+<span class="font-bold text-primary" id="act-result">5.00 KG</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-xs font-bold uppercase text-secondary">Billable Chargeable Weight:</span>
+<span class="text-xl font-extrabold text-secondary" id="billable-result">7.20 KG</span>
+</div>
+<p class="text-[11px] text-on-surface-variant italic">
+            * Air freight standard formula applied. For oversize sea cargo or express documents, ask our operations desk.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- DESTINATION COUNTRIES SECTION -->
+<section class="w-full py-16 px-4 sm:px-6 bg-surface-container-low scroll-mt-24" id="countries-section">
+<div class="max-w-7xl mx-auto space-y-8">
+<div class="text-center space-y-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Global Reach</span>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">Direct Routes &amp; Air Corridors (220+ Countries)</h2>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center">
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇦🇪</div>
+<div class="font-bold text-primary text-xs">United Arab Emirates</div>
+<div class="text-[10px] text-on-surface-variant">DXB / AUH (Next Day)</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇬🇧</div>
+<div class="font-bold text-primary text-xs">United Kingdom</div>
+<div class="text-[10px] text-on-surface-variant">LHR / MAN (2-3 Days)</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇺🇸</div>
+<div class="font-bold text-primary text-xs">United States</div>
+<div class="text-[10px] text-on-surface-variant">JFK / ORD / LAX (3-4 Days)</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇸🇬</div>
+<div class="font-bold text-primary text-xs">Singapore &amp; SEA</div>
+<div class="text-[10px] text-on-surface-variant">SIN / KUL (1-2 Days)</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇨🇦</div>
+<div class="font-bold text-primary text-xs">Canada</div>
+<div class="text-[10px] text-on-surface-variant">YYZ / YVR (3-4 Days)</div>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl shadow-xs border border-outline-variant/20">
+<div class="text-2xl mb-1">🇦🇺</div>
+<div class="font-bold text-primary text-xs">Australia &amp; NZ</div>
+<div class="text-[10px] text-on-surface-variant">SYD / MEL (3-5 Days)</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ SECTION -->
+<section class="w-full py-16 px-4 sm:px-6 bg-surface scroll-mt-24" id="faq-section">
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="text-center space-y-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Answers &amp; Help</span>
+<h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-3">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<button class="w-full p-4 text-left font-bold text-primary flex items-center justify-between text-sm sm:text-base" onclick="toggleFaq('faq-1')">
+<span>What documents are required for international courier export from Mumbai?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed" id="faq-1">
+            For personal shipments: recipient &amp; sender KYC (Aadhaar / Passport copy) and itemized declaration. For commercial shipments: GST invoice, IEC code copy, packing list, and CSB-IV / CSB-V export manifest. Our Sahar Road desk prepares all documentation for you.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<button class="w-full p-4 text-left font-bold text-primary flex items-center justify-between text-sm sm:text-base" onclick="toggleFaq('faq-2')">
+<span>How fast can urgent domestic couriers be picked up in Mumbai?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed" id="faq-2">
+            Within Mumbai city (Andheri, BKC, Nariman Point, Powai, Navi Mumbai), our express rider can arrive within 60 to 90 minutes. We can lodge parcels on the same afternoon flight departing CSMI BOM airport.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<button class="w-full p-4 text-left font-bold text-primary flex items-center justify-between text-sm sm:text-base" onclick="toggleFaq('faq-3')">
+<span>How can I track my shipment online?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden px-4 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed" id="faq-3">
+            Simply input your Waybill / Consignment number (e.g., IXCDEMO123456 or IXC-DOM-7701) into our Track Consignment engine above or contact our Sahar dispatch team on WhatsApp (+91 9570821019) for instant flight status updates.
+          </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-primary text-on-primary py-12 px-4 sm:px-6 border-t border-primary-container">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs text-surface-container">
+<div class="space-y-3">
+<div class="text-base sm:text-lg font-black text-white tracking-tight">IXC EXPRESS LOGISTICS</div>
+<p class="leading-relaxed text-slate-300">
+        Headquartered at Sahar Cargo Complex, Andheri East, Mumbai. Delivering reliable domestic express courier across India alongside international air freight to 220+ global countries.
+      </p>
+<div class="text-secondary-fixed font-bold">Mumbai Gateway: BOM (CSMI Airport)</div>
+</div>
+<div class="space-y-2">
+<div class="text-sm font-bold text-white uppercase tracking-wider">Quick Navigation</div>
+<ul class="space-y-1.5 text-slate-300">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#home">Home</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#domestic-section">Domestic Courier (India)</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#services-section">International Services</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#how-it-works-section">How It Works</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#weight-volume-guide">Weight &amp; Volume Calculator</a></li>
+<li><button class="hover:text-secondary-fixed transition-colors text-left" onclick="scrollToTracking()">Track Consignment</button></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#domestic-quote-calculator">Get Quote</a></li>
+</ul>
+</div>
+<div class="space-y-2">
+<div class="text-sm font-bold text-white uppercase tracking-wider">Operations Desk</div>
+<p class="text-slate-300">Sahar Road, Andheri East, Mumbai, Maharashtra 400099, India</p>
+<p>Phone: <a class="text-white hover:text-secondary-fixed font-bold" href="tel:+919570821019">+91 9570821019</a></p>
+<p>Email: <a class="text-white hover:text-secondary-fixed font-medium truncate block" href="mailto:InfoInternationalexpress07@gmail.com">InfoInternationalexpress07@gmail.com</a></p>
+<p>WhatsApp: <a class="text-[#25D366] hover:underline font-bold" href="https://wa.me/919570821019" target="_blank">+91 9570821019</a></p>
+</div>
+<div class="space-y-3">
+<div class="text-sm font-bold text-white uppercase tracking-wider">Staff Administration</div>
+<p class="text-slate-300">Authorized terminal staff and operations management portal:</p>
+<button class="px-4 py-2 rounded-xl bg-primary-container hover:bg-secondary text-white font-bold transition-colors flex items-center gap-1.5 border border-white/10" onclick="openAdminModal()">
+<span class="material-symbols-outlined text-base">admin_panel_settings</span>
+<span>Staff &amp; Admin Portal</span>
+</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 mt-8 border-t border-primary-container/80 flex flex-col sm:flex-row items-center justify-between text-[11px] text-on-primary-container gap-2 text-center sm:text-left">
+<div>© 2026 International Express Courier &amp; Cargo (IXC Mumbai). All Rights Reserved.</div>
+<div>Sahar Air Cargo Complex • CSMI Airport Gateway (BOM)</div>
+</div>
+</footer>
+<!-- STAFF & ADMIN MODAL (DEMO SIMULATION WITH FULL DASHBOARD) -->
+<div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-4 overflow-y-auto" id="admin-modal">
+<div class="bg-surface-container-lowest text-on-surface rounded-2xl max-w-2xl w-full p-5 sm:p-8 shadow-2xl relative space-y-5 my-8 border border-outline-variant/30">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary p-1 rounded-lg" onclick="closeAdminModal()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<!-- VIEW 1: AUTHENTICATION FORM -->
+<div class="space-y-5" id="admin-auth-view">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-primary text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">admin_panel_settings</span>
+</div>
+<div>
+<h3 class="text-lg sm:text-xl font-bold text-primary">DEMO ADMIN LOGIN (Frontend Simulation)</h3>
+<p class="text-xs text-on-surface-variant">Authorized IXC Operations Access Only</p>
+</div>
+</div>
+<div class="p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 leading-relaxed">
+<strong>Notice:</strong> Client-side simulation for interface demonstration. Not connected to a live server backend.
+        <div class="mt-1 font-medium">
+          Quick credentials: Email: <span class="font-mono bg-amber-100 px-1 rounded">infointernationalexpress07@gmail.com</span> or <span class="font-mono bg-amber-100 px-1 rounded">abujaid07860@gmail.com</span> | Password: <span class="font-mono bg-amber-100 px-1 rounded">1234</span> or <span class="font-mono bg-amber-100 px-1 rounded">admin</span>
+</div>
+</div>
+<form class="space-y-4" onsubmit="handleAdminLogin(event)">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Operator / Admin Email</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm text-on-surface border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary" id="admin-email-input" placeholder="infointernationalexpress07@gmail.com" required="" type="email" value="infointernationalexpress07@gmail.com"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface">Access Security PIN / Password</label>
+<input class="w-full h-11 px-3.5 bg-surface rounded-lg text-sm text-on-surface border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary" id="admin-pin-input" placeholder="••••••••" required="" type="password" value="1234"/>
+</div>
+<div class="flex gap-2">
+<button class="w-full h-11 bg-primary hover:bg-secondary text-white font-bold text-sm rounded-xl transition-colors flex items-center justify-center gap-2 shadow" type="submit">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Authenticate &amp; Open Portal</span>
+</button>
+</div>
+<div class="hidden p-3 rounded-lg text-xs font-medium" id="admin-auth-msg"></div>
+</form>
+</div>
+<!-- VIEW 2: OPERATIONS DASHBOARD (Rendered once logged in) -->
+<div class="hidden space-y-5" id="admin-dashboard-view">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary text-white flex items-center justify-center font-bold">
+            IXC
+          </div>
+<div>
+<h3 class="text-lg font-bold text-primary">Sahar Gateway Operations Console</h3>
+<p class="text-xs text-on-surface-variant" id="admin-user-badge">Logged in: infointernationalexpress07@gmail.com</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-error-container hover:text-error text-xs font-bold transition-colors flex items-center gap-1" onclick="handleAdminLogout()">
+<span class="material-symbols-outlined text-sm">logout</span> Logout
+        </button>
+</div>
+<!-- Tab Switcher -->
+<div class="flex gap-2 border-b border-surface-container text-xs font-bold">
+<button class="pb-2 border-b-2 border-secondary text-secondary" id="tab-btn-shipments" onclick="switchAdminTab('shipments')">
+          Consignment Ledger (3)
+        </button>
+<button class="pb-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary" id="tab-btn-quotes" onclick="switchAdminTab('quotes')">
+          Recent Quote Inquiries (2)
+        </button>
+</div>
+<!-- Tab 1: Shipments -->
+<div class="space-y-3" id="tab-pane-shipments">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-semibold">Active BOM Outbound Air Waybills</span>
+<button class="px-2.5 py-1 bg-secondary text-white rounded-lg font-bold hover:bg-secondary-container" onclick="alert('Demo Action: Create Consignment Modal Simulation')">
+            + New Consignment
+          </button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs border border-surface-container">
+<thead class="bg-surface-container text-on-surface font-bold">
+<tr>
+<th class="p-2">Waybill #</th>
+<th class="p-2">Destination</th>
+<th class="p-2">Type</th>
+<th class="p-2">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface">
+<td class="p-2 font-mono font-bold text-primary">IXCDEMO123456</td>
+<td class="p-2">Dubai (DXB)</td>
+<td class="p-2">Air Priority</td>
+<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold">In Transit</span></td>
+</tr>
+<tr class="hover:bg-surface">
+<td class="p-2 font-mono font-bold text-primary">IXC-DOM-7701</td>
+<td class="p-2">Bengaluru (BLR)</td>
+<td class="p-2">Domestic Flight</td>
+<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-green-100 text-green-800 font-bold">In Flight</span></td>
+</tr>
+<tr class="hover:bg-surface">
+<td class="p-2 font-mono font-bold text-primary">IXC-DEMO-001</td>
+<td class="p-2">London (LHR)</td>
+<td class="p-2">International Express</td>
+<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 font-bold">Customs Cleared</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Tab 2: Quotes -->
+<div class="hidden space-y-3" id="tab-pane-quotes">
+<div class="space-y-2 text-xs">
+<div class="p-3 bg-surface rounded-xl border border-surface-container space-y-1">
+<div class="flex justify-between font-bold text-primary">
+<span>Mumbai → London, UK (5.0 KG Commercial)</span>
+<span class="text-secondary font-bold">Pending Review</span>
+</div>
+<div class="text-on-surface-variant">Contact: Rahul Sharma (+91 9570821019)</div>
+</div>
+<div class="p-3 bg-surface rounded-xl border border-surface-container space-y-1">
+<div class="flex justify-between font-bold text-primary">
+<span>Mumbai → Bengaluru (1.2 KG Document)</span>
+<span class="text-green-700 font-bold">Dispatched Response</span>
+</div>
+<div class="text-on-surface-variant">Contact: Priya Verma (+91 9820011223)</div>
+</div>
+</div>
+</div>
+<div class="pt-2 text-[11px] text-on-surface-variant flex justify-between items-center border-t border-surface-container">
+<span>Terminal Gateway: BOM-AIR-01</span>
+<button class="px-4 py-2 bg-primary text-white rounded-lg font-bold hover:bg-secondary transition-colors" onclick="closeAdminModal()">
+          Close Admin Portal
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SCRIPTS & FUNCTIONALITY -->
+<script>
+// --- CONSIGNMENT REPOSITORY DICTIONARY ---
+const CONSIGNMENTS_DB = {
+  "IXCDEMO123456": {
+    waybill: "IXCDEMO123456",
+    status: "In Transit",
+    statusCode: "transit",
+    origin: "Mumbai, India (BOM Air Gateway)",
+    destination: "Dubai, UAE (DXB Cargo Village)",
+    currentLocation: "Mumbai Air Gateway (Departed sorting hub, export manifest cleared)",
+    service: "Express Air Priority Consignment",
+    estimatedDelivery: "2-3 Business Days",
+    progress: 65,
+    milestones: [
+      { title: "Export Manifest & Flight Boarding (AI-901)", location: "CSMI Airport Sahar T2, BOM", time: "Today, 14:30 IST", done: true },
+      { title: "Export Customs Clearance Passed (CSB-V)", location: "Mumbai Air Customs Hub", time: "Today, 11:15 IST", done: true },
+      { title: "Security & X-ray Screening Verified", location: "Sahar Cargo Terminal, Mumbai", time: "Today, 08:45 IST", done: true },
+      { title: "Picked up & Inward Scanned", location: "IXC Sahar Road Andheri Hub", time: "Yesterday, 19:20 IST", done: true },
+      { title: "Booking Confirmed & Waybill Generated", location: "IXC Central Booking Desk", time: "Yesterday, 17:00 IST", done: true }
+    ]
+  },
+  "IXC-DOM-7701": {
+    waybill: "IXC-DOM-7701",
+    status: "In Flight Transit",
+    statusCode: "inflight",
+    origin: "Mumbai Gateway (BOM)",
+    destination: "Bengaluru (BLR)",
+    currentLocation: "En route - AI Express Priority Air Freight Flight 512",
+    service: "Domestic Express Same-Day / Next-Day",
+    estimatedDelivery: "Expected Today by 20:00 IST",
+    progress: 75,
+    milestones: [
+      { title: "Air Freight Departed BOM Airport", location: "CSMI Cargo Terminal BOM", time: "Today, 13:10 IST", done: true },
+      { title: "Domestic Security Screen & Airline Transfer", location: "Sahar Domestic Cargo Apron", time: "Today, 10:20 IST", done: true },
+      { title: "Package Received & Barcode Tagged", location: "IXC Andheri East Center", time: "Today, 07:30 IST", done: true }
+    ]
+  },
+  "IXC-DEMO-001": {
+    waybill: "IXC-DEMO-001",
+    status: "Export Customs Cleared",
+    statusCode: "cleared",
+    origin: "Mumbai Air Gateway (BOM)",
+    destination: "London Heathrow, UK (LHR)",
+    currentLocation: "Sahar International Air Cargo Lounge",
+    service: "International Express Priority Courier",
+    estimatedDelivery: "3 Days",
+    progress: 50,
+    milestones: [
+      { title: "Customs CSB-IV Out of Charge (OOC) Granted", location: "Sahar Air Cargo Complex, BOM", time: "Today, 12:00 IST", done: true },
+      { title: "Volumetric Audit & Tare Weight Validation", location: "IXC Sahar Processing Floor", time: "Today, 09:10 IST", done: true },
+      { title: "Consignment Lodged at Hub", location: "Sahar Road, Andheri East Hub", time: "Yesterday, 18:00 IST", done: true }
+    ]
+  }
+};
+
+// --- MOBILE NAVIGATION DRAWER ---
+function toggleMobileMenu() {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
+  const icon = document.getElementById('menu-icon');
+  const isClosed = drawer.classList.contains('translate-x-full');
+
+  if (isClosed) {
+    drawer.classList.remove('translate-x-full');
+    backdrop.classList.remove('hidden');
+    setTimeout(() => backdrop.classList.remove('opacity-0'), 10);
+    icon.textContent = 'close';
+    document.body.style.overflow = 'hidden';
+  } else {
+    drawer.classList.add('translate-x-full');
+    backdrop.classList.add('opacity-0');
+    setTimeout(() => backdrop.classList.add('hidden'), 300);
+    icon.textContent = 'menu';
+    document.body.style.overflow = '';
+  }
+}
+
+function navigateToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function scrollToTracking() {
+  const tracker = document.getElementById('quick-tracker');
+  if (tracker) {
+    tracker.scrollIntoView({ behavior: 'smooth' });
+    const input = document.getElementById('track-input');
+    if (input) {
+      setTimeout(() => input.focus(), 400);
+    }
+  }
+}
+
+// --- TRACKING ENGINE LOGIC ---
+function handleTrackSearch(e) {
+  if (e) e.preventDefault();
+  const inputEl = document.getElementById('track-input');
+  const query = inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g, '');
+  const container = document.getElementById('track-result-container');
+  container.classList.remove('hidden');
+
+  if (!query) {
+    return;
+  }
+
+  // Lookup in DB or normalize comparison
+  let found = CONSIGNMENTS_DB[query];
+  if (!found) {
+    // Try relaxed search for IXCDEMO123456
+    const cleanQuery = query.replace(/[^A-Z0-9]/g, '');
+    if (cleanQuery === "IXCDEMO123456") {
+      found = CONSIGNMENTS_DB["IXCDEMO123456"];
+    } else if (cleanQuery.includes("7701")) {
+      found = CONSIGNMENTS_DB["IXC-DOM-7701"];
+    } else if (cleanQuery.includes("DEMO001")) {
+      found = CONSIGNMENTS_DB["IXC-DEMO-001"];
+    }
+  }
+
+  if (found) {
+    renderSuccessTracking(found, container);
+  } else {
+    renderNotFoundTracking(query, container);
+  }
+}
+
+function quickFillTrack(num) {
+  const inputEl = document.getElementById('track-input');
+  inputEl.value = num;
+  handleTrackSearch();
+}
+
+function renderSuccessTracking(data, container) {
+  let badgeColor = "bg-green-100 text-green-800 border-green-300";
+  if (data.statusCode === 'transit') badgeColor = "bg-amber-100 text-amber-800 border-amber-300";
+
+  let milestonesHtml = data.milestones.map((m, idx) => `
+    <div class="relative flex items-start gap-3 text-xs">
+      <div class="w-6 h-6 rounded-full ${idx === 0 ? 'bg-secondary text-white' : 'bg-surface-container text-on-surface-variant'} flex items-center justify-center shrink-0 mt-0.5 z-10 text-[11px] font-bold">
+        ${idx === 0 ? '✓' : '•'}
+      </div>
+      <div class="min-w-0">
+        <div class="font-bold text-primary text-sm">${m.title}</div>
+        <div class="text-on-surface-variant">${m.location}</div>
+        <div class="text-[11px] text-secondary font-medium">${m.time}</div>
+      </div>
+    </div>
+  `).join('');
+
+  container.innerHTML = `
+    <div class="p-5 sm:p-6 rounded-2xl bg-surface-container-low border border-outline-variant/30 space-y-5 animate-fadeIn">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-surface-container">
+        <div>
+          <span class="text-xs text-on-surface-variant font-medium block">Consignment Number</span>
+          <span class="text-lg sm:text-xl font-black text-primary font-mono">${data.waybill}</span>
+        </div>
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border ${badgeColor}">
+            <span class="w-2 h-2 rounded-full bg-current"></span>
+            ${data.status.toUpperCase()}
+          </span>
+        </div>
+      </div>
+
+      <!-- Route Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs bg-surface-container-lowest p-4 rounded-xl border border-surface-container">
+        <div>
+          <span class="text-on-surface-variant font-medium block">Origin Hub</span>
+          <span class="font-bold text-primary text-sm block">${data.origin}</span>
+        </div>
+        <div>
+          <span class="text-on-surface-variant font-medium block">Final Destination</span>
+          <span class="font-bold text-primary text-sm block">${data.destination}</span>
+        </div>
+        <div>
+          <span class="text-on-surface-variant font-medium block">Service Level</span>
+          <span class="font-bold text-primary block">${data.service}</span>
+        </div>
+        <div>
+          <span class="text-on-surface-variant font-medium block">Estimated Delivery</span>
+          <span class="font-bold text-secondary text-sm block">${data.estimatedDelivery}</span>
+        </div>
+        <div class="sm:col-span-2 pt-2 border-t border-surface-container">
+          <span class="text-on-surface-variant font-medium block">Current Milestone Location:</span>
+          <span class="font-bold text-primary block">${data.currentLocation}</span>
+        </div>
+      </div>
+
+      <!-- Visual Progress Bar -->
+      <div class="space-y-1.5">
+        <div class="flex justify-between text-xs font-bold text-primary">
+          <span>Transit Progress</span>
+          <span>${data.progress}%</span>
+        </div>
+        <div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+          <div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: ${data.progress}%"></div>
+        </div>
+      </div>
+
+      <!-- Chronological Milestone Timeline -->
+      <div class="space-y-3 pt-2">
+        <span class="text-xs font-bold text-primary uppercase tracking-wider block">Milestone Tracking History</span>
+        <div class="space-y-4 pl-1 border-l-2 border-surface-container ml-3">
+          ${milestonesHtml}
+        </div>
+      </div>
+
+      <!-- Fast Help Footer inside result -->
+      <div class="pt-3 border-t border-surface-container flex flex-wrap items-center justify-between gap-3 text-xs">
+        <span class="text-on-surface-variant">Need direct gateway assistance for this waybill?</span>
+        <a href="https://wa.me/919570821019?text=Hello%20IXC%20Dispatch%2C%20inquiring%20about%20waybill%20${encodeURIComponent(data.waybill)}" target="_blank" class="text-[#25D366] hover:underline font-bold flex items-center gap-1">
+          <span class="material-symbols-outlined text-base">chat</span> WhatsApp Dispatch Desk
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+function renderNotFoundTracking(query, container) {
+  container.innerHTML = `
+    <div class="p-5 sm:p-6 rounded-2xl bg-amber-50 border border-amber-200 space-y-4 text-xs">
+      <div class="flex items-start gap-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-200 text-amber-900 flex items-center justify-center shrink-0 font-bold">
+          <span class="material-symbols-outlined">help_outline</span>
+        </div>
+        <div class="space-y-1">
+          <div class="text-sm font-black text-amber-950">Consignment Not Located: "${query}"</div>
+          <p class="text-amber-900 leading-relaxed">
+            We couldn't find a shipment with this tracking number in our active manifest. Please check the spelling, format or contact our Sahar Road dispatch desk (+91 9570821019) for manual verification.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 pt-1">
+        <a href="https://wa.me/919570821019?text=Hello%2C%20I%20am%20tracking%20consignment%20number%20${encodeURIComponent(query)}%20and%20need%20assistance." target="_blank" class="px-4 py-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white rounded-xl font-bold flex items-center gap-1.5 shadow-sm">
+          <span class="material-symbols-outlined text-base">chat</span> WhatsApp Help Desk
+        </a>
+        <a href="tel:+919570821019" class="px-4 py-2 bg-primary hover:bg-secondary text-white rounded-xl font-bold flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-base">call</span> Call +91 9570821019
+        </a>
+        <button onclick="quickFillTrack('IXCDEMO123456')" class="text-secondary font-bold underline px-2 py-1">
+          Try Demo: IXCDEMO123456
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+// --- ADMIN PORTAL SIMULATION & MODAL ---
+const AUTHORIZED_ADMIN_EMAILS = [
+  "infointernationalexpress07@gmail.com",
+  "abujaid07860@gmail.com"
+];
+
+function openAdminModal() {
+  const m = document.getElementById('admin-modal');
+  m.classList.remove('hidden');
+  m.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeAdminModal() {
+  const m = document.getElementById('admin-modal');
+  m.classList.add('hidden');
+  m.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+function handleAdminLogin(e) {
+  e.preventDefault();
+  const emailInput = document.getElementById('admin-email-input').value.trim().toLowerCase();
+  const pinInput = document.getElementById('admin-pin-input').value.trim();
+  const msgBox = document.getElementById('admin-auth-msg');
+  msgBox.classList.remove('hidden');
+
+  if (AUTHORIZED_ADMIN_EMAILS.includes(emailInput) && pinInput.length >= 1) {
+    msgBox.className = "p-3 rounded-lg text-xs font-medium bg-green-100 text-green-800 border border-green-300";
+    msgBox.innerHTML = `✓ Authentication successful for authorized administrator. Launching IXC Operations Console...`;
+    
+    setTimeout(() => {
+      msgBox.classList.add('hidden');
+      document.getElementById('admin-auth-view').classList.add('hidden');
+      document.getElementById('admin-dashboard-view').classList.remove('hidden');
+      document.getElementById('admin-user-badge').textContent = `Logged in: ${emailInput}`;
+    }, 600);
+  } else {
+    msgBox.className = "p-3 rounded-lg text-xs font-medium bg-red-100 text-red-800 border border-red-300";
+    msgBox.innerHTML = `✕ Access restricted. Please use an authorized email (e.g. infointernationalexpress07@gmail.com) and any password.`;
+  }
+}
+
+function handleAdminLogout() {
+  document.getElementById('admin-dashboard-view').classList.add('hidden');
+  document.getElementById('admin-auth-view').classList.remove('hidden');
+}
+
+function switchAdminTab(tab) {
+  const paneShipments = document.getElementById('tab-pane-shipments');
+  const paneQuotes = document.getElementById('tab-pane-quotes');
+  const btnShipments = document.getElementById('tab-btn-shipments');
+  const btnQuotes = document.getElementById('tab-btn-quotes');
+
+  if (tab === 'shipments') {
+    paneShipments.classList.remove('hidden');
+    paneQuotes.classList.add('hidden');
+    btnShipments.className = "pb-2 border-b-2 border-secondary text-secondary font-bold";
+    btnQuotes.className = "pb-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary";
+  } else {
+    paneShipments.classList.add('hidden');
+    paneQuotes.classList.remove('hidden');
+    btnQuotes.className = "pb-2 border-b-2 border-secondary text-secondary font-bold";
+    btnShipments.className = "pb-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary";
+  }
+}
+
+// --- QUOTE SUBMIT HANDLER ---
+function handleQuoteSubmit(e) {
+  e.preventDefault();
+  const box = document.getElementById('quote-success-box');
+  box.classList.remove('hidden');
+  box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// --- VOLUMETRIC CALCULATOR ---
+function calculateVolumetricWeight() {
+  const l = parseFloat(document.getElementById('calc-len').value) || 0;
+  const w = parseFloat(document.getElementById('calc-wid').value) || 0;
+  const h = parseFloat(document.getElementById('calc-hgt').value) || 0;
+  const actual = parseFloat(document.getElementById('calc-act').value) || 0;
+
+  const vol = (l * w * h) / 5000;
+  const billable = Math.max(vol, actual);
+
+  document.getElementById('vol-result').textContent = `${vol.toFixed(2)} KG`;
+  document.getElementById('act-result').textContent = `${actual.toFixed(2)} KG`;
+  document.getElementById('billable-result').textContent = `${billable.toFixed(2)} KG`;
+}
+
+// --- FAQ ACCORDION ---
+function toggleFaq(id) {
+  const content = document.getElementById(id);
+  const icon = document.getElementById(`${id}-icon`);
+  const isHidden = content.classList.contains('hidden');
+
+  if (isHidden) {
+    content.classList.remove('hidden');
+    icon.style.transform = 'rotate(180deg)';
+  } else {
+    content.classList.add('hidden');
+    icon.style.transform = 'rotate(0deg)';
+  }
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  calculateVolumetricWeight();
+});
+</script>
+</body></html>

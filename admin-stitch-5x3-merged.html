@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#768dad", "background": "#f7f9fb", "outline": "#74777e", "error": "#ba1a1a", "secondary-container": "#fd761a", "primary-fixed": "#d2e4ff", "error-container": "#ffdad6", "on-secondary": "#ffffff", "surface-container-high": "#e6e8ea", "surface-container-low": "#f2f4f6", "secondary-fixed-dim": "#ffb690", "primary-fixed-dim": "#b0c8eb", "inverse-primary": "#b0c8eb", "on-error": "#ffffff", "secondary-fixed": "#ffdbca", "on-tertiary": "#ffffff", "secondary": "#9d4300", "on-tertiary-fixed": "#111c2d", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "on-secondary-fixed": "#341100", "primary": "#000f22", "primary-container": "#0a2540", "surface-tint": "#49607e", "surface-container": "#eceef0", "outline-variant": "#c4c6ce", "tertiary": "#040e1f", "inverse-surface": "#2d3133", "tertiary-container": "#192436", "surface-bright": "#f7f9fb", "on-surface": "#191c1e", "inverse-on-surface": "#eff1f3", "surface-variant": "#e0e3e5", "on-primary-fixed": "#001c37", "on-background": "#191c1e", "tertiary-fixed": "#d8e3fb", "on-secondary-container": "#5c2400", "tertiary-fixed-dim": "#bcc7de", "on-tertiary-container": "#808ba1", "surface-dim": "#d8dadc", "surface-container-highest": "#e0e3e5", "on-primary-fixed-variant": "#314865", "on-surface-variant": "#43474d", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#783200", "on-tertiary-fixed-variant": "#3c475a", "surface": "#f7f9fb" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "margin-sm": "1rem", "gutter-sm": "1rem", "margin-lg": "3rem", "margin": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-lg": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "code-tracking": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}], "code-tracking": ["15px", {"lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "700"}], "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400"}], "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(10,37,64,0.06)]"><div class="h-16 px-margin-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #0a2540
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ5IEgnDva-uvBG9Ljkn4HbxUWW5WFIKsN9moHDyrHseavvKWGWCHvdLwQEwmu0D6YXIEuSKSAfDdA6l-pJOE5rrzCgw_oJ_umuCOELM8EUndwdlhM_JC_75DR5uUXJcszdx1wxm860ucmsnTZmtT6ktx-gOLwzqQys6WsxktpltAwwO8ws-d1WCrH1HMkw2P3SIFh37QfpLju7pYUfc8Lw5dDmIjPe-ve_STmx6orf2X3BWi2HlWK"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse flex-shrink-0"></span><span class="font-label-sm text-label-sm text-primary-container truncate">BOM GATEWAY</span></div><h1 class="font-headline-sm text-headline-sm text-primary truncate leading-none">Scan Update</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Quick Scan Manifest" class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">qr_code_scanner</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Toast Notification System -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform -translate-y-8 opacity-0 pointer-events-none w-[90%] max-w-sm" id="toast-notification">
+<div class="flex items-center gap-space-sm p-space-sm rounded-xl bg-primary text-on-primary shadow-xl">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md" id="toast-title">Update Posted Successfully</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim truncate" id="toast-desc">AWB IXC-7849-BOM-LHR synced to BOM Gateway</p>
+</div>
+</div>
+</div>
+<!-- Operator & Terminal Shift Status Banner -->
+<div class="w-full bg-primary-container text-on-primary px-margin-sm pt-space-md pb-space-lg">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">flight_takeoff</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Sahar Air Cargo Complex, T2</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-primary truncate">Rajiv Mehta</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed text-[10px] font-bold tracking-wider">SR. DISPATCH</span>
+</div>
+</div>
+<button aria-label="Thermal Printer Status" class="flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 active:scale-95 transition-all text-on-primary flex-shrink-0 cursor-pointer border border-surface-container-lowest/20 shadow-sm" onclick="openBtPrinterModal()" type="button"><span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span><span class="font-label-sm text-label-sm pr-1 flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">print</span><span>Thermal Print Ready</span></span></button>
+</div>
+<!-- Quick Shift Metrics -->
+<div class="grid grid-cols-3 gap-2 mt-space-sm">
+<div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-lg p-2.5 flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Scanned Today</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-primary" id="metric-scanned">48</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">+4/hr</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-lg p-2.5 flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Pending Dispatch</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-primary">12</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Pkgs</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-lg p-2.5 flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">CSB-V Customs</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary-container">6</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Staged</span>
+</div>
+</div>
+</div>
+</div>
+<!-- View Switcher Tabs (Internal Screen Controller) -->
+<div class="px-margin-sm -mt-3">
+<div class="flex p-1 bg-surface-container-lowest rounded-xl shadow-md gap-1">
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all bg-primary-container text-on-primary shadow-sm" id="btn-tab-scan" onclick="switchView('scan')">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+<span>Scan &amp; Log</span>
+</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-primary" id="btn-tab-quotes" onclick="switchView('quotes')">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Quotes (2)</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-primary" id="btn-tab-print" onclick="openBtPrinterModal()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>AWB Print</span>
+</button>
+<button class="flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-primary" id="btn-tab-customer-slip" onclick="switchView('customer-slip')">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Customer Slip</span>
+</button>
+</div>
+</div>
+<!-- ==================== SECTION 1: SCAN & CHECKPOINT VIEW ==================== -->
+<div class="flex flex-col px-margin-sm mt-space-md gap-space-md" id="view-scan">
+<!-- Viewfinder Reticle Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col">
+<div class="relative w-full h-44 rounded-lg bg-primary overflow-hidden flex flex-col items-center justify-center">
+<!-- Ambient terminal camera simulated stream -->
+<div class="absolute inset-0 opacity-40 bg-[radial-gradient(#fd761a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Live Camera HUD Controls -->
+<div class="absolute top-2 left-2 right-2 flex items-center justify-between z-10">
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/80 backdrop-blur-sm text-[10px] text-on-primary font-code-tracking">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+            CAMERA 01 • ACTIVE 60FPS
+          </span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-full bg-primary-container/80 text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" id="torch-btn" onclick="toggleTorch()" type="button">
+<span class="material-symbols-outlined text-[16px]" id="torch-icon">flash_on</span>
+</button>
+<button class="w-7 h-7 rounded-full bg-primary-container/80 text-on-primary flex items-center justify-center hover:bg-secondary-container transition-colors" onclick="playBeep()" type="button">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+</button>
+</div>
+</div>
+<!-- Laser Scanner Bar Animation -->
+<div class="relative w-56 h-28 flex items-center justify-center">
+<div class="absolute inset-0 rounded-lg shadow-[0_0_0_2px_rgba(253,118,26,0.7)] pointer-events-none"></div>
+<!-- Corner reticle guides -->
+<div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-secondary-container"></div>
+<div class="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-secondary-container"></div>
+<div class="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-secondary-container"></div>
+<div class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-secondary-container"></div>
+<!-- Animated red scan line -->
+<div class="w-full h-0.5 bg-secondary-container shadow-[0_0_8px_#fd761a] animate-bounce"></div>
+<p class="absolute bottom-2 text-primary-fixed font-label-sm text-[10px] uppercase tracking-wider text-center">Align Waybill Barcode or QR</p>
+</div>
+<!-- Action trigger overlay button -->
+<div class="absolute bottom-2 inset-x-2 flex gap-2">
+<button class="flex-1 h-9 rounded-md bg-secondary-container text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-all" onclick="simulateInstantScan()" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Simulate Scan Barcode</span>
+</button>
+</div>
+</div>
+<!-- Quick AWB Search Input & Recent Pills -->
+<div class="mt-space-sm flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between" for="awb-search">
+<span>WAYBILL OR CONSIGNMENT NO.</span>
+<span class="text-secondary font-semibold">12-digit Master AWB</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-24 rounded-lg bg-surface-container-low text-on-surface font-code-tracking text-code-tracking focus:outline-none focus:bg-surface-container-lowest transition-colors" id="awb-search" placeholder="Scan or enter AWB..." type="text" value="IXC-7849-BOM-LHR"/>
+<button class="absolute right-1.5 h-8 px-3 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1" onclick="searchAWB()" type="button">
+<span>Load</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Demo Quick Select Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 scrollbar-none">
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">Presets:</span>
+<button class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-primary font-semibold flex-shrink-0 hover:bg-secondary-container hover:text-on-secondary transition-colors" onclick="setAWB('IXC-7849-BOM-LHR', 'Mumbai -&gt; London Heathrow', '4.5 KG • Commercial Samples')" type="button">
+            IXC-7849-BOM-LHR
+          </button>
+<button class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex-shrink-0 hover:bg-secondary-container hover:text-on-secondary transition-colors" onclick="setAWB('IXC-DEMO-001', 'Mumbai -&gt; Dubai DXB', '12.0 KG • Auto Spares')" type="button">
+            IXC-DEMO-001
+          </button>
+<button class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex-shrink-0 hover:bg-secondary-container hover:text-on-secondary transition-colors" onclick="setAWB('IXC-DOM-7701', 'Mumbai -&gt; Delhi DEL', '1.2 KG • Legal Docs')" type="button">
+            IXC-DOM-7701
+          </button>
+</div>
+</div>
+</div>
+<!-- Active Consignment Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-code-tracking text-code-tracking text-primary font-bold" id="card-awb-title">IXC-7849-BOM-LHR</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold" id="badge-category">Air Express</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-0.5" id="card-desc">Commercial Samples &amp; Precision Metal Hardware</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wide flex-shrink-0" id="current-stage-pill">
+          CSB-V Gate Cleared
+        </span>
+</div>
+<!-- Route Diagram Flight Visual -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none">BOM</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">Mumbai Int'l</span>
+</div>
+<div class="flex-1 flex flex-col items-center px-space-sm">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-1">
+<span>Direct Air • BA-138</span>
+</div>
+<div class="w-full flex items-center">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<div class="flex-1 h-0.5 bg-secondary-container"></div>
+<span class="material-symbols-outlined text-[18px] text-secondary-container mx-0.5 rotate-90">flight</span>
+<div class="flex-1 h-0.5 bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<span class="font-label-sm text-[10px] text-outline mt-1">Terminal 4 • Hounslow</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold leading-none">LHR</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">London Hub</span>
+</div>
+</div>
+<!-- Specification Matrix -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Weight</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="card-weight">4.50 KG</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Vol: 12.0 KG</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Consignee</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">AeroTech UK</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">VAT Verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Package</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">1 of 1 Box</span>
+<span class="font-label-sm text-[10px] text-secondary-container font-semibold">Pouch Attached</span>
+</div>
+</div>
+</div>
+<!-- Milestone Quick Selector Action Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Post Checkpoint Milestone</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Step 2 of 2</span>
+</div>
+<!-- 8 Touch-Optimized Milestone Status Chips -->
+<div class="grid grid-cols-2 gap-2 mt-1" id="milestone-grid">
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'Booked')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">description</span>
+<span class="truncate">Booked</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'Picked Up')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">inventory_2</span>
+<span class="truncate">Picked Up</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'Arrived at Hub')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">warehouse</span>
+<span class="truncate">Arrived at Hub</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md flex items-center gap-2 shadow-sm text-left" onclick="selectMilestone(this, 'Customs Cleared')" type="button">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="truncate">Customs Cleared</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'In Transit (Air)')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">flight_takeoff</span>
+<span class="truncate">In Transit</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'Out for Delivery')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">local_shipping</span>
+<span class="truncate">Out for Delivery</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left" onclick="selectMilestone(this, 'Delivered')" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">task_alt</span>
+<span class="truncate">Delivered</span>
+</button>
+<button class="milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-error font-label-md text-label-md flex items-center gap-2 hover:bg-error-container transition-all text-left" onclick="selectMilestone(this, 'Exception / Hold')" type="button">
+<span class="material-symbols-outlined text-[20px] text-error">warning</span>
+<span class="truncate">Exception</span>
+</button>
+</div>
+<!-- Location and Remark Details Inputs -->
+<div class="flex flex-col gap-space-xs mt-space-sm">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>EVENT LOCATION STAMP</span>
+<button class="text-secondary font-semibold flex items-center gap-0.5" onclick="refreshGPS()" type="button">
+<span class="material-symbols-outlined text-[14px]">my_location</span>
+<span>GPS Auto</span>
+</button>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">location_on</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" id="checkpoint-location" type="text" value="Sahar Cargo Complex Gate 3 / BOM Ramp"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant">OPERATIONAL NOTES &amp; COMPLIANCE REMARKS</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" id="checkpoint-notes" placeholder="Add inspection details, airway manifest flight ref, or seal tag..." rows="2">CSB-V clearance completed by BOM Customs Appraiser. Staged at Bay 4 for BA-138 flight consolidation.</textarea>
+</div>
+<!-- Big Primary Submit CTA -->
+<button class="w-full h-12 mt-space-xs rounded-xl bg-secondary-container text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] transition-all" onclick="postCheckpoint()" type="button">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+<span>Post Checkpoint Update</span>
+</button>
+</div>
+<!-- Audited Event Timeline Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Live Activity Log</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline" id="timeline-count">4 Events Recorded</span>
+</div>
+<!-- Vertical Step Chain Timeline -->
+<div class="flex flex-col gap-space-md mt-2 relative pl-3 before:absolute before:left-5 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant" id="timeline-container">
+<!-- Step 1 (Latest) -->
+<div class="relative flex items-start gap-space-sm z-10 timeline-item">
+<div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Customs Clearance (CSB-V)</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Today, 14:15</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sahar Air Cargo Complex — Appraiser Seal Verified</p>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">Officer ID: BOM-CUST-8819</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-space-sm z-10 timeline-item">
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[12px]">warehouse</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Arrived at Hub</span>
+<span class="font-label-sm text-label-sm text-outline">Today, 10:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">BOM Gateway Inbound Ramp Bay 2</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-space-sm z-10 timeline-item">
+<div class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">local_shipping</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Picked Up by Dispatcher</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday, 18:00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Andheri East Commercial Facility, Mumbai</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-space-sm z-10 timeline-item">
+<div class="w-5 h-5 rounded-full bg-surface-container text-outline flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="flex-1 flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Consignment Registered</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday, 16:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Web Portal Booking ID: BOM-WEB-4910</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== SECTION 2: QUOTE REQUESTS INBOX (DISPATCH DESK) ==================== -->
+<div class="hidden flex flex-col px-margin-sm mt-space-md gap-space-md" id="view-quotes">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Inbound Quote Inquiries</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/10 text-secondary font-label-sm text-label-sm font-bold">2 Pending Response</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Website air freight and courier quote inquiries requiring dispatch verification.</p>
+</div>
+<!-- Quote Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">
+            AS
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">Amit Sharma</span>
+<span class="font-label-sm text-label-sm text-outline">Precision Auto Engineering LLP</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-code-tracking text-[11px] font-bold">18.0 KG</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between text-on-surface">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">ORIGIN</span>
+<span class="font-body-md text-body-md font-bold">Mumbai (BOM)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">trending_flat</span>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">DESTINATION</span>
+<span class="font-body-md text-body-md font-bold">Frankfurt (FRA)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest p-2 rounded">
+        "Need priority CSB-V export for 2 cartons replacement CNC lathe spindles. Urgent customs clearance needed before Friday flight."
+      </p>
+<!-- Action Grid -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-11 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/919570821019?text=Hello%20Amit%2C%20IXC%20Express%20Dispatch%20team%20here%20regarding%20your%2018kg%20Frankfurt%20shipment." target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp Reply</span>
+</a>
+<button class="h-11 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors" onclick="convertQuoteToAWB('Amit Sharma', 'FRA', '18.0')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span>Convert to AWB</span>
+</button>
+</div>
+</div>
+<!-- Quote Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center font-headline-sm text-headline-sm">
+            PV
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">Dr. Priyank V.</span>
+<span class="font-label-sm text-label-sm text-outline">Clinical Research Council</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-code-tracking text-[11px] font-bold">2.5 KG</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between text-on-surface">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">ORIGIN</span>
+<span class="font-body-md text-body-md font-bold">Mumbai (BOM)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">trending_flat</span>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-outline">DESTINATION</span>
+<span class="font-body-md text-body-md font-bold">Dubai (DXB)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container-lowest p-2 rounded">
+        "Non-infectious medical certificate originals and trial documentation pouch. Door delivery in Deira Dubai."
+      </p>
+<!-- Action Grid -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-11 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="showToast('Calling Client', '+91 9570821019 connected')" type="button">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Client</span>
+</button>
+<button class="h-11 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" onclick="showToast('Rate Card Dispatched', 'Standard Courier Rate INR 2,450 sent via SMS')" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Rate</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ==================== SECTION 3: AWB & THERMAL PRINT STUDIO ==================== -->
+<div class="hidden flex flex-col px-margin-sm mt-space-md gap-space-md" id="view-print">
+<!-- Thermal Printer Hardware Status -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">print</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Thermal Printer</span>
+<span class="font-label-sm text-label-sm text-outline">Direct Thermal • 203 DPI • 4x6"</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Thermal Print Ready</span>
+</div>
+<!-- Live Thermal Waybill Preview (Card representation of standard courier label) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">THERMAL LABEL PREVIEW (4" × 6")</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">PIECE 1 OF 1</span>
+</div>
+<!-- Simulated 4x6 Air Cargo Thermal Label -->
+<div class="bg-surface-bright rounded-lg p-3 flex flex-col gap-2 shadow-inner">
+<!-- Label Header -->
+<div class="flex items-center justify-between pb-1.5 border-b border-surface-container-high">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-black tracking-tight">IXC</span>
+<div class="flex flex-col leading-none">
+<span class="text-[9px] font-bold text-primary">EXPRESS CARGO</span>
+<span class="text-[8px] text-outline">BOM GATEWAY</span>
+</div>
+</div>
+<div class="text-right">
+<span class="px-2 py-0.5 bg-primary text-on-primary text-[10px] font-bold rounded">PRIORITY AIR</span>
+<div class="text-[9px] text-outline mt-0.5">BOM / DXB-LHR / BA-138</div>
+</div>
+</div>
+<!-- Big Routing Blocks -->
+<div class="grid grid-cols-2 gap-2 text-center py-1 bg-surface-container-low rounded">
+<div class="flex flex-col">
+<span class="text-[9px] font-bold text-outline">ORIGIN</span>
+<span class="font-headline-md text-headline-md text-primary font-black leading-none">BOM</span>
+<span class="text-[9px] text-on-surface-variant">MUMBAI IN</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[9px] font-bold text-outline">DESTINATION</span>
+<span class="font-headline-md text-headline-md text-primary font-black leading-none">LHR</span>
+<span class="text-[9px] text-on-surface-variant">LONDON UK</span>
+</div>
+</div>
+<!-- Simulated Barcode Graphic -->
+<div class="flex flex-col items-center justify-center py-2 bg-surface-container-lowest rounded">
+<!-- Inline SVG High-Density Code 128 Barcode -->
+<svg class="w-full h-12" preserveaspectratio="none" viewbox="0 0 280 48">
+<rect fill="#000f22" height="48" width="4" x="0" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="6" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="12" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="22" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="26" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="38" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="44" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="52" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="62" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="68" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="76" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="88" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="94" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="104" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="112" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="118" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="130" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="138" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="144" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="154" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="162" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="168" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="180" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="188" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="194" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="204" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="212" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="224" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="230" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="238" y="0"></rect>
+<rect fill="#000f22" height="48" width="2" x="248" y="0"></rect>
+<rect fill="#000f22" height="48" width="8" x="254" y="0"></rect>
+<rect fill="#000f22" height="48" width="4" x="266" y="0"></rect>
+<rect fill="#000f22" height="48" width="6" x="274" y="0"></rect>
+</svg>
+<span class="font-code-tracking text-code-tracking text-primary font-bold mt-1 tracking-widest text-[12px]">IXC-7849-BOM-LHR</span>
+</div>
+<!-- Consignee Delivery Address -->
+<div class="flex flex-col text-[10px] leading-tight text-on-surface bg-surface-container-low p-2 rounded">
+<span class="font-bold text-primary">DELIVER TO (CONSIGNEE):</span>
+<span class="font-semibold mt-0.5">AeroTech Solutions UK Ltd.</span>
+<span>Logistics Gate 3, Hounslow Industrial Estate</span>
+<span>Great South-West Road, Feltham, TW14 0NR, London UK</span>
+<span class="text-outline mt-0.5">VAT: GB982301923 • Contact: +44 (0) 20 8974 4110</span>
+</div>
+<!-- Metrics Strip -->
+<div class="grid grid-cols-3 gap-1 text-[9px] border-t border-surface-container-high pt-1.5 text-center">
+<div><span class="text-outline">PIECES:</span> <span class="font-bold">1 / 1</span></div>
+<div><span class="text-outline">WEIGHT:</span> <span class="font-bold">4.50 KG</span></div>
+<div><span class="text-outline">TERMS:</span> <span class="font-bold">DAP</span></div>
+</div>
+<div class="px-2 py-1 rounded bg-secondary-container/10 text-secondary font-label-sm text-[9px] font-bold text-center">
+          CUSTOMS INSPECTED • CARGO SECURITY CLEARED • NON-DANGEROUS GOODS (NON-DG)
+        </div>
+</div>
+<!-- Print Operations Trigger Button -->
+<div class="flex flex-col gap-2 mt-space-xs">
+<button class="w-full h-12 rounded-xl bg-secondary-container text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md active:scale-95 transition-all" onclick="triggerThermalPrint()" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print 4x6" Thermal Waybill</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container transition-colors" onclick="showToast('Batch Print Queued', 'Sending 5 piece labels to browser print preview')" type="button">
+<span class="material-symbols-outlined text-[18px]">burst_mode</span>
+<span>Batch Print Multi-Piece (Piece 1 to 5)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Footer Help Desk Info -->
+<div class="px-margin-sm mt-space-lg mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">24/7 Sahar Gateway Control</span>
+<span class="font-label-sm text-label-sm text-outline">Terminal Intercom: EXT-302</span>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-md bg-surface-container text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1" href="tel:+919570821019">
+<span class="material-symbols-outlined text-[14px]">call</span>
+<span>Call Desk</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Application Logic -->
+<script>
+  let isTorchOn = false;
+  let activeSelectedMilestone = 'Customs Cleared';
+
+  function switchView(tabKey) {
+    const scanView = document.getElementById('view-scan');
+    const quotesView = document.getElementById('view-quotes');
+    const printView = document.getElementById('view-print');
+    const customerSlipView = document.getElementById('view-customer-slip');
+
+    const btnScan = document.getElementById('btn-tab-scan');
+    const btnQuotes = document.getElementById('btn-tab-quotes');
+    const btnPrint = document.getElementById('btn-tab-print');
+    const btnCustomerSlip = document.getElementById('btn-tab-customer-slip');
+
+    // Default classes
+    const activeClasses = ['bg-primary-container', 'text-on-primary', 'shadow-sm'];
+    const inactiveClasses = ['text-on-surface-variant'];
+
+    // Hide all views
+    scanView.classList.add('hidden');
+    quotesView.classList.add('hidden');
+    printView.classList.add('hidden');
+    customerSlipView.classList.add('hidden');
+
+    // Reset button states
+    [btnScan, btnQuotes, btnPrint, btnCustomerSlip].forEach(btn => {
+      btn.classList.remove(...activeClasses);
+      btn.classList.add(...inactiveClasses);
+    });
+
+    if (tabKey === 'scan') {
+      scanView.classList.remove('hidden');
+      btnScan.classList.add(...activeClasses);
+      btnScan.classList.remove(...inactiveClasses);
+    } else if (tabKey === 'quotes') {
+      quotesView.classList.remove('hidden');
+      btnQuotes.classList.add(...activeClasses);
+      btnQuotes.classList.remove(...inactiveClasses);
+    } else if (tabKey === 'print') {
+      printView.classList.remove('hidden');
+      btnPrint.classList.add(...activeClasses);
+      btnPrint.classList.remove(...inactiveClasses);
+    }
+    else if (tabKey === 'customer-slip') {
+      customerSlipView.classList.remove('hidden');
+      btnCustomerSlip.classList.add(...activeClasses);
+      btnCustomerSlip.classList.remove(...inactiveClasses);
+    }
+  }
+
+  function toggleTorch() {
+    isTorchOn = !isTorchOn;
+    const btn = document.getElementById('torch-btn');
+    const icon = document.getElementById('torch-icon');
+    if (isTorchOn) {
+      btn.classList.add('bg-secondary-container', 'text-on-secondary');
+      icon.innerText = 'flash_off';
+      showToast('Camera Torch Enabled', 'Night scan lighting active');
+    } else {
+      btn.classList.remove('bg-secondary-container', 'text-on-secondary');
+      icon.innerText = 'flash_on';
+    }
+  }
+
+  function playBeep() {
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(1760, audioCtx.currentTime); // High pitch crisp beep
+      gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.08);
+    } catch(e) {
+      // Audio fallback
+    }
+  }
+
+  function showToast(title, desc) {
+    const toast = document.getElementById('toast-notification');
+    const tTitle = document.getElementById('toast-title');
+    const tDesc = document.getElementById('toast-desc');
+
+    tTitle.innerText = title;
+    tDesc.innerText = desc;
+
+    toast.classList.remove('opacity-0', '-translate-y-8', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', '-translate-y-8', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 2800);
+  }
+
+  function simulateInstantScan() {
+    playBeep();
+    if (navigator.vibrate) {
+      navigator.vibrate(50);
+    }
+    setAWB('IXC-7849-BOM-LHR', 'Mumbai -> London Heathrow', '4.5 KG • Commercial Samples');
+    showToast('Barcode Detected (Code 128)', 'IXC-7849-BOM-LHR read with 100% confidence');
+  }
+
+  function setAWB(awbNumber, routeText, descText) {
+    const input = document.getElementById('awb-search');
+    const title = document.getElementById('card-awb-title');
+    const desc = document.getElementById('card-desc');
+    
+    input.value = awbNumber;
+    title.innerText = awbNumber;
+    desc.innerText = descText;
+    showToast('Waybill Loaded', awbNumber + ' - ' + routeText);
+  }
+
+  function searchAWB() {
+    const input = document.getElementById('awb-search');
+    if (input.value.trim()) {
+      playBeep();
+      document.getElementById('card-awb-title').innerText = input.value.toUpperCase();
+      showToast('Consignment Fetched', 'Master details synchronized with BOM Central');
+    }
+  }
+
+  function selectMilestone(element, milestoneName) {
+    activeSelectedMilestone = milestoneName;
+    document.querySelectorAll('.milestone-btn').forEach(btn => {
+      btn.className = 'milestone-btn h-12 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-2 hover:bg-surface-container transition-all text-left';
+    });
+    element.className = 'milestone-btn h-12 px-3 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md flex items-center gap-2 shadow-sm text-left';
+  }
+
+  function refreshGPS() {
+    const locInput = document.getElementById('checkpoint-location');
+    locInput.value = 'Sahar Cargo Gate 3 / BOM Airside Ramp (Lat 19.0896, Long 72.8656)';
+    showToast('GPS Calibrated', 'Accuracy ± 3 meters at BOM Cargo Gate');
+  }
+
+  function postCheckpoint() {
+    playBeep();
+    if (navigator.vibrate) {
+      navigator.vibrate([40, 60, 40]);
+    }
+
+    const currentAWB = document.getElementById('card-awb-title').innerText;
+    const location = document.getElementById('checkpoint-location').value;
+    const notes = document.getElementById('checkpoint-notes').value;
+
+    // Prepend to timeline
+    const timelineContainer = document.getElementById('timeline-container');
+    const newEvent = document.createElement('div');
+    newEvent.className = 'relative flex items-start gap-space-sm z-10 timeline-item';
+    newEvent.innerHTML = `
+      <div class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm mt-0.5">
+        <span class="material-symbols-outlined text-[12px]">verified</span>
+      </div>
+      <div class="flex-1 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="font-label-md text-label-md text-primary font-bold">${activeSelectedMilestone}</span>
+          <span class="font-label-sm text-label-sm text-secondary font-semibold">Just Now</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">${location}</p>
+        <p class="font-label-sm text-[11px] text-outline mt-0.5">${notes}</p>
+      </div>
+    `;
+
+    timelineContainer.insertBefore(newEvent, timelineContainer.firstChild);
+
+    // Update Pill
+    document.getElementById('current-stage-pill').innerText = activeSelectedMilestone;
+
+    // Increment scanned metric
+    const metric = document.getElementById('metric-scanned');
+    metric.innerText = parseInt(metric.innerText) + 1;
+
+    showToast('Milestone Confirmed', `${currentAWB} set to ${activeSelectedMilestone}`);
+  }
+function triggerThermalPrint() {
+  window.print();
+}
+
+  function convertQuoteToAWB(clientName, destCode, weightKg) {
+    playBeep();
+    showToast('Converted to AWB', `Generated draft AWB for ${clientName} (${destCode})`);
+    setTimeout(() => {
+      switchView('scan');
+      setAWB(`IXC-${Math.floor(1000 + Math.random() * 9000)}-BOM-${destCode}`, `Mumbai -> ${destCode}`, `${weightKg} KG • Air Consignment`);
+    }, 600);
+  }
+</script><!-- Bluetooth Printer Status & Thermal AWB Label Print Modal -->
+<div class="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-primary/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="bt-printer-modal">
+<!-- Backdrop click catcher -->
+<div class="absolute inset-0" onclick="closeBtPrinterModal()"></div>
+<!-- Bottom Sheet / Modal Card Content -->
+<div class="relative w-full max-w-lg max-h-[92vh] flex flex-col bg-surface-container-lowest rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden transform translate-y-full transition-transform duration-300 ease-out z-10" id="bt-printer-sheet">
+<!-- Drag Handle Indicator for Mobile Bottom Sheet -->
+<div class="w-12 h-1.5 bg-surface-container-high rounded-full mx-auto mt-2.5 mb-1 sm:hidden"></div>
+<!-- Modal Header -->
+<div class="px-margin-sm py-3 border-b border-surface-container-high flex items-center justify-between bg-surface-bright">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/15 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">print</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight">Thermal Printer (Browser)</h2>
+<span class="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-container/10 text-secondary text-[10px] font-bold tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+              BT 5.2
+            </span>
+</div>
+<p class="font-label-sm text-label-sm text-outline truncate">ID: ZBR-BOM-RAMP-04 • Direct Thermal 203 DPI</p>
+</div>
+</div>
+<button aria-label="Close Printer Modal" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="closeBtPrinterModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Scrollable Modal Body -->
+<div class="px-margin-sm py-3 overflow-y-auto space-y-3.5 scrollbar-none"><!-- Live Hardware Telemetry Grid -->
+<div class="bg-surface-container-low rounded-xl p-3 border border-surface-container-high flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+      Live Printer Telemetry
+    </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-[11px] font-bold shadow-sm">
+      Linked &amp; Thermal Print Ready
+    </span>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center">
+<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center shadow-sm">
+<div class="flex items-center gap-0.5 text-secondary font-bold text-[13px]">
+<span class="material-symbols-outlined text-[15px]">battery_charging_full</span>
+<span>88%</span>
+</div>
+<span class="text-[10px] text-outline mt-0.5 font-medium">Battery</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center shadow-sm">
+<div class="flex items-center gap-0.5 text-primary font-bold text-[13px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">heat_pump</span>
+<span>24°C</span>
+</div>
+<span class="text-[10px] text-outline mt-0.5 font-medium">Head Temp</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center shadow-sm">
+<div class="flex items-center gap-0.5 text-primary font-bold text-[13px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">speed</span>
+<span>5 ips</span>
+</div>
+<span class="text-[10px] text-outline mt-0.5 font-medium">Speed</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-2 flex flex-col items-center justify-center shadow-sm">
+<div class="flex items-center gap-0.5 text-primary font-bold text-[13px]">
+<span class="material-symbols-outlined text-[15px] text-secondary">receipt_long</span>
+<span id="modal-labels-left">142</span>
+</div>
+<span class="text-[10px] text-outline mt-0.5 font-medium">Labels Left</span>
+</div>
+</div>
+</div>
+<!-- Multi-Piece Batch Dispatch Mode Selector Card -->
+<div class="bg-surface-container-lowest rounded-xl p-3 border border-surface-container-high shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">layers</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Multi-Piece Batch Print</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/15 text-secondary font-label-sm text-[11px] font-bold" id="batch-badge-status">
+      5 Pieces Staged
+    </span>
+</div>
+<!-- Batch Piece Selection Chips (Touch target >= 44px) -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 scrollbar-none" id="piece-selector-container">
+<button class="min-h-[44px] px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-sm flex-shrink-0 transition-all" id="chip-piece-all" onclick="selectPrintPiece('all')" type="button">
+<span class="material-symbols-outlined text-[16px]">burst_mode</span>
+<span>All (1-5 Batch)</span>
+</button>
+<button class="min-h-[44px] px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-1 flex-shrink-0 transition-all" id="chip-piece-1" onclick="selectPrintPiece(1)" type="button">
+<span>Piece 1</span>
+<span class="text-[10px] text-outline">(4.5kg)</span>
+</button>
+<button class="min-h-[44px] px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-1 flex-shrink-0 transition-all" id="chip-piece-2" onclick="selectPrintPiece(2)" type="button">
+<span>Piece 2</span>
+<span class="text-[10px] text-outline">(3.2kg)</span>
+</button>
+<button class="min-h-[44px] px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-1 flex-shrink-0 transition-all" id="chip-piece-3" onclick="selectPrintPiece(3)" type="button">
+<span>Piece 3</span>
+<span class="text-[10px] text-outline">(5.8kg)</span>
+</button>
+<button class="min-h-[44px] px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-1 flex-shrink-0 transition-all" id="chip-piece-4" onclick="selectPrintPiece(4)" type="button">
+<span>Piece 4</span>
+<span class="text-[10px] text-outline">(2.1kg)</span>
+</button>
+<button class="min-h-[44px] px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-1 flex-shrink-0 transition-all" id="chip-piece-5" onclick="selectPrintPiece(5)" type="button">
+<span>Piece 5</span>
+<span class="text-[10px] text-outline">(3.9kg)</span>
+</button>
+</div>
+<!-- Batch Queue Status Notification Strip -->
+<div class="flex items-center justify-between bg-surface-container-low px-2.5 py-2 rounded-lg text-[12px] border border-surface-container-high">
+<div class="flex items-center gap-1.5 text-primary min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse flex-shrink-0"></span>
+<span class="font-medium truncate" id="queue-status-text">5 of 5 labels ready for browser print preview</span>
+</div>
+<span class="font-code-tracking font-bold text-secondary flex-shrink-0 ml-1" id="queue-total-wt">Total: 19.50 KG</span>
+</div>
+</div>
+<!-- Target Consignment & Live Dynamic Mini Thermal Preview -->
+<div class="bg-surface-container-lowest rounded-xl p-3 border border-surface-container-high shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Label Layout Preview</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/10 text-secondary font-code-tracking text-[11px] font-bold" id="preview-piece-indicator">
+      PIECE 1 OF 5 (BATCH MODE)
+    </span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col min-w-0">
+<span class="font-code-tracking text-code-tracking text-primary font-bold" id="modal-awb-num">IXC-7849-BOM-LHR</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">BOM ➔ LHR • AeroTech Solutions UK</span>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline block">Piece Spec</span>
+<span class="font-body-sm text-body-sm font-bold text-primary" id="modal-piece-spec">4.50 KG (1 of 5)</span>
+</div>
+</div>
+<!-- Mini Thermal Label Code 128 Preview with Live Dynamic Piece Identifier -->
+<div class="bg-surface-bright rounded-lg p-2.5 border border-surface-container-high flex flex-col gap-1.5 shadow-inner">
+<div class="flex items-center justify-between text-[11px] font-bold text-primary border-b border-surface-container pb-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">flight</span>
+<span>IXC EXPRESS CARGO • PRIORITY AIR</span>
+</span>
+<span class="text-[10px] text-secondary font-bold">BA-138</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-bold py-0.5">
+<span class="text-primary">ORIGIN: BOM (MUMBAI)</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>
+<span class="text-primary">DEST: LHR (LONDON)</span>
+</div>
+<!-- Dynamic Piece Barcode Container -->
+<div class="w-full flex flex-col items-center justify-center py-1.5 bg-surface-container-lowest rounded">
+<svg class="w-full h-8 px-2" preserveaspectratio="none" viewbox="0 0 240 32">
+<rect fill="#000f22" height="32" width="3" x="0" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="5" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="10" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="18" y="0"></rect>
+<rect fill="#000f22" height="32" width="6" x="23" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="32" y="0"></rect>
+<rect fill="#000f22" height="32" width="4" x="37" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="44" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="52" y="0"></rect>
+<rect fill="#000f22" height="32" width="4" x="57" y="0"></rect>
+<rect fill="#000f22" height="32" width="7" x="64" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="74" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="79" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="87" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="93" y="0"></rect>
+<rect fill="#000f22" height="32" width="6" x="98" y="0"></rect>
+<rect fill="#000f22" height="32" width="4" x="107" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="114" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="119" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="127" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="133" y="0"></rect>
+<rect fill="#000f22" height="32" width="6" x="138" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="147" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="153" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="158" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="166" y="0"></rect>
+<rect fill="#000f22" height="32" width="6" x="172" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="181" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="186" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="192" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="200" y="0"></rect>
+<rect fill="#000f22" height="32" width="6" x="205" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="214" y="0"></rect>
+<rect fill="#000f22" height="32" width="2" x="220" y="0"></rect>
+<rect fill="#000f22" height="32" width="5" x="225" y="0"></rect>
+<rect fill="#000f22" height="32" width="3" x="233" y="0"></rect>
+</svg>
+<span class="font-code-tracking text-[12px] font-bold text-primary tracking-widest mt-0.5" id="preview-piece-barcode">IXC-7849-BOM-LHR-001</span>
+</div>
+<div class="flex items-center justify-between text-[9px] text-outline">
+<span id="preview-subtext-security">SECURITY CLEARED • NON-DG • CSB-V</span>
+<span class="font-code-tracking font-bold text-primary" id="preview-job-id">JOB ID #4092-P1</span>
+</div>
+</div>
+</div>
+<!-- Batch Options and Preferences -->
+<div class="bg-surface-container-low rounded-xl p-3 border border-surface-container-high flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Batch Options &amp; Controls</span>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer min-h-[44px] shadow-sm">
+<input checked="" class="w-4 h-4 rounded text-secondary-container" id="check-master-summary" onchange="updateBatchSummaryMode()" type="checkbox"/>
+<span class="text-[11px] font-semibold text-primary leading-tight">Print Master Summary Label</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest cursor-pointer min-h-[44px] shadow-sm">
+<input checked="" class="w-4 h-4 rounded text-secondary-container" id="check-collate" type="checkbox"/>
+<span class="text-[11px] font-semibold text-primary leading-tight">Collate Multi-Piece Sequence</span>
+</label>
+</div>
+</div>
+<!-- Print Configuration Media & Quantity Options -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Format Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold">LABEL MEDIA</label>
+<select class="h-10 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md border border-surface-container-high focus:outline-none" id="print-media-format">
+<option value="4x6">4" × 6" Direct Thermal</option>
+<option value="iata">IATA Folded Pouch Slip</option>
+<option value="master">Master Carton Big Tag</option>
+</select>
+</div>
+<!-- Stepper for Copies per Piece -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold">COPIES / PIECE</label>
+<div class="flex items-center h-10 rounded-lg bg-surface-container-low border border-surface-container-high px-1">
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-primary font-bold flex items-center justify-center active:scale-95 shadow-sm" onclick="adjustCopies(-1)" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="flex-1 text-center font-bold text-primary font-code-tracking" id="print-copies-val">1</span>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-primary font-bold flex items-center justify-center active:scale-95 shadow-sm" onclick="adjustCopies(1)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div></div>
+<!-- Modal Footer Actions -->
+<div class="p-margin-sm border-t border-surface-container-high bg-surface-bright flex flex-col gap-2">
+<!-- Primary Print CTA Button with live progress state -->
+<button class="w-full h-12 rounded-xl bg-secondary-container text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] transition-all cursor-pointer" id="btn-exec-bt-print" onclick="executeThermalPrint()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="btn-exec-print-icon">print</span>
+<span id="btn-exec-print-text">Print AWB via Browser</span>
+</button>
+<!-- Secondary Actions Grid -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" onclick="testPrinterFeed()" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">fast_forward</span>
+<span>Test Calibration Feed</span>
+</button>
+<button class="h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center transition-colors" onclick="closeBtPrinterModal()" type="button">
+<span>Dismiss</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let printCopiesCount = 1;
+
+  function openBtPrinterModal() {
+    playBeep();
+    const currentAWB = document.getElementById('card-awb-title') ? document.getElementById('card-awb-title').innerText : 'IXC-7849-BOM-LHR';
+    const modalAWB = document.getElementById('modal-awb-num');
+    if (modalAWB) {
+      modalAWB.innerText = currentAWB;
+    }
+    const modal = document.getElementById('bt-printer-modal');
+    const sheet = document.getElementById('bt-printer-sheet');
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modal.classList.add('opacity-100');
+    sheet.classList.remove('translate-y-full');
+    sheet.classList.add('translate-y-0');
+  }
+
+  function closeBtPrinterModal() {
+    const modal = document.getElementById('bt-printer-modal');
+    const sheet = document.getElementById('bt-printer-sheet');
+    if (!modal) return;
+    sheet.classList.remove('translate-y-0');
+    sheet.classList.add('translate-y-full');
+    modal.classList.remove('opacity-100');
+    modal.classList.add('opacity-0', 'pointer-events-none');
+  }
+
+  function adjustCopies(delta) {
+    printCopiesCount = Math.max(1, Math.min(10, printCopiesCount + delta));
+    const el = document.getElementById('print-copies-val');
+    if (el) el.innerText = printCopiesCount;
+  }
+
+  function testPrinterFeed() {
+    playBeep();
+    showToast('Print Preview Test', 'Preparing browser print preview');
+  }
+
+  function executeThermalPrint() {
+    playBeep();
+    if (navigator.vibrate) navigator.vibrate([30, 40, 30]);
+    closeBtPrinterModal();
+    window.print();
+  }
+</script>
+<!-- IXC CUSTOMER SLIP: INDEPENDENT 5x3 MODULE -->
+<style>
+    @media print {
+      @page {
+        size: 5in 3in;
+        margin: 0;
+      }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-sizing: border-box !important;
+      }
+      html, body {
+        width: 5in !important;
+        height: 3in !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        overflow: hidden !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      body * {
+        visibility: hidden !important;
+      }
+      #printable-slip-wrapper, #printable-slip-wrapper * {
+        visibility: visible !important;
+      }
+      #printable-slip-wrapper {
+        position: fixed !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 5in !important;
+        height: 3in !important;
+        margin: 0 !important;
+        padding: 0.05in !important;
+        background: #ffffff !important;
+        z-index: 999999 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+      }
+      #customer-slip-canvas {
+        width: 4.88in !important;
+        height: 2.88in !important;
+        max-width: 4.88in !important;
+        min-width: 4.88in !important;
+        max-height: 2.88in !important;
+        min-height: 2.88in !important;
+        margin: 0 auto !important;
+        padding: 5px 7px !important;
+        box-sizing: border-box !important;
+        border: 1.2px solid #000 !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+        background: #fff !important;
+        overflow: hidden !important;
+        font-size: 7.5px !important;
+        line-height: 1.1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    @keyframes toastSlide {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .toast-anim {
+      animation: toastSlide 0.25s ease-out forwards;
+    }
+      /* IXC 5x3 PRINT TYPOGRAPHY — balanced, crisp and consistent */
+      #customer-slip-canvas, #customer-slip-canvas * {
+        font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+        -webkit-font-smoothing: auto !important;
+        -moz-osx-font-smoothing: auto !important;
+        text-rendering: geometricPrecision !important;
+      }
+      #customer-slip-canvas {
+        font-weight: 500 !important;
+        color: #111827 !important;
+      }
+      #customer-slip-canvas p,
+      #customer-slip-canvas span,
+      #customer-slip-canvas div {
+        font-weight: 500;
+      }
+      #customer-slip-canvas h1,
+      #customer-slip-canvas h2,
+      #customer-slip-canvas h3,
+      #customer-slip-canvas strong,
+      #customer-slip-canvas .font-bold,
+      #customer-slip-canvas .font-extrabold,
+      #customer-slip-canvas .font-black {
+        font-weight: 700 !important;
+      }
+      #customer-slip-canvas .font-mono {
+        font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+        font-weight: 700 !important;
+      }
+      #customer-slip-canvas .text-slate-400,
+      #customer-slip-canvas .text-slate-500,
+      #customer-slip-canvas .text-slate-600 {
+        color: #475569 !important;
+        font-weight: 500 !important;
+      }
+      #customer-slip-canvas .text-slate-700,
+      #customer-slip-canvas .text-slate-800,
+      #customer-slip-canvas .text-slate-900,
+      #customer-slip-canvas .text-slate-950 {
+        color: #111827 !important;
+      }
+
+</style>
+<style>
+
+    @page {
+      size: 5in 3in;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    html, body {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    #print-slip-page {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+    #customer-slip-canvas {
+      width: 5in !important;
+      height: 3in !important;
+      max-width: 5in !important;
+      min-width: 5in !important;
+      max-height: 3in !important;
+      min-height: 3in !important;
+      margin: 0 !important;
+      padding: 0.08in !important;
+      box-sizing: border-box !important;
+      border: 1.5px solid #000 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      background: #fff !important;
+      overflow: hidden !important;
+      font-size: 8px !important;
+      line-height: 1.15 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }
+    /* Keep shipment metrics compact so DESCRIPTION/CUSTOMS text stays fully inside its box. */
+    #customer-slip-canvas #slip-shipment-metrics {
+      line-height: 1 !important;
+      flex: 0 0 auto !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics > div {
+      line-height: 1 !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics #slip-desc,
+    #customer-slip-canvas #slip-shipment-metrics #slip-customs-val {
+      display: inline-block !important;
+      max-width: 100% !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      vertical-align: bottom !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics .grid {
+      min-height: 0 !important;
+    }
+
+    #customer-slip-canvas svg {
+      max-height: 100%;
+    }
+  
+    /* Balanced print typography: no faint body text, no excessive bold */
+    #customer-slip-canvas, #customer-slip-canvas * {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+      -webkit-font-smoothing: auto !important;
+      -moz-osx-font-smoothing: auto !important;
+      text-rendering: geometricPrecision !important;
+    }
+    #customer-slip-canvas {
+      font-weight: 500 !important;
+      color: #111827 !important;
+    }
+    #customer-slip-canvas p,
+    #customer-slip-canvas span,
+    #customer-slip-canvas div { font-weight: 500; }
+    #customer-slip-canvas h1,
+    #customer-slip-canvas h2,
+    #customer-slip-canvas h3,
+    #customer-slip-canvas strong,
+    #customer-slip-canvas .font-bold,
+    #customer-slip-canvas .font-extrabold,
+    #customer-slip-canvas .font-black { font-weight: 700 !important; }
+    #customer-slip-canvas .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+      font-weight: 700 !important;
+    }
+    #customer-slip-canvas .text-slate-400,
+    #customer-slip-canvas .text-slate-500,
+    #customer-slip-canvas .text-slate-600 {
+      color: #475569 !important;
+      font-weight: 500 !important;
+    }
+    #customer-slip-canvas .text-slate-700,
+    #customer-slip-canvas .text-slate-800,
+    #customer-slip-canvas .text-slate-900,
+    #customer-slip-canvas .text-slate-950 { color: #111827 !important; }
+
+</style>
+<style>
+
+    @page {
+      size: 5in 3in;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    html, body {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .slip-container {
+      width: 5in;
+      height: 3in;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+    #customer-slip-canvas {
+      width: 5in !important;
+      height: 3in !important;
+      max-width: 5in !important;
+      min-width: 5in !important;
+      max-height: 3in !important;
+      min-height: 3in !important;
+      margin: 0 !important;
+      padding: 0.08in !important;
+      box-sizing: border-box !important;
+      border: 1.5px solid #000 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      background: #fff !important;
+      overflow: hidden !important;
+      font-size: 8px !important;
+      line-height: 1.15 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }
+  
+    /* Balanced print typography: no faint body text, no excessive bold */
+    #customer-slip-canvas, #customer-slip-canvas * {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+      -webkit-font-smoothing: auto !important;
+      -moz-osx-font-smoothing: auto !important;
+      text-rendering: geometricPrecision !important;
+    }
+    #customer-slip-canvas {
+      font-weight: 500 !important;
+      color: #111827 !important;
+    }
+    #customer-slip-canvas p,
+    #customer-slip-canvas span,
+    #customer-slip-canvas div { font-weight: 500; }
+    #customer-slip-canvas h1,
+    #customer-slip-canvas h2,
+    #customer-slip-canvas h3,
+    #customer-slip-canvas strong,
+    #customer-slip-canvas .font-bold,
+    #customer-slip-canvas .font-extrabold,
+    #customer-slip-canvas .font-black { font-weight: 700 !important; }
+    #customer-slip-canvas .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+      font-weight: 700 !important;
+    }
+    #customer-slip-canvas .text-slate-400,
+    #customer-slip-canvas .text-slate-500,
+    #customer-slip-canvas .text-slate-600 {
+      color: #475569 !important;
+      font-weight: 500 !important;
+    }
+    #customer-slip-canvas .text-slate-700,
+    #customer-slip-canvas .text-slate-800,
+    #customer-slip-canvas .text-slate-900,
+    #customer-slip-canvas .text-slate-950 { color: #111827 !important; }
+
+</style>
+<!-- TAB 1: CUSTOMER SLIP (5 INCH x 3 INCH STRICT PRINT/PDF SYSTEM)            -->
+<!-- ========================================================================= -->
+<section class="p-4 md:p-6 space-y-5" id="view-customer-slip" class="hidden">
+<!-- MODULE HEADER & ACTION BAR -->
+<div class="bg-white rounded-xl p-4 shadow-sm border border-slate-200/80 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xl">🧾</span>
+<h1 class="font-bold text-lg text-slate-900 tracking-tight">Airway Bill Customer Slip (5" × 3" Landscape)</h1>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800 border border-amber-300">
+                5in × 3in Direct Print &amp; PDF
+              </span>
+</div>
+<p class="text-xs text-slate-500 max-w-2xl">
+              Completely independent manual customer receipt slip generator. Does not alter or sync with any existing database records, tracking numbers, or manifests. Calibrated strictly for 5 inch × 3 inch slip printing and PDF export.
+            </p>
+</div>
+<!-- TOP ACTION BUTTONS -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs flex items-center gap-1.5 border border-slate-300 transition-colors" onclick="loadSampleSlipData()">
+<span class="material-symbols-outlined text-[16px] text-slate-600">replay</span>
+<span>Sample Data</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs flex items-center gap-1.5 border border-slate-300 transition-colors" onclick="clearSlipForm()">
+<span class="material-symbols-outlined text-[16px] text-rose-500">backspace</span>
+<span>Clear Form</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-[#0a2540] hover:bg-[#000f22] text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-[0.98]" onclick="generateCustomerSlip()">
+<span class="material-symbols-outlined text-[16px] text-orange-400">check_circle</span>
+<span>Generate Customer Slip</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-md transition-all active:scale-[0.98] cursor-pointer" onclick="printCustomerSlip()">
+<span class="material-symbols-outlined text-[17px]">print</span>
+<span>Print / Save PDF — 5×3</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-[0.98] cursor-pointer" onclick="downloadSlipHTML()">
+<span class="material-symbols-outlined text-[16px] text-sky-400">download</span>
+<span>Download</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-blue-100 hover:bg-slate-200 text-blue-800 font-bold text-xs flex items-center gap-1.5 border border-slate-300 transition-colors shadow-xs" onclick="toggle5x3PreviewModal()">
+<span class="material-symbols-outlined text-[16px] text-sky-600">visibility</span>
+<span>5 × 3 INCH PRINT PREVIEW</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-[0.98]" onclick="openSignatureModal('customer')"><span class="material-symbols-outlined text-[16px]">draw</span><span>Sign as Shipper</span></button>
+<button class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-[0.98]" onclick="openSignatureModal('receiver')"><span class="material-symbols-outlined text-[16px] text-emerald-400">ink_pen</span><span>Sign as Receiver</span></button>
+</div>
+</div>
+<!-- TWO COLUMN LAYOUT: LEFT FORM (MANUAL INPUTS) | RIGHT LIVE SLIP PREVIEW -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-5 items-start">
+<!-- LEFT COLUMN: MANUAL ENTRY FORM (5 COLS) -->
+<div class="xl:col-span-5 bg-white rounded-xl shadow-sm border border-slate-200/80 p-4 space-y-4">
+<div class="flex items-center justify-between pb-2 border-b border-slate-200">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-orange-600 text-[18px]">edit_note</span>
+<span class="font-bold text-xs text-slate-800 uppercase tracking-wide">Manual Slip Details</span>
+</div>
+<span class="text-[10px] text-slate-500 font-mono">Instant Live Update</span>
+</div>
+<!-- SECTION A: WAYBILL & ROUTING -->
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 space-y-2.5">
+<span class="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">1. Airway Bill &amp; Routing</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="col-span-2">
+<label class="block text-[11px] font-bold text-slate-700 mb-0.5">Airway Bill Number *</label>
+<input class="w-full h-8 px-2.5 rounded bg-white border border-slate-300 font-mono text-xs font-bold text-slate-900 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500" id="cs-awb" oninput="syncSlip()" type="text" value="IXC-88421092-IN"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Date</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-date" oninput="syncSlip()" type="text" value="01-Oct-2026"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Shipper Reference</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 font-mono text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-ref" oninput="syncSlip()" type="text" value="REF/BOM/2026-09"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Origin</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-semibold text-slate-900 focus:outline-none focus:border-orange-500" id="cs-origin" oninput="syncSlip()" type="text" value="Mumbai (BOM), India"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Destination</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-semibold text-slate-900 focus:outline-none focus:border-orange-500" id="cs-dest" oninput="syncSlip()" type="text" value="London (LHR), United Kingdom"/>
+</div>
+</div>
+</div>
+<!-- SECTION B: SHIPPER / CONSIGNOR -->
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 space-y-2">
+<span class="text-[10px] font-bold text-orange-600 uppercase tracking-wider block">2. Shipper / Consignor (Sender)</span>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Shipper Name</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-name" oninput="syncSlip()" type="text" value="Rajesh Sharma"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Company</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-company" oninput="syncSlip()" type="text" value="Apex International Exports"/>
+</div>
+<div class="col-span-2">
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Address</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-address" oninput="syncSlip()" type="text" value="Gala 14, MIDC Industrial Area, Andheri East"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">City</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-city" oninput="syncSlip()" type="text" value="Mumbai, Maharashtra"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Postal Code</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-postal" oninput="syncSlip()" type="text" value="400093"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Country</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-country" oninput="syncSlip()" type="text" value="India"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Telephone</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-s-phone" oninput="syncSlip()" type="text" value="+91 98201 44521"/>
+</div>
+</div>
+<div class="pt-1.5 border-t border-slate-200/80 flex items-center justify-between">
+<span class="text-[10px] text-slate-500 font-medium">Shipper Endorsement:</span>
+<div class="flex items-center gap-1.5">
+<button class="px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-rose-600 text-[10px] font-semibold border border-slate-200 transition-all flex items-center gap-0.5" onclick="clearSpecificSignature('customer')" title="Clear only Customer/Shipper signature" type="button">
+<span class="material-symbols-outlined text-[13px]">backspace</span>
+<span>Clear Sign</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-orange-600/20 text-orange-600 border border-orange-400/40 hover:bg-orange-600/30 text-[10px] font-bold flex items-center gap-1 transition-all" onclick="openSignatureModal('customer')" type="button">
+<span class="material-symbols-outlined text-[13px]">draw</span>
+<span>Sign as Customer</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION C: CONSIGNEE (RECEIVER) -->
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 space-y-2">
+<span class="text-[10px] font-bold text-sky-700 uppercase tracking-wider block">3. Consignee (Receiver)</span>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Consignee Name</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-semibold text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-name" oninput="syncSlip()" type="text" value="Arthur Pendelton"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Company</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-company" oninput="syncSlip()" type="text" value="AeroTech Solutions UK Ltd."/>
+</div>
+<div class="col-span-2">
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Address</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-address" oninput="syncSlip()" type="text" value="Gate 3, Great South-West Rd, Feltham"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">City</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-city" oninput="syncSlip()" type="text" value="London"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Postal Code</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-postal" oninput="syncSlip()" type="text" value="TW14 0NR"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Country</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-country" oninput="syncSlip()" type="text" value="United Kingdom"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Telephone</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-orange-500" id="cs-c-phone" oninput="syncSlip()" type="text" value="+44 20 8974 4110"/>
+</div>
+</div>
+<div class="pt-1.5 border-t border-slate-200/80 flex items-center justify-between">
+<span class="text-[10px] text-slate-500 font-medium">Delivery Acknowledgement:</span>
+<div class="flex items-center gap-1.5">
+<button class="px-2 py-1 rounded bg-slate-100 hover:bg-slate-200 text-rose-600 text-[10px] font-semibold border border-slate-200 transition-all flex items-center gap-0.5" onclick="clearSpecificSignature('receiver')" title="Clear only Receiver signature" type="button">
+<span class="material-symbols-outlined text-[13px]">backspace</span>
+<span>Clear Sign</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-900 text-white text-[10px] font-bold flex items-center gap-1 transition-all" onclick="openSignatureModal('receiver')" type="button">
+<span class="material-symbols-outlined text-[13px] text-emerald-400">ink_pen</span>
+<span>Sign as Receiver</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION D: PACKAGE & COMMODITY -->
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 space-y-2">
+<span class="text-[10px] font-bold text-slate-600 uppercase tracking-wider block">4. Package &amp; Goods Specifications</span>
+<div class="grid grid-cols-3 gap-2">
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Shipment Type</label>
+<select class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-type" onchange="syncSlip()">
+<option value="N-DOX (Non-Document)">N-DOX</option>
+<option value="DOX (Document)">DOX</option>
+<option value="COD (Cash on Delivery)">COD</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">COD Amount</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-cod" oninput="syncSlip()" type="text" value="N/A"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Pieces</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-bold text-slate-900 focus:outline-none" id="cs-pcs" min="1" oninput="syncSlip()" type="number" value="1"/>
+</div>
+<div class="col-span-3">
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Full Description of Goods</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-desc" oninput="syncSlip()" type="text" value="Commercial Samples &amp; Precision Metal Hardware Parts"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Actual Wt (KG)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-act-wt" oninput="recalcChargeable(); syncSlip();" type="text" value="4.50"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Dims L × H × W (cm)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-dims" oninput="recalcChargeable(); syncSlip();" type="text" value="50 x 30 x 40"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Chargeable Wt (KG)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-bold text-orange-600 focus:outline-none" id="cs-chg-wt" oninput="syncSlip()" type="text" value="12.00"/>
+</div>
+<div class="col-span-3">
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Value for Customs</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-customs-val" oninput="syncSlip()" type="text" value="USD 450.00 (Declared for Customs Only)"/>
+</div>
+</div>
+</div>
+<!-- SECTION E: PAYMENT & CHARGES -->
+<div class="bg-slate-50 p-3 rounded-lg border border-slate-200/70 space-y-2">
+<span class="text-[10px] font-bold text-emerald-700 uppercase tracking-wider block">5. Payment &amp; Charges (₹)</span>
+<div class="grid grid-cols-3 gap-2">
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Payment</label>
+<select class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs font-semibold text-slate-900 focus:outline-none" id="cs-payment" onchange="syncSlip()">
+<option value="Prepaid">Prepaid</option>
+<option value="To Pay / COD">To Pay</option>
+<option value="On Account / Credit">On Account</option>
+</select>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Freight Charge (₹)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-freight" oninput="calcTotal(); syncSlip();" type="number" value="4800"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Fuel Charge (₹)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-fuel" oninput="calcTotal(); syncSlip();" type="number" value="650"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">GST (18%) (₹)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-gst" oninput="calcTotal(); syncSlip();" type="number" value="981"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-600 mb-0.5">Other Charges (₹)</label>
+<input class="w-full h-8 px-2 rounded bg-white border border-slate-300 text-xs text-slate-900 focus:outline-none" id="cs-other" oninput="calcTotal(); syncSlip();" type="number" value="250"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold text-slate-700 mb-0.5">Total (₹)</label>
+<input class="w-full h-8 px-2 rounded bg-slate-200 border border-slate-300 text-xs font-bold text-slate-900" id="cs-total" readonly="" type="text" value="₹ 6,681"/>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: HIGH FIDELITY 5" x 3" SLIP PREVIEW (7 COLS) -->
+<div class="xl:col-span-7 flex flex-col items-center">
+<div class="no-print w-full flex items-center justify-between px-3 py-1.5 mb-2 bg-slate-200/80 rounded-lg text-xs text-slate-600 font-medium">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-orange-600 text-[18px]">aspect_ratio</span>
+<span>Slip Format: <strong>5" × 3" Landscape (Strict Output)</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[11px] text-slate-500">1-Page Zero-Overflow Guarantee</span>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+</div>
+</div>
+<!-- SLIP CONTAINER ROOT -->
+<div class="w-full flex justify-center py-1" id="printable-slip-wrapper">
+<!-- THE 5" x 3" AIRWAY BILL SLIP COMPONENT -->
+<article class="w-full max-w-[720px] bg-white text-slate-950 p-1.5 rounded-lg shadow-lg border-2 border-slate-900 font-sans text-[8px] leading-tight select-text flex flex-col justify-between overflow-hidden" id="customer-slip-canvas" style="box-sizing: border-box;">
+<!-- 1. SLIP HEADER -->
+<div class="border-b border-slate-900 pb-0.5 mb-0.5 flex items-start justify-between gap-1">
+<div class="flex items-start gap-1.5">
+<div class="w-7 h-7 bg-[#0a2540] text-white flex items-center justify-center font-extrabold text-xs rounded shrink-0 border border-slate-900">
+                      IXC
+                    </div>
+<div>
+<h2 class="font-extrabold text-[11px] tracking-tight leading-none text-slate-950">
+                        INTERNATIONAL EXPRESS COURIER &amp; CARGO
+                      </h2>
+<p class="text-[7.5px] text-slate-700 font-medium leading-none mt-0.5">
+                        Address: Sahar Road, Andheri East, Mumbai, Maharashtra 400099
+                      </p>
+<div class="flex flex-wrap items-center gap-x-2 text-[7px] text-slate-800 font-semibold leading-none mt-0.5">
+<span>Mobile: +91 9570821019</span>
+<span>•</span>
+<span>Email: InfoInternationalexpress07@gmail.com</span>
+</div>
+</div>
+</div>
+<!-- TOP RIGHT: AIRWAY BILL BOX & BARCODE -->
+<div class="text-right shrink-0 border-l border-slate-300 pl-1.5">
+<div class="text-[6.5px] font-extrabold uppercase tracking-wider text-slate-600 leading-none">CUSTOMER RECEIPT COPY</div>
+<div class="font-mono font-black text-[10px] text-slate-950 mt-0.5 tracking-wider bg-slate-100 px-1 rounded border border-slate-300 text-center leading-none py-0.2" id="slip-awb-num">
+                      IXC-88421092-IN
+                    </div>
+<!-- Vector Barcode -->
+<div class="h-3.5 w-28 ml-auto my-0.5 flex items-center justify-center">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 200 40">
+<rect fill="black" height="40" width="2" x="0" y="0"></rect>
+<rect fill="black" height="40" width="1" x="4" y="0"></rect>
+<rect fill="black" height="40" width="3" x="7" y="0"></rect>
+<rect fill="black" height="40" width="2" x="12" y="0"></rect>
+<rect fill="black" height="40" width="4" x="16" y="0"></rect>
+<rect fill="black" height="40" width="1" x="22" y="0"></rect>
+<rect fill="black" height="40" width="3" x="25" y="0"></rect>
+<rect fill="black" height="40" width="1" x="30" y="0"></rect>
+<rect fill="black" height="40" width="4" x="33" y="0"></rect>
+<rect fill="black" height="40" width="2" x="39" y="0"></rect>
+<rect fill="black" height="40" width="1" x="43" y="0"></rect>
+<rect fill="black" height="40" width="3" x="46" y="0"></rect>
+<rect fill="black" height="40" width="2" x="51" y="0"></rect>
+<rect fill="black" height="40" width="4" x="55" y="0"></rect>
+<rect fill="black" height="40" width="1" x="61" y="0"></rect>
+<rect fill="black" height="40" width="3" x="64" y="0"></rect>
+<rect fill="black" height="40" width="2" x="69" y="0"></rect>
+<rect fill="black" height="40" width="4" x="73" y="0"></rect>
+<rect fill="black" height="40" width="1" x="79" y="0"></rect>
+<rect fill="black" height="40" width="2" x="82" y="0"></rect>
+<rect fill="black" height="40" width="4" x="86" y="0"></rect>
+<rect fill="black" height="40" width="1" x="92" y="0"></rect>
+<rect fill="black" height="40" width="3" x="95" y="0"></rect>
+<rect fill="black" height="40" width="2" x="100" y="0"></rect>
+<rect fill="black" height="40" width="4" x="104" y="0"></rect>
+<rect fill="black" height="40" width="2" x="110" y="0"></rect>
+<rect fill="black" height="40" width="1" x="114" y="0"></rect>
+<rect fill="black" height="40" width="3" x="117" y="0"></rect>
+<rect fill="black" height="40" width="4" x="122" y="0"></rect>
+<rect fill="black" height="40" width="1" x="128" y="0"></rect>
+<rect fill="black" height="40" width="3" x="131" y="0"></rect>
+<rect fill="black" height="40" width="2" x="136" y="0"></rect>
+<rect fill="black" height="40" width="4" x="140" y="0"></rect>
+<rect fill="black" height="40" width="1" x="146" y="0"></rect>
+<rect fill="black" height="40" width="3" x="149" y="0"></rect>
+<rect fill="black" height="40" width="2" x="154" y="0"></rect>
+<rect fill="black" height="40" width="4" x="158" y="0"></rect>
+<rect fill="black" height="40" width="1" x="164" y="0"></rect>
+<rect fill="black" height="40" width="3" x="167" y="0"></rect>
+<rect fill="black" height="40" width="2" x="172" y="0"></rect>
+<rect fill="black" height="40" width="4" x="176" y="0"></rect>
+<rect fill="black" height="40" width="2" x="182" y="0"></rect>
+<rect fill="black" height="40" width="1" x="186" y="0"></rect>
+<rect fill="black" height="40" width="4" x="189" y="0"></rect>
+<rect fill="black" height="40" width="2" x="195" y="0"></rect>
+<rect fill="black" height="40" width="2" x="198" y="0"></rect>
+</svg>
+</div>
+<div class="text-[6.5px] font-mono text-slate-600 text-center leading-none" id="slip-awb-subtext">IXC-88421092-IN</div>
+</div>
+</div>
+<!-- 2. ROUTING & DATE BAR -->
+<div class="grid grid-cols-4 bg-slate-100 border border-slate-300 rounded px-1.5 py-0.5 mb-0.5 text-[8px]">
+<div>
+<span class="text-[6.5px] text-slate-500 font-bold uppercase block leading-none">DATE</span>
+<span class="font-bold text-slate-900 leading-none" id="slip-date">01-Oct-2026</span>
+</div>
+<div>
+<span class="text-[6.5px] text-slate-500 font-bold uppercase block leading-none">ORIGIN</span>
+<span class="font-extrabold text-slate-900 truncate block leading-none" id="slip-origin">Mumbai (BOM), India</span>
+</div>
+<div>
+<span class="text-[6.5px] text-slate-500 font-bold uppercase block leading-none">DESTINATION</span>
+<span class="font-extrabold text-slate-900 truncate block leading-none" id="slip-dest">London (LHR), United Kingdom</span>
+</div>
+<div>
+<span class="text-[6.5px] text-slate-500 font-bold uppercase block leading-none">SHIPPER REF / ORDER #</span>
+<span class="font-mono font-bold text-slate-900 truncate block leading-none" id="slip-ref">REF/BOM/2026-09</span>
+</div>
+</div>
+<!-- 3. SHIPPER & CONSIGNEE TWIN BOXES -->
+<div class="grid grid-cols-2 gap-1 mb-0.5">
+<!-- Shipper / Consignor Box -->
+<div class="border border-slate-300 px-1.5 py-0.5 rounded bg-white leading-tight">
+<div class="text-[6.5px] font-extrabold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-0.2 mb-0.5 flex items-center justify-between">
+<span>SHIPPER / CONSIGNOR (FROM)</span>
+<span class="font-mono text-[6.5px] text-slate-700">ORIGIN: BOM</span>
+</div>
+<div class="font-bold text-[8.5px] text-slate-900 leading-tight" id="slip-s-name">Rajesh Sharma</div>
+<div class="text-[7.5px] font-semibold text-slate-800 leading-tight truncate" id="slip-s-company">Apex International Exports</div>
+<div class="text-[7px] text-slate-700 leading-tight truncate" id="slip-s-address">Gala 14, MIDC Industrial Area, Andheri East</div>
+<div class="text-[7px] text-slate-700 leading-tight truncate" id="slip-s-city-country">Mumbai, Maharashtra - 400093, India</div>
+<div class="text-[7px] font-mono text-slate-900 font-semibold leading-tight" id="slip-s-phone">TEL: +91 98201 44521</div>
+</div>
+<!-- Consignee Box -->
+<div class="border border-slate-300 px-1.5 py-0.5 rounded bg-white leading-tight">
+<div class="text-[6.5px] font-extrabold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-0.2 mb-0.5 flex items-center justify-between">
+<span>CONSIGNEE / DELIVER TO</span>
+<span class="font-mono text-[6.5px] text-slate-700">DEST: INTL</span>
+</div>
+<div class="font-bold text-[8.5px] text-slate-900 leading-tight" id="slip-c-name">Arthur Pendelton</div>
+<div class="text-[7.5px] font-semibold text-slate-800 leading-tight truncate" id="slip-c-company">AeroTech Solutions UK Ltd.</div>
+<div class="text-[7px] text-slate-700 leading-tight truncate" id="slip-c-address">Gate 3, Great South-West Rd, Feltham</div>
+<div class="text-[7px] text-slate-700 leading-tight truncate" id="slip-c-city-country">London, TW14 0NR, United Kingdom</div>
+<div class="text-[7px] font-mono text-slate-900 font-semibold leading-tight" id="slip-c-phone">TEL: +44 20 8974 4110</div>
+</div>
+</div>
+<!-- 4. SHIPMENT NATURE, TYPE, & WEIGHT METRICS GRID -->
+<div id="slip-shipment-metrics" class="border border-slate-300 rounded mb-0.5 overflow-hidden leading-none">
+<div class="grid grid-cols-12 bg-slate-100 px-0.5 py-0.1 text-[6.6px] leading-none font-bold border-b border-slate-200">
+<div class="col-span-3">TYPE / SERVICE</div>
+<div class="col-span-2 text-center">PIECES</div>
+<div class="col-span-2 text-center">ACTUAL WT</div>
+<div class="col-span-3 text-center">DIMENSIONS (L×H×W)</div>
+<div class="col-span-2 text-center">CHARGEABLE WT</div>
+</div>
+<div class="grid grid-cols-12 px-0.5 py-0.1 text-[7.5px] leading-none items-center bg-white">
+<div class="col-span-3 font-bold text-slate-900 truncate" id="slip-type">N-DOX (Non-Document)</div>
+<div class="col-span-2 text-center font-bold" id="slip-pcs">1 BOX</div>
+<div class="col-span-2 text-center font-bold" id="slip-act-wt">4.50 KG</div>
+<div class="col-span-3 text-center font-mono text-[7px]" id="slip-dims">50 x 30 x 40 cm</div>
+<div class="col-span-2 text-center font-black text-slate-950 bg-slate-100 py-0.2 rounded border border-slate-300" id="slip-chg-wt">12.00 KG</div>
+</div>
+<div class="bg-slate-50 px-1 py-0.1 border-t border-slate-200 text-[6.3px] leading-none flex items-center justify-between">
+<div class="min-w-0 flex-1 truncate mr-1">
+<span class="font-bold text-slate-700">DESCRIPTION:</span>
+<span class="text-slate-900 font-semibold ml-0.5 truncate" id="slip-desc">Commercial Samples &amp; Precision Metal Hardware Parts</span>
+</div>
+<div class="min-w-0 max-w-[46%] shrink truncate text-right">
+<span class="font-bold text-slate-700">CUSTOMS VAL:</span>
+<span class="font-mono font-bold text-slate-900 ml-0.5 truncate" id="slip-customs-val">USD 450.00 (Declared for Customs Only)</span>
+</div>
+</div>
+</div>
+<!-- 5. CHARGES & AGREEMENT -->
+<div class="grid grid-cols-12 gap-1 mb-0.5 items-stretch flex-1">
+<!-- Charges Box -->
+<div class="col-span-5 border border-slate-300 p-1 rounded bg-slate-50 text-[7.5px] flex flex-col justify-between leading-tight">
+<div class="flex-1 flex flex-col justify-between">
+<div class="font-extrabold uppercase text-[7px] text-slate-700 border-b border-slate-200 pb-0.2 mb-0.5 flex items-center justify-between">
+<span class="tracking-wide">PAYMENT &amp; CHARGES</span>
+<span class="font-black text-emerald-700 bg-emerald-100 px-1 py-0.2 rounded border border-emerald-300 text-[7px]" id="slip-payment-badge">Prepaid</span>
+</div>
+<div class="space-y-0.5 flex-1 flex flex-col justify-around py-0.2">
+<div class="flex justify-between items-center text-[7.5px]">
+<span class="text-slate-600 font-medium">Freight Charge:</span>
+<span class="font-mono font-bold text-slate-900" id="slip-freight">₹ 4,800.00</span>
+</div>
+<div class="flex justify-between items-center text-[7.5px]">
+<span class="text-slate-600 font-medium">Fuel Surcharge:</span>
+<span class="font-mono font-bold text-slate-900" id="slip-fuel">₹ 650.00</span>
+</div>
+<div class="flex justify-between items-center text-[7.5px]">
+<span class="text-slate-600 font-medium">GST (18%):</span>
+<span class="font-mono font-bold text-slate-900" id="slip-gst">₹ 981.00</span>
+</div>
+<div class="flex justify-between items-center text-[7.5px]">
+<span class="text-slate-600 font-medium">Other Charges / COD:</span>
+<span class="font-mono font-bold text-slate-900" id="slip-other">₹ 250.00</span>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-900 pt-0.5 mt-0.5 flex justify-between items-center bg-slate-200/80 -mx-1 -mb-1 px-1.5 py-0.5 rounded-b">
+<span class="font-black text-[8px] text-slate-950 uppercase tracking-tight">TOTAL CHARGES:</span>
+<span class="font-mono font-black text-[9.5px] text-orange-600" id="slip-total-charges">₹ 6,681.00</span>
+</div>
+</div>
+<!-- Shipper Declaration & Signatures Box -->
+<div class="col-span-7 border border-slate-300 p-1 rounded bg-slate-50 text-[6.5px] text-slate-700 leading-tight flex flex-col justify-between">
+<div>
+<div class="font-extrabold uppercase text-[6.5px] text-slate-800 border-b border-slate-200 pb-0.2 mb-0.5 flex items-center justify-between">
+<span class="tracking-wide">SHIPPER DECLARATION &amp; TERMS AGREEMENT</span>
+<span class="text-[5.5px] font-mono text-rose-600 font-bold">[ MANDATORY ]</span>
+</div>
+<p class="text-[6px] leading-tight text-slate-700">
+Unless agreed in writing, I/We agree International Express Courier &amp; Cargo terms of carriage. Warsaw Convention exclusions apply. No cash/dangerous goods. <strong class="text-rose-600 font-black">[ NO CLAIM FOR DELAY, LOSS OR DAMAGE ]</strong>
+</p>
+<p class="text-[6px] font-bold text-slate-900 mt-0.2 leading-none">
+Carriage contracted with: <span class="underline font-extrabold">International Express Courier &amp; Cargo</span>
+</p>
+</div>
+<!-- DUAL INDEPENDENT SIGNATURE DISPLAYS -->
+<div class="grid grid-cols-2 gap-1 pt-0.5 border-t border-slate-300 mt-0.5">
+<!-- 1. Shipper / Consignor Box -->
+<div class="cursor-pointer group relative bg-white border border-slate-300 rounded p-0.5 hover:border-orange-500 transition-colors shadow-xs" id="shipper-sig-box" onclick="openSignatureModal('customer')">
+<div class="h-4 flex items-center justify-center overflow-hidden border-b border-dashed border-slate-300 relative bg-white" id="customer-sign-display">
+<span class="text-[6px] text-orange-600 font-bold group-hover:underline flex items-center gap-0.5">✍️ Sign / Draw</span>
+</div>
+<div class="text-[6px] font-bold text-slate-800 mt-0.2 flex justify-between items-center leading-none">
+<span>Shipper Signature</span>
+<span class="text-[5.5px] text-slate-400 font-normal" id="customer-sign-date">Click to Sign</span>
+</div>
+</div>
+<!-- 2. Receiver / Good Order Box -->
+<div class="cursor-pointer group relative bg-white border border-slate-300 rounded p-0.5 hover:border-orange-500 transition-colors shadow-xs" id="receiver-sig-box" onclick="openSignatureModal('receiver')">
+<div class="h-4 flex items-center justify-center overflow-hidden border-b border-dashed border-slate-300 relative bg-white" id="receiver-sign-display">
+<span class="text-[6px] text-slate-500 font-semibold group-hover:text-orange-600 group-hover:underline flex items-center gap-0.5">✍️ Consignee</span>
+</div>
+<div class="text-[6px] font-bold text-slate-800 mt-0.2 flex justify-between items-center leading-none">
+<span>Received in Order</span>
+<span class="text-[5.5px] text-slate-400 font-normal" id="receiver-sign-date">Click to Sign</span>
+</div>
+</div>
+</div>
+</div></div>
+<!-- 6. SLIP FOOTER STRIP & FREE PICKUP BADGE (STRICTLY WITHIN CANVAS) -->
+<div class="border-t border-slate-900 pt-0.5 mt-0.5 flex items-center justify-between text-[7px] bg-slate-50 -mx-1.5 -mb-1.5 px-1.5 py-0.5 rounded-b shrink-0 leading-none">
+<div class="flex items-center gap-1 text-slate-700 font-bold text-[6.5px]">
+<span class="font-mono font-extrabold text-slate-950 uppercase tracking-tight">AIRWAY BILL CUSTOMER COPY</span>
+<span class="text-slate-400">•</span>
+<span class="text-slate-600">Direct Air Gateway BOM</span>
+<span class="text-slate-400">•</span>
+<span class="text-slate-500">Non-Negotiable Note</span>
+</div>
+<div class="px-1.5 py-0.2 rounded bg-slate-950 text-white font-extrabold text-[6.5px] tracking-wider uppercase border border-slate-800 shadow-sm flex items-center gap-0.5">
+<span class="w-1 h-1 rounded-full bg-orange-500"></span>
+<span>FREE PICKUP AVAILABLE ALL INDIA</span>
+</div>
+</div>
+</article>
+</div>
+<!-- PRINT HELPER NOTE -->
+<div class="no-print mt-3 text-center text-xs text-slate-500">
+              💡 Output calibrated strictly for <strong>5" × 3" Landscape</strong>. Direct isolated print engine ensures 100% non-blank printouts and PDFs.
+            </div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+
+<div class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-30 flex items-center justify-center p-3 md:p-6 hidden no-print" id="signature-modal"><div class="bg-white rounded-xl shadow-2xl border border-slate-300 w-full max-w-5xl max-h-[95vh] overflow-hidden flex flex-col"><div class="p-3.5 bg-[#0a2540] text-white flex items-center justify-between shrink-0"><div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-[#fd761a] flex items-center justify-center"><span class="material-symbols-outlined text-white text-[18px]">draw</span></div><div><h3 class="font-bold text-sm tracking-tight">Digital Express Signature Studio</h3><p class="text-[10px] text-slate-300">High-fidelity touch/stylus/mouse signature capture for Airway Bill validation</p></div></div><button class="text-slate-300 hover:text-white p-1 rounded-lg hover:bg-slate-800" onclick="closeSignatureModal()"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-3 bg-slate-100 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3"><div class="flex items-center gap-2"><span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Target Party:</span><div class="inline-flex p-1 bg-slate-200 rounded-lg gap-1"><button class="px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-white text-slate-900 shadow-xs flex items-center gap-1.5" id="tab-sig-customer" onclick="setSignatureTarget('customer')" type="button"><span class="material-symbols-outlined text-[15px] text-orange-600">person</span><span>Customer / Shipper Signature</span></button><button class="px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-600 hover:text-slate-900 flex items-center gap-1.5" id="tab-sig-receiver" onclick="setSignatureTarget('receiver')" type="button"><span class="material-symbols-outlined text-[15px] text-sky-600">verified_user</span><span>Receiver / Received in Good Order</span></button></div></div><div class="flex items-center gap-4 text-xs"><div class="flex items-center gap-1.5"><span class="text-[11px] text-slate-500 font-semibold">Ink Color:</span><button class="w-6 h-6 rounded-full bg-black ring-2 ring-orange-500 shadow-xs hover:scale-105 transition-all" id="pen-black" onclick="setPenColor('#000000')"></button><button class="w-6 h-6 rounded-full bg-blue-800 shadow-xs hover:scale-105 transition-all" id="pen-blue" onclick="setPenColor('#002699')"></button></div><div class="flex items-center gap-1.5 pl-2 border-l border-slate-300"><span class="text-[11px] text-slate-500 font-semibold">Stroke:</span><button class="px-2 py-0.5 rounded text-[11px] font-semibold border border-slate-300 bg-white hover:bg-slate-50" id="pen-w-fine" onclick="setPenWidth(2)" type="button">Fine</button><button class="px-2 py-0.5 rounded text-[11px] font-semibold border border-slate-300 bg-slate-200" id="pen-w-bold" onclick="setPenWidth(3.5)" type="button">Medium</button></div></div></div><div class="p-4 space-y-2 bg-slate-50 flex-1 overflow-hidden flex flex-col"><div class="flex items-center justify-between text-xs"><span class="text-slate-600 font-semibold flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-orange-500">gesture</span><span id="sig-active-target-label">Signing as: <strong>Customer / Shipper Agreement</strong></span></span><span class="text-xs text-slate-500 font-mono" id="sig-timestamp-hint">Live BOM Gateway Verification Active</span></div><div class="relative bg-white rounded-xl border-2 border-dashed border-slate-400 overflow-hidden shadow-inner flex-1 min-h-[380px] flex items-center justify-center cursor-crosshair" id="canvas-container"><canvas class="w-full h-full" height="390" id="signature-canvas" width="980"></canvas><div class="absolute pointer-events-none text-center select-none text-slate-300 flex flex-col items-center justify-center gap-2" id="canvas-hint"><span class="material-symbols-outlined text-4xl text-slate-300">draw</span><span class="text-xs font-semibold">Sign inside this expansive area using your stylus, touchscreen, or trackpad</span><span class="text-[11px] text-slate-400">__________________________________________________________________</span></div></div><div class="flex items-center justify-between text-[11px] text-slate-500 pt-1"><span>Pad Status: <strong class="text-slate-700" id="sig-status">Ready to capture</strong></span><span class="font-mono text-slate-400">Canvas: 980 × 390 px • High-Resolution Vector Smoothing</span></div></div><div class="p-3 bg-white border-t border-slate-200 flex items-center justify-between gap-3 shrink-0"><button class="px-3.5 py-2 rounded-lg border border-slate-300 text-slate-700 text-xs font-semibold hover:bg-slate-100 flex items-center gap-1.5 transition-colors" onclick="clearSignatureCanvas()"><span class="material-symbols-outlined text-[16px] text-rose-500">delete</span><span>Clear Canvas</span></button><div class="flex items-center gap-2.5"><button class="px-4 py-2 rounded-lg border border-slate-300 text-slate-600 text-xs font-semibold hover:bg-slate-100 transition-colors" onclick="closeSignatureModal()">Cancel</button><button class="px-5 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white text-xs font-bold shadow-md flex items-center gap-1.5 active:scale-[0.98] transition-all cursor-pointer" onclick="saveSignature()"><span class="material-symbols-outlined text-[17px]">check_circle</span><span>Save &amp; Apply Signature</span></button></div></div></div></div>
+<div class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-30 flex items-center justify-center p-4 hidden no-print" id="preview-5x3-modal">
+<div class="bg-white rounded-xl shadow-2xl border border-slate-300 max-w-2xl w-full max-h-[92vh] flex flex-col overflow-hidden">
+<div class="p-3 bg-[#0a2540] text-white flex items-center justify-between shrink-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sky-400 text-[20px]">preview</span>
+<h3 class="font-bold text-sm">5 × 3 INCH PRINT PREVIEW (Exact Ratio Simulation)</h3>
+</div>
+<button class="text-slate-300 hover:text-white" onclick="toggle5x3PreviewModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-slate-200 p-6 overflow-y-auto custom-scrollbar flex items-center justify-center flex-1">
+<div class="bg-white shadow-2xl border border-slate-900 rounded p-0 flex items-center justify-center" id="modal-slip-clone-container" style="width: 5in; height: 3in; box-sizing: border-box; overflow: hidden;">
+</div>
+</div>
+<div class="p-3 bg-white border-t border-slate-200 flex items-center justify-between">
+<span class="text-xs text-slate-500">Zero page overflow guaranteed: Exactly 5.00" × 3.00"</span>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg border border-slate-300 text-slate-700 text-xs font-semibold hover:bg-slate-100" onclick="toggle5x3PreviewModal()">
+          Close Preview
+        </button>
+<button class="px-4 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-bold text-xs flex items-center gap-1.5 shadow cursor-pointer" onclick="printCustomerSlip()">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print / Save PDF — 5×3</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    // Tab Switcher Logic
+    const modules = [
+      'dashboard', 'create-awb', 'shipments', 'tracking', 'labels',
+      'customer-slip', 'invoices', 'manifest', 'search', 'settings'
+    ];
+
+    window.switchTab = function(targetId) {
+      modules.forEach(m => {
+        const sec = document.getElementById('module-' + m);
+        const btn = document.getElementById('nav-' + m);
+        if (sec) {
+          if (m === targetId) {
+            sec.classList.remove('hidden');
+          } else {
+            sec.classList.add('hidden');
+          }
+        }
+        if (btn) {
+          if (m === targetId) {
+            btn.className = "w-full flex items-center gap-2.5 px-3 py-2 rounded-lg bg-orange-600/20 text-orange-400 border border-orange-500/40 text-left shadow-sm";
+          } else {
+            btn.className = "w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800/70 hover:text-white transition-all text-left";
+          }
+        }
+      });
+    };
+
+    // Customer Slip Real-Time Two-Way Sync
+    window.syncSlip = function() {
+      // 1. Waybill & Routing
+      const awb = (document.getElementById('cs-awb') ? document.getElementById('cs-awb').value : '') || 'IXC-88421092-IN';
+      const date = (document.getElementById('cs-date') ? document.getElementById('cs-date').value : '') || '';
+      const ref = (document.getElementById('cs-ref') ? document.getElementById('cs-ref').value : '') || '-';
+      const origin = (document.getElementById('cs-origin') ? document.getElementById('cs-origin').value : '') || '';
+      const dest = (document.getElementById('cs-dest') ? document.getElementById('cs-dest').value : '') || '';
+
+      const elNum = document.getElementById('slip-awb-num');
+      if (elNum) elNum.textContent = awb.toUpperCase();
+      const elSub = document.getElementById('slip-awb-subtext');
+      if (elSub) elSub.textContent = awb.toUpperCase();
+      const elDate = document.getElementById('slip-date');
+      if (elDate) elDate.textContent = date;
+      const elOrigin = document.getElementById('slip-origin');
+      if (elOrigin) elOrigin.textContent = origin;
+      const elDest = document.getElementById('slip-dest');
+      if (elDest) elDest.textContent = dest;
+      const elRef = document.getElementById('slip-ref');
+      if (elRef) elRef.textContent = ref;
+
+      // 2. Shipper
+      const sName = (document.getElementById('cs-s-name') ? document.getElementById('cs-s-name').value : '') || '';
+      const sCo = (document.getElementById('cs-s-company') ? document.getElementById('cs-s-company').value : '') || '';
+      const sAddr = (document.getElementById('cs-s-address') ? document.getElementById('cs-s-address').value : '') || '';
+      const sCity = (document.getElementById('cs-s-city') ? document.getElementById('cs-s-city').value : '') || '';
+      const sPostal = (document.getElementById('cs-s-postal') ? document.getElementById('cs-s-postal').value : '') || '';
+      const sCountry = (document.getElementById('cs-s-country') ? document.getElementById('cs-s-country').value : '') || '';
+      const sPhone = (document.getElementById('cs-s-phone') ? document.getElementById('cs-s-phone').value : '') || '';
+
+      if (document.getElementById('slip-s-name')) document.getElementById('slip-s-name').textContent = sName;
+      if (document.getElementById('slip-s-company')) document.getElementById('slip-s-company').textContent = sCo;
+      if (document.getElementById('slip-s-address')) document.getElementById('slip-s-address').textContent = sAddr;
+      if (document.getElementById('slip-s-city-country')) document.getElementById('slip-s-city-country').textContent = `${sCity}${sPostal ? ' - ' + sPostal : ''}, ${sCountry}`;
+      if (document.getElementById('slip-s-phone')) document.getElementById('slip-s-phone').textContent = `TEL: ${sPhone}`;
+
+      // 3. Consignee
+      const cName = (document.getElementById('cs-c-name') ? document.getElementById('cs-c-name').value : '') || '';
+      const cCo = (document.getElementById('cs-c-company') ? document.getElementById('cs-c-company').value : '') || '';
+      const cAddr = (document.getElementById('cs-c-address') ? document.getElementById('cs-c-address').value : '') || '';
+      const cCity = (document.getElementById('cs-c-city') ? document.getElementById('cs-c-city').value : '') || '';
+      const cPostal = (document.getElementById('cs-c-postal') ? document.getElementById('cs-c-postal').value : '') || '';
+      const cCountry = (document.getElementById('cs-c-country') ? document.getElementById('cs-c-country').value : '') || '';
+      const cPhone = (document.getElementById('cs-c-phone') ? document.getElementById('cs-c-phone').value : '') || '';
+
+      if (document.getElementById('slip-c-name')) document.getElementById('slip-c-name').textContent = cName;
+      if (document.getElementById('slip-c-company')) document.getElementById('slip-c-company').textContent = cCo;
+      if (document.getElementById('slip-c-address')) document.getElementById('slip-c-address').textContent = cAddr;
+      if (document.getElementById('slip-c-city-country')) document.getElementById('slip-c-city-country').textContent = `${cCity}${cPostal ? ' - ' + cPostal : ''}, ${cCountry}`;
+      if (document.getElementById('slip-c-phone')) document.getElementById('slip-c-phone').textContent = `TEL: ${cPhone}`;
+
+      // 4. Package & Commodity
+      const type = document.getElementById('cs-type') ? document.getElementById('cs-type').value : '';
+      const cod = document.getElementById('cs-cod') ? document.getElementById('cs-cod').value : '';
+      const pcs = (document.getElementById('cs-pcs') ? document.getElementById('cs-pcs').value : '') || '1';
+      const desc = (document.getElementById('cs-desc') ? document.getElementById('cs-desc').value : '') || '';
+      const actWt = (document.getElementById('cs-act-wt') ? document.getElementById('cs-act-wt').value : '') || '0.0';
+      const dims = (document.getElementById('cs-dims') ? document.getElementById('cs-dims').value : '') || '';
+      const chgWt = (document.getElementById('cs-chg-wt') ? document.getElementById('cs-chg-wt').value : '') || '0.0';
+      const customsVal = (document.getElementById('cs-customs-val') ? document.getElementById('cs-customs-val').value : '') || '';
+
+      if (document.getElementById('slip-type')) document.getElementById('slip-type').textContent = type + (cod && cod !== 'N/A' ? ` (COD: ${cod})` : '');
+      if (document.getElementById('slip-pcs')) document.getElementById('slip-pcs').textContent = pcs + (parseInt(pcs) > 1 ? ' BOXES' : ' BOX');
+      if (document.getElementById('slip-act-wt')) document.getElementById('slip-act-wt').textContent = parseFloat(actWt || 0).toFixed(2) + ' KG';
+      if (document.getElementById('slip-dims')) document.getElementById('slip-dims').textContent = dims + (dims.includes('cm') ? '' : ' cm');
+      if (document.getElementById('slip-chg-wt')) document.getElementById('slip-chg-wt').textContent = parseFloat(chgWt || 0).toFixed(2) + ' KG';
+      if (document.getElementById('slip-desc')) document.getElementById('slip-desc').textContent = desc;
+      if (document.getElementById('slip-customs-val')) document.getElementById('slip-customs-val').textContent = customsVal;
+
+      // 5. Payment & Charges
+      const payment = document.getElementById('cs-payment') ? document.getElementById('cs-payment').value : 'Prepaid';
+      if (document.getElementById('slip-payment-badge')) document.getElementById('slip-payment-badge').textContent = payment;
+    };
+
+    // Auto-calculate Chargeable Weight: max(gross, (L*H*W)/5000)
+    window.recalcChargeable = function() {
+      const act = parseFloat(document.getElementById('cs-act-wt').value) || 0;
+      const dims = document.getElementById('cs-dims').value;
+      const parts = dims.split(/x|\*/i).map(s => parseFloat(s.trim()));
+      if (parts.length === 3 && !isNaN(parts[0]) && !isNaN(parts[1]) && !isNaN(parts[2])) {
+        const vol = (parts[0] * parts[1] * parts[2]) / 5000;
+        const chg = Math.max(act, vol);
+        document.getElementById('cs-chg-wt').value = chg.toFixed(2);
+      }
+    };
+
+    // Auto-sum Charges
+    window.calcTotal = function() {
+      const f = parseFloat(document.getElementById('cs-freight').value) || 0;
+      const fuel = parseFloat(document.getElementById('cs-fuel').value) || 0;
+      const gst = parseFloat(document.getElementById('cs-gst').value) || 0;
+      const other = parseFloat(document.getElementById('cs-other').value) || 0;
+      const total = f + fuel + gst + other;
+
+      document.getElementById('cs-total').value = '₹ ' + total.toLocaleString('en-IN');
+      if (document.getElementById('slip-freight')) document.getElementById('slip-freight').textContent = '₹ ' + f.toLocaleString('en-IN', {minimumFractionDigits: 2});
+      if (document.getElementById('slip-fuel')) document.getElementById('slip-fuel').textContent = '₹ ' + fuel.toLocaleString('en-IN', {minimumFractionDigits: 2});
+      if (document.getElementById('slip-gst')) document.getElementById('slip-gst').textContent = '₹ ' + gst.toLocaleString('en-IN', {minimumFractionDigits: 2});
+      if (document.getElementById('slip-other')) document.getElementById('slip-other').textContent = '₹ ' + other.toLocaleString('en-IN', {minimumFractionDigits: 2});
+      if (document.getElementById('slip-total-charges')) document.getElementById('slip-total-charges').textContent = '₹ ' + total.toLocaleString('en-IN', {minimumFractionDigits: 2});
+    };
+
+    // Clear Slip Form
+    window.clearSlipForm = function() {
+      document.getElementById('cs-awb').value = '';
+      document.getElementById('cs-ref').value = '';
+      document.getElementById('cs-s-name').value = '';
+      document.getElementById('cs-s-company').value = '';
+      document.getElementById('cs-s-address').value = '';
+      document.getElementById('cs-s-phone').value = '';
+      document.getElementById('cs-c-name').value = '';
+      document.getElementById('cs-c-company').value = '';
+      document.getElementById('cs-c-address').value = '';
+      document.getElementById('cs-c-phone').value = '';
+      document.getElementById('cs-desc').value = '';
+      document.getElementById('cs-act-wt').value = '';
+      document.getElementById('cs-dims').value = '';
+      document.getElementById('cs-chg-wt').value = '';
+      document.getElementById('cs-freight').value = '0';
+      document.getElementById('cs-fuel').value = '0';
+      document.getElementById('cs-gst').value = '0';
+      document.getElementById('cs-other').value = '0';
+      calcTotal();
+      syncSlip();
+      showToast('Form cleared successfully', 'info');
+    };
+
+    // Load Sample Slip Data
+    window.loadSampleSlipData = function() {
+      document.getElementById('cs-awb').value = 'IXC-88421092-IN';
+      document.getElementById('cs-date').value = '01-Oct-2026';
+      document.getElementById('cs-ref').value = 'REF/BOM/2026-09';
+      document.getElementById('cs-origin').value = 'Mumbai (BOM), India';
+      document.getElementById('cs-dest').value = 'London (LHR), United Kingdom';
+      document.getElementById('cs-s-name').value = 'Rajesh Sharma';
+      document.getElementById('cs-s-company').value = 'Apex International Exports';
+      document.getElementById('cs-s-address').value = 'Gala 14, MIDC Industrial Area, Andheri East';
+      document.getElementById('cs-s-city').value = 'Mumbai, Maharashtra';
+      document.getElementById('cs-s-postal').value = '400093';
+      document.getElementById('cs-s-country').value = 'India';
+      document.getElementById('cs-s-phone').value = '+91 98201 44521';
+      document.getElementById('cs-c-name').value = 'Arthur Pendelton';
+      document.getElementById('cs-c-company').value = 'AeroTech Solutions UK Ltd.';
+      document.getElementById('cs-c-address').value = 'Gate 3, Great South-West Rd, Feltham';
+      document.getElementById('cs-c-city').value = 'London';
+      document.getElementById('cs-c-postal').value = 'TW14 0NR';
+      document.getElementById('cs-c-country').value = 'United Kingdom';
+      document.getElementById('cs-c-phone').value = '+44 20 8974 4110';
+      document.getElementById('cs-type').value = 'N-DOX (Non-Document)';
+      document.getElementById('cs-cod').value = 'N/A';
+      document.getElementById('cs-pcs').value = '1';
+      document.getElementById('cs-desc').value = 'Commercial Samples & Precision Metal Hardware Parts';
+      document.getElementById('cs-act-wt').value = '4.50';
+      document.getElementById('cs-dims').value = '50 x 30 x 40';
+      document.getElementById('cs-chg-wt').value = '12.00';
+      document.getElementById('cs-customs-val').value = 'USD 450.00 (Declared for Customs Only)';
+      document.getElementById('cs-payment').value = 'Prepaid';
+      document.getElementById('cs-freight').value = '4800';
+      document.getElementById('cs-fuel').value = '650';
+      document.getElementById('cs-gst').value = '981';
+      document.getElementById('cs-other').value = '250';
+      calcTotal();
+      syncSlip();
+      showToast('Sample shipment data loaded', 'success');
+    };
+
+    // Toast Notification helper
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      const icon = type === 'success' ? 'check_circle' : (type === 'error' ? 'error' : 'info');
+      const bgColor = type === 'success' ? 'bg-slate-900 border-emerald-500' : (type === 'error' ? 'bg-rose-900 border-rose-500' : 'bg-slate-900 border-sky-500');
+      toast.className = `${bgColor} text-white px-4 py-2.5 rounded-lg shadow-xl border flex items-center gap-2 text-xs font-semibold toast-anim pointer-events-auto`;
+      toast.innerHTML = `<span class="material-symbols-outlined text-[18px] text-emerald-400">${icon}</span><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s ease-out';
+        setTimeout(() => toast.remove(), 300);
+      }, 3200);
+    }
+
+    // Generate action toast & highlight
+    window.generateCustomerSlip = function() {
+      syncSlip();
+      const el = document.getElementById('customer-slip-canvas');
+      if (el) {
+        el.classList.add('ring-4', 'ring-orange-400');
+        setTimeout(() => el.classList.remove('ring-4', 'ring-orange-400'), 800);
+      }
+      showToast('Customer Slip generated & verified for 5" × 3"', 'success');
+    };
+
+    // 1. BULLETPROOF PRINT / SAVE PDF — 5x3 ENGINE (Works across Desktop & Mobile)
+    window.printCustomerSlip = function() {
+      if (typeof window.syncSlip === 'function') {
+        window.syncSlip();
+      }
+
+      const source = document.getElementById('customer-slip-canvas');
+      if (!source) {
+        showToast('Slip canvas not found!', 'error');
+        return;
+      }
+
+      // Check if we are on mobile / safari or iframe printing might be blocked
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+      // On mobile devices or browsers that block programmatic iframe prints, direct print with media queries is 100% reliable
+      if (isMobile) {
+        // Direct print - CSS handles hiding everything except #printable-slip-wrapper
+        window.focus();
+        window.print();
+        return;
+      }
+
+      // On desktop, attempt high-isolation iframe print first with foolproof fallback
+      try {
+        const oldIframe = document.getElementById('ixc-print-iframe');
+        if (oldIframe) {
+          oldIframe.remove();
+        }
+
+        const iframe = document.createElement('iframe');
+        iframe.id = 'ixc-print-iframe';
+        iframe.style.position = 'fixed';
+        iframe.style.right = '0';
+        iframe.style.bottom = '0';
+        iframe.style.width = '10px';
+        iframe.style.height = '10px';
+        iframe.style.border = '0';
+        iframe.style.opacity = '0.01';
+        iframe.style.zIndex = '-9999';
+        document.body.appendChild(iframe);
+
+        const iframeDoc = iframe.contentWindow.document;
+
+        const printHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Customer Slip 5x3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"><\/script>
+  <style>
+    @page {
+      size: 5in 3in;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    html, body {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    #print-slip-page {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: hidden;
+      background: #ffffff;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+    #customer-slip-canvas {
+      width: 5in !important;
+      height: 3in !important;
+      max-width: 5in !important;
+      min-width: 5in !important;
+      max-height: 3in !important;
+      min-height: 3in !important;
+      margin: 0 !important;
+      padding: 0.08in !important;
+      box-sizing: border-box !important;
+      border: 1.5px solid #000 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      background: #fff !important;
+      overflow: hidden !important;
+      font-size: 8px !important;
+      line-height: 1.15 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }
+    /* Keep shipment metrics compact so DESCRIPTION/CUSTOMS text stays fully inside its box. */
+    #customer-slip-canvas #slip-shipment-metrics {
+      line-height: 1 !important;
+      flex: 0 0 auto !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics > div {
+      line-height: 1 !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics #slip-desc,
+    #customer-slip-canvas #slip-shipment-metrics #slip-customs-val {
+      display: inline-block !important;
+      max-width: 100% !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      vertical-align: bottom !important;
+    }
+    #customer-slip-canvas #slip-shipment-metrics .grid {
+      min-height: 0 !important;
+    }
+
+    #customer-slip-canvas svg {
+      max-height: 100%;
+    }
+  
+    /* Balanced print typography: no faint body text, no excessive bold */
+    #customer-slip-canvas, #customer-slip-canvas * {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+      -webkit-font-smoothing: auto !important;
+      -moz-osx-font-smoothing: auto !important;
+      text-rendering: geometricPrecision !important;
+    }
+    #customer-slip-canvas {
+      font-weight: 500 !important;
+      color: #111827 !important;
+    }
+    #customer-slip-canvas p,
+    #customer-slip-canvas span,
+    #customer-slip-canvas div { font-weight: 500; }
+    #customer-slip-canvas h1,
+    #customer-slip-canvas h2,
+    #customer-slip-canvas h3,
+    #customer-slip-canvas strong,
+    #customer-slip-canvas .font-bold,
+    #customer-slip-canvas .font-extrabold,
+    #customer-slip-canvas .font-black { font-weight: 700 !important; }
+    #customer-slip-canvas .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+      font-weight: 700 !important;
+    }
+    #customer-slip-canvas .text-slate-400,
+    #customer-slip-canvas .text-slate-500,
+    #customer-slip-canvas .text-slate-600 {
+      color: #475569 !important;
+      font-weight: 500 !important;
+    }
+    #customer-slip-canvas .text-slate-700,
+    #customer-slip-canvas .text-slate-800,
+    #customer-slip-canvas .text-slate-900,
+    #customer-slip-canvas .text-slate-950 { color: #111827 !important; }
+</style>
+</head>
+<body>
+  <div id="print-slip-page">
+    ${source.outerHTML}
+  </div>
+</body>
+</html>`;
+
+        iframeDoc.open();
+        iframeDoc.write(printHTML);
+        iframeDoc.close();
+
+        let printed = false;
+        const triggerIframePrint = () => {
+          if (printed) return;
+          printed = true;
+          try {
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+          } catch (err) {
+            console.warn('Iframe print error, falling back to window.print():', err);
+            window.focus();
+            window.print();
+          }
+          setTimeout(() => {
+            if (iframe && iframe.parentNode) iframe.parentNode.removeChild(iframe);
+          }, 3000);
+        };
+
+        iframe.onload = () => {
+          setTimeout(triggerIframePrint, 250);
+        };
+        // Fallback timer if onload doesn't fire promptly
+        setTimeout(triggerIframePrint, 500);
+
+      } catch (e) {
+        console.warn('Iframe setup failed, falling back to direct window.print()', e);
+        window.focus();
+        window.print();
+      }
+    };
+
+    // 2. BULLETPROOF DOWNLOAD SLIP HTML ENGINE
+    window.downloadSlipHTML = function() {
+      if (typeof window.syncSlip === 'function') {
+        window.syncSlip();
+      }
+
+      const slipEl = document.getElementById('customer-slip-canvas');
+      if (!slipEl) {
+        showToast('Customer slip canvas not found', 'error');
+        return;
+      }
+
+      const awbInput = document.getElementById('cs-awb');
+      const awbClean = (awbInput && awbInput.value.trim()) ? awbInput.value.trim().replace(/[^a-zA-Z0-9_-]/g, '_') : 'Customer_Slip';
+      const fileName = `IXC_Customer_Slip_5x3_${awbClean}.html`;
+
+      const fullDoc = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Slip 5x3 - ${awbClean}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"><\/script>
+  <style>
+    @page {
+      size: 5in 3in;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    html, body {
+      width: 5in;
+      height: 3in;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .slip-container {
+      width: 5in;
+      height: 3in;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+    #customer-slip-canvas {
+      width: 5in !important;
+      height: 3in !important;
+      max-width: 5in !important;
+      min-width: 5in !important;
+      max-height: 3in !important;
+      min-height: 3in !important;
+      margin: 0 !important;
+      padding: 0.08in !important;
+      box-sizing: border-box !important;
+      border: 1.5px solid #000 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      background: #fff !important;
+      overflow: hidden !important;
+      font-size: 8px !important;
+      line-height: 1.15 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }
+  
+    /* Balanced print typography: no faint body text, no excessive bold */
+    #customer-slip-canvas, #customer-slip-canvas * {
+      font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+      -webkit-font-smoothing: auto !important;
+      -moz-osx-font-smoothing: auto !important;
+      text-rendering: geometricPrecision !important;
+    }
+    #customer-slip-canvas {
+      font-weight: 500 !important;
+      color: #111827 !important;
+    }
+    #customer-slip-canvas p,
+    #customer-slip-canvas span,
+    #customer-slip-canvas div { font-weight: 500; }
+    #customer-slip-canvas h1,
+    #customer-slip-canvas h2,
+    #customer-slip-canvas h3,
+    #customer-slip-canvas strong,
+    #customer-slip-canvas .font-bold,
+    #customer-slip-canvas .font-extrabold,
+    #customer-slip-canvas .font-black { font-weight: 700 !important; }
+    #customer-slip-canvas .font-mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+      font-weight: 700 !important;
+    }
+    #customer-slip-canvas .text-slate-400,
+    #customer-slip-canvas .text-slate-500,
+    #customer-slip-canvas .text-slate-600 {
+      color: #475569 !important;
+      font-weight: 500 !important;
+    }
+    #customer-slip-canvas .text-slate-700,
+    #customer-slip-canvas .text-slate-800,
+    #customer-slip-canvas .text-slate-900,
+    #customer-slip-canvas .text-slate-950 { color: #111827 !important; }
+</style>
+</head>
+<body>
+  <div class="slip-container">
+    ${slipEl.outerHTML}
+  </div>
+</body>
+</html>`;
+
+      try {
+        const blob = new Blob([fullDoc], { type: 'text/html;charset=utf-8' });
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = blobUrl;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        
+        // Mobile / Safari cleanup timeout
+        setTimeout(() => {
+          document.body.removeChild(a);
+          URL.revokeObjectURL(blobUrl);
+        }, 1500);
+
+        showToast(`Downloaded: ${fileName}`, 'success');
+      } catch (err) {
+        console.error('Download error:', err);
+        // Fallback for browsers rejecting blob downloads
+        const dataUrl = 'data:text/html;charset=utf-8,' + encodeURIComponent(fullDoc);
+        const a = document.createElement('a');
+        a.href = dataUrl;
+        a.download = fileName;
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => document.body.removeChild(a), 500);
+        showToast('Downloaded slip HTML file', 'success');
+      }
+    };
+
+    // 3. 5" x 3" Strict Print Simulation Modal
+    window.toggle5x3PreviewModal = function() {
+      const m = document.getElementById('preview-5x3-modal');
+      const cloneTarget = document.getElementById('modal-slip-clone-container');
+      if (!m) return;
+      if (m.classList.contains('hidden')) {
+        if (typeof window.syncSlip === 'function') window.syncSlip();
+        const source = document.getElementById('customer-slip-canvas');
+        if (source && cloneTarget) {
+          cloneTarget.innerHTML = source.outerHTML;
+          const clonedSlip = cloneTarget.querySelector('#customer-slip-canvas');
+          if (clonedSlip) {
+            clonedSlip.style.width = '5in';
+            clonedSlip.style.height = '3in';
+            clonedSlip.style.maxWidth = '5in';
+            clonedSlip.style.maxHeight = '3in';
+            clonedSlip.style.padding = '0.08in';
+            clonedSlip.style.border = '1.5px solid #000';
+            clonedSlip.style.borderRadius = '0';
+            clonedSlip.style.boxShadow = 'none';
+            clonedSlip.style.fontSize = '8px';
+            clonedSlip.style.lineHeight = '1.15';
+            clonedSlip.style.display = 'flex';
+            clonedSlip.style.flexDirection = 'column';
+            clonedSlip.style.justifyContent = 'space-between';
+          }
+        }
+        m.classList.remove('hidden');
+      } else {
+        m.classList.add('hidden');
+      }
+    };
+
+    // Simulate tracking tab lookup
+    window.simulateTrack = function() {
+      const input = document.getElementById('track-input');
+      const num = input ? input.value : 'IXC-7849-BOM-LHR';
+      const res = document.getElementById('track-result');
+      if (res) {
+        res.innerHTML = `
+          <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+            <span class="font-mono font-bold text-slate-900">${num}</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">In Transit</span>
+          </div>
+          <div class="text-slate-600">Origin: <strong>Mumbai Cargo Gateway (BOM)</strong></div>
+          <div class="text-slate-600">Current Status: <strong>Departure Manifest Lodged • Direct Air Cargo Forwarding</strong></div>
+        `;
+      }
+    };
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      window.syncSlip();
+      window.calcTotal();
+    });
+  
+
+  // Signature logic state & functions
+  window.customerSignatureData = null;
+  window.receiverSignatureData = null;
+  let currentSigningRole = 'customer'; // 'customer' or 'receiver'
+
+  let currentPenColor = '#000000';
+  let currentLineWidth = 2.5;
+  let isDrawing = false;
+  let sigCanvas = null;
+  let sigCtx = null;
+  let hasSignature = false;
+
+  window.initSignatureCanvas = function() {
+    sigCanvas = document.getElementById('signature-canvas');
+    if (!sigCanvas) return;
+    sigCtx = sigCanvas.getContext('2d');
+    sigCtx.lineWidth = currentLineWidth;
+    sigCtx.lineCap = 'round';
+    sigCtx.lineJoin = 'round';
+    sigCtx.strokeStyle = currentPenColor;
+
+    const startDraw = (e) => {
+      isDrawing = true;
+      hasSignature = true;
+      const hint = document.getElementById('canvas-hint');
+      if (hint) hint.classList.add('hidden');
+      const st = document.getElementById('sig-status');
+      if (st) st.textContent = 'Drawing...';
+      const pos = getPos(e);
+      sigCtx.beginPath();
+      sigCtx.moveTo(pos.x, pos.y);
+    };
+
+    const draw = (e) => {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const pos = getPos(e);
+      sigCtx.lineTo(pos.x, pos.y);
+      sigCtx.stroke();
+    };
+
+    const stopDraw = () => {
+      if (isDrawing) {
+        isDrawing = false;
+        const st = document.getElementById('sig-status');
+        if (st) st.textContent = 'Signature captured (ready to apply)';
+      }
+    };
+
+    function getPos(e) {
+      const rect = sigCanvas.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      const scaleX = sigCanvas.width / rect.width;
+      const scaleY = sigCanvas.height / rect.height;
+      return {
+        x: (clientX - rect.left) * scaleX,
+        y: (clientY - rect.top) * scaleY
+      };
+    }
+
+    sigCanvas.addEventListener('mousedown', startDraw);
+    sigCanvas.addEventListener('mousemove', draw);
+    window.addEventListener('mouseup', stopDraw);
+
+    sigCanvas.addEventListener('touchstart', startDraw, { passive: false });
+    sigCanvas.addEventListener('touchmove', draw, { passive: false });
+    sigCanvas.addEventListener('touchend', stopDraw);
+  };
+
+  // Open modal with specific role tracking ('customer' or 'receiver')
+  window.openSignatureModal = function(role = 'customer') {
+    if (role === 'shipper') role = 'customer';
+    const modal = document.getElementById('signature-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      if (!sigCanvas) window.initSignatureCanvas();
+      window.setSignatureTarget(role);
+    }
+  };
+
+  window.closeSignatureModal = function() {
+    const modal = document.getElementById('signature-modal');
+    if (modal) modal.classList.add('hidden');
+  };
+
+  // Set modal role tab and keep canvases clean & isolated
+  window.setSignatureTarget = function(role) {
+    if (role === 'shipper') role = 'customer';
+    currentSigningRole = role;
+
+    const tabCustomer = document.getElementById('tab-sig-customer');
+    const tabReceiver = document.getElementById('tab-sig-receiver');
+    const label = document.getElementById('sig-active-target-label');
+
+    if (role === 'customer') {
+      if (tabCustomer) tabCustomer.className = "px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-white text-slate-900 shadow-xs flex items-center gap-1.5";
+      if (tabReceiver) tabReceiver.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-600 hover:text-slate-900 flex items-center gap-1.5";
+      if (label) label.innerHTML = "Signing as: <strong class='text-orange-600'>Customer / Shipper Agreement</strong>";
+    } else {
+      if (tabCustomer) tabCustomer.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-600 hover:text-slate-900 flex items-center gap-1.5";
+      if (tabReceiver) tabReceiver.className = "px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-white text-slate-900 shadow-xs flex items-center gap-1.5";
+      if (label) label.innerHTML = "Signing as: <strong class='text-sky-600'>Receiver / Received in Good Order</strong>";
+    }
+
+    // Clear canvas so the previous signature is NOT copied over
+    window.clearSignatureCanvas();
+
+    // If the selected role already has a saved signature, load it into canvas for viewing/editing
+    const existingData = (role === 'customer') ? window.customerSignatureData : window.receiverSignatureData;
+    if (existingData && sigCtx && sigCanvas) {
+      const img = new Image();
+      img.onload = () => {
+        sigCtx.drawImage(img, 0, 0);
+        hasSignature = true;
+        const hint = document.getElementById('canvas-hint');
+        if (hint) hint.classList.add('hidden');
+        const st = document.getElementById('sig-status');
+        if (st) st.textContent = 'Existing ' + (role === 'customer' ? 'Shipper' : 'Receiver') + ' signature loaded';
+      };
+      img.src = existingData;
+    }
+  };
+
+  window.setPenColor = function(color) {
+    currentPenColor = color;
+    if (sigCtx) sigCtx.strokeStyle = color;
+    const bBlack = document.getElementById('pen-black');
+    const bBlue = document.getElementById('pen-blue');
+    if (color === '#000000') {
+      if (bBlack) bBlack.classList.add('ring-2', 'ring-orange-500');
+      if (bBlue) bBlue.classList.remove('ring-2', 'ring-orange-500');
+    } else {
+      if (bBlue) bBlue.classList.add('ring-2', 'ring-orange-500');
+      if (bBlack) bBlack.classList.remove('ring-2', 'ring-orange-500');
+    }
+  };
+
+  window.setPenWidth = function(w) {
+    currentLineWidth = w;
+    if (sigCtx) sigCtx.lineWidth = w;
+    const btnFine = document.getElementById('pen-w-fine');
+    const btnBold = document.getElementById('pen-w-bold');
+    if (w <= 2.5) {
+      if (btnFine) btnFine.classList.replace('bg-white', 'bg-slate-200');
+      if (btnBold) btnBold.classList.replace('bg-slate-200', 'bg-white');
+    } else {
+      if (btnBold) btnBold.classList.replace('bg-white', 'bg-slate-200');
+      if (btnFine) btnFine.classList.replace('bg-slate-200', 'bg-white');
+    }
+  };
+
+  window.clearSignatureCanvas = function() {
+    if (!sigCanvas || !sigCtx) return;
+    sigCtx.clearRect(0, 0, sigCanvas.width, sigCanvas.height);
+    hasSignature = false;
+    const hint = document.getElementById('canvas-hint');
+    if (hint) hint.classList.remove('hidden');
+    const st = document.getElementById('sig-status');
+    if (st) st.textContent = 'Ready to capture';
+  };
+
+  // Independent signature clearing function for either party
+  window.clearSpecificSignature = function(role) {
+    if (role === 'customer' || role === 'shipper') {
+      window.customerSignatureData = null;
+      const el = document.getElementById('customer-sign-display');
+      if (el) {
+        el.innerHTML = '<span class="text-[6.5px] text-orange-600 font-bold group-hover:underline flex items-center gap-0.5">✍️ Sign Here / Draw</span>';
+      }
+      const dateEl = document.getElementById('customer-sign-date');
+      if (dateEl) dateEl.textContent = 'Click to Sign';
+      showToast('Shipper signature removed', 'info');
+    } else if (role === 'receiver') {
+      window.receiverSignatureData = null;
+      const el = document.getElementById('receiver-sign-display');
+      if (el) {
+        el.innerHTML = '<span class="text-[6.5px] text-slate-500 font-semibold group-hover:text-orange-600 group-hover:underline flex items-center gap-0.5">✍️ Consignee / Agent</span>';
+      }
+      const dateEl = document.getElementById('receiver-sign-date');
+      if (dateEl) dateEl.textContent = 'Click to Sign';
+      showToast('Receiver signature removed', 'info');
+    }
+  };
+
+  // Save ONLY to the active role's target container and state variable
+  window.saveSignature = function() {
+    if (!sigCanvas || !hasSignature) {
+      alert('Please draw a signature before saving.');
+      return;
+    }
+    const dataUrl = sigCanvas.toDataURL('image/png');
+    const now = new Date();
+    const timeStr = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
+
+    if (currentSigningRole === 'customer') {
+      window.customerSignatureData = dataUrl;
+      const customerBox = document.getElementById('customer-sign-display');
+      if (customerBox) {
+        customerBox.innerHTML = '<img src="' + dataUrl + '" alt="Shipper Signature" class="h-full max-h-4 object-contain mx-auto" />';
+      }
+      const dateEl = document.getElementById('customer-sign-date');
+      if (dateEl) dateEl.textContent = 'Signed ' + timeStr;
+      showToast('Shipper signature saved', 'success');
+    } else if (currentSigningRole === 'receiver') {
+      window.receiverSignatureData = dataUrl;
+      const receiverBox = document.getElementById('receiver-sign-display');
+      if (receiverBox) {
+        receiverBox.innerHTML = '<img src="' + dataUrl + '" alt="Receiver Signature" class="h-full max-h-4 object-contain mx-auto" />';
+      }
+      const dateEl = document.getElementById('receiver-sign-date');
+      if (dateEl) dateEl.textContent = 'Signed ' + timeStr;
+      showToast('Receiver signature saved', 'success');
+    }
+
+    window.closeSignatureModal();
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    window.initSignatureCanvas();
+  });
+
+</script>
+<!-- END IXC CUSTOMER SLIP -->
+</main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(10,37,64,0.05)]" data-active-classes="text-secondary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 transition-colors text-secondary font-semibold" data-path="scan-update" href="#"><span class="material-symbols-outlined text-[24px]">barcode_scanner</span><span class="font-label-sm text-label-sm mt-0.5">Scan/Update</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="shipments-awbs" href="#"><span class="material-symbols-outlined text-[24px]">package_2</span><span class="font-label-sm text-label-sm mt-0.5">Shipments</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="quote-requests" href="#"><span class="material-symbols-outlined text-[24px]">request_quote</span><span class="font-label-sm text-label-sm mt-0.5">Quotes</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="profile-shift" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm mt-0.5">Shift/Profile</span></a></div></nav></body></html>
