@@ -5,6 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <meta content="web_standard" name="shell-type"/>
 <title>IXC Mumbai | International &amp; Domestic Express Courier &amp; Air Cargo</title>
+
 <meta name="description" content="IXC Mumbai provides international and domestic express courier, air cargo, parcel pickup and door-to-door delivery services from Mumbai to destinations worldwide.">
 <meta content="Domestic courier service Mumbai, express courier Mumbai, urgent courier Mumbai, same day courier Mumbai, airport pickup courier Mumbai, air express courier Mumbai, door to door courier Mumbai." name="keywords"/>
 <!-- ixc-seo-extra -->
@@ -274,10 +275,6 @@ tailwind.config={
 <a class="inline-flex items-center justify-center px-2.5 sm:px-4 py-2 rounded-lg bg-secondary hover:bg-secondary-container text-white text-xs sm:text-sm font-bold shadow transition-all whitespace-nowrap btn-lift" href="#domestic-quote-calculator">
 <span class="material-symbols-outlined mr-1 text-[15px] sm:text-[17px]">request_quote</span>Get Quote
       </a>
-<!-- Admin Portal Trigger Button (hidden on mobile, visible on desktop/md+) -->
-<button class="hidden md:flex w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-primary hover:bg-primary-container text-white items-center justify-center transition-colors shadow-sm btn-lift" onclick="openAdminModal()" title="Staff &amp; Admin Portal">
-<span class="material-symbols-outlined text-[19px]">admin_panel_settings</span>
-</button>
 <!-- Mobile Hamburger Button: ≥44px tap target, clean 3-bar menu icon -->
 <button aria-label="Toggle Navigation Menu" class="lg:hidden w-11 h-11 rounded-lg bg-surface-container hover:bg-surface-variant flex items-center justify-center text-primary border border-outline-variant/40 transition-colors shrink-0" id="mobile-menu-btn" onclick="toggleMobileMenu()">
 <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
@@ -335,9 +332,7 @@ tailwind.config={
 <a class="p-2.5 rounded-lg hover:bg-surface-container flex items-center gap-2.5 transition-colors" href="#faq-section" onclick="toggleMobileMenu()">
 <span class="material-symbols-outlined text-primary text-lg">quiz</span> Questions &amp; FAQ
       </a>
-<button class="p-2.5 rounded-lg hover:bg-primary/10 text-left text-primary font-bold flex items-center gap-2.5 border border-primary/20 mt-2 transition-colors" onclick="toggleMobileMenu(); openAdminModal();">
-<span class="material-symbols-outlined text-primary text-lg">admin_panel_settings</span> Staff/Admin Portal
-      </button>
+
 </nav>
 </div>
 <div class="pt-6 border-t border-surface-container space-y-3">
@@ -365,9 +360,6 @@ tailwind.config={
 <span class="text-on-primary-container hidden sm:inline">•</span>
 <span>Active priority dispatches: Pan-India Domestic Express + 220 Global Cargo Hubs.</span>
 </div>
-<button class="text-xs font-bold text-secondary-fixed hover:text-white flex items-center gap-1 transition-colors" onclick="openAdminModal()">
-<span class="material-symbols-outlined text-[16px]">admin_panel_settings</span> Staff / Admin Portal
-      </button>
 </div>
 </section>
 <!-- HERO SECTION -->
@@ -391,7 +383,7 @@ tailwind.config={
           Dependable domestic express courier service Mumbai alongside international air forwarding. Scheduled Pan-India same-day and urgent cargo routing combined with seamless global customs clearance.
         </p>
 <!-- Hero Action Buttons (Exact Required Order & Wrap Protection) -->
-<div class="space-y-3 pt-2 w-full max-w-lg hero-animate-3"><div class="grid grid-cols-2 gap-3 w-full"><button class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-secondary hover:bg-secondary-container text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all whitespace-nowrap btn-lift" onclick="scrollToTracking()"><span class="material-symbols-outlined text-base sm:text-lg">radar</span><span>TRACK SHIPMENT</span></button><a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-secondary-container hover:bg-secondary text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all whitespace-nowrap btn-lift" href="#services-section"><span class="material-symbols-outlined text-base sm:text-lg">public</span><span>INTERNATIONAL EXPRESS</span></a></div><div class="grid grid-cols-2 gap-3 w-full"><a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-primary-container hover:bg-primary-container/80 text-white border border-on-primary-container/40 px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap btn-lift" href="#domestic-quote-calculator"><span class="material-symbols-outlined text-base sm:text-lg">request_quote</span><span>GET A QUOTE</span></a><a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all whitespace-nowrap btn-lift" href="https://wa.me/919570821019?text=Hello%20IXC%20Team%2C%20I%20would%20like%20to%20inquire%20about%20express%20courier%20service" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base sm:text-lg">chat</span><span>WHATSAPP NOW</span></a></div></div>
+<div class="space-y-3 pt-2 w-full max-w-lg hero-animate-3"><div class="grid grid-cols-2 gap-3 w-full"><button class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-secondary hover:bg-secondary-container text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all whitespace-nowrap btn-lift" onclick="scrollToTracking()"><span class="material-symbols-outlined text-base sm:text-lg">radar</span><span>TRACK SHIPMENT</span></button><a class="inline-flex min-w-0 items-center justify-center gap-1 sm:gap-2 bg-secondary-container hover:bg-secondary text-white px-2.5 sm:px-4 py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-sm leading-tight font-bold shadow-md transition-all btn-lift" href="#services-section"><span class="material-symbols-outlined text-sm sm:text-lg shrink-0">public</span><span class="text-center leading-tight">INTERNATIONAL EXPRESS</span></a></div><div class="grid grid-cols-2 gap-3 w-full"><a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-primary-container hover:bg-primary-container/80 text-white border border-on-primary-container/40 px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap btn-lift" href="#domestic-quote-calculator"><span class="material-symbols-outlined text-base sm:text-lg">request_quote</span><span>GET A QUOTE</span></a><a class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md transition-all whitespace-nowrap btn-lift" href="https://wa.me/919570821019?text=Hello%20IXC%20Team%2C%20I%20would%20like%20to%20inquire%20about%20express%20courier%20service" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base sm:text-lg">chat</span><span>WHATSAPP NOW</span></a></div></div>
 <!-- Quick Stats -->
 </div>
 <!-- Hero Fast Contact Desk Card -->
@@ -470,16 +462,16 @@ tailwind.config={
 <form class="flex flex-col sm:flex-row items-stretch gap-2.5 w-full" onsubmit="handleTrackSearch(event)">
 <div class="relative flex-1 w-full min-w-0">
 <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-xl pointer-events-none">barcode_scanner</span>
-<input class="w-full min-w-0 h-12 pl-11 pr-4 bg-surface rounded-xl text-on-surface text-sm font-bold focus:outline-none focus:ring-2 focus:ring-secondary uppercase placeholder:normal-case placeholder:font-normal border border-outline-variant/30 transition-all" id="track-input" placeholder="Enter your Waybill / Consignment number" required="" type="text" />
+<input class="w-full min-w-0 h-12 pl-11 pr-4 bg-surface rounded-xl text-on-surface text-sm font-bold focus:outline-none focus:ring-2 focus:ring-secondary uppercase placeholder:normal-case placeholder:font-normal border border-outline-variant/30 transition-all" id="track-input" placeholder="Enter your Waybill / Consignment Number" required="" type="text"/>
 </div>
 <button class="w-full sm:w-auto h-12 px-6 bg-secondary hover:bg-secondary-container text-white rounded-xl text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all shadow-md flex items-center justify-center gap-2 shrink-0 btn-lift" type="submit">
 <span class="material-symbols-outlined text-base">search</span>
 <span>TRACK CONSIGNMENT</span>
 </button>
 </form>
-<!-- Clickable Sample Waybill Chips -->
 <!-- Render Target for Tracking Result -->
-<div class="transition-all duration-300 w-full overflow-hidden" id="track-result-container"><div class="p-4 sm:p-5 rounded-2xl bg-surface-container-low border border-outline-variant/30 space-y-4 w-full overflow-hidden max-w-full"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-surface-container"><div><span class="text-xs text-on-surface-variant font-medium block">Consignment Number</span><span class="text-base sm:text-lg font-black text-primary font-mono break-all"></span></div><div><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black border bg-amber-100 text-amber-800 border-amber-300"><span class="w-2 h-2 rounded-full bg-current"></span>IN TRANSIT</span></div></div><div class="grid grid-cols-1 gap-2.5 text-xs bg-surface-container-lowest p-3.5 rounded-xl border border-surface-container w-full overflow-hidden max-w-full"><div><span class="text-on-surface-variant font-medium block">Origin Hub</span><span class="font-bold text-primary text-xs block break-words">Mumbai, India (BOM Air Gateway)</span></div><div><span class="text-on-surface-variant font-medium block">Final Destination</span><span class="font-bold text-primary text-xs block break-words">Dubai, UAE (DXB Cargo Village)</span></div><div><span class="text-on-surface-variant font-medium block">Service Level</span><span class="font-bold text-primary block break-words">Express Air Priority Consignment</span></div><div><span class="text-on-surface-variant font-medium block">Estimated Delivery</span><span class="font-bold text-secondary text-sm block">2-3 Business Days</span></div><div class="pt-2 border-t border-surface-container"><span class="text-on-surface-variant font-medium block">Current Milestone Location:</span><span class="font-bold text-primary block leading-tight mt-0.5 break-words">Mumbai Air Gateway (Departed sorting hub, export manifest cleared)</span></div></div><div class="space-y-1.5"><div class="flex justify-between text-xs font-bold text-primary"><span>Transit Progress</span><span>65%</span></div><div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden"><div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 65%"></div></div></div><div class="space-y-3 pt-2"><span class="text-xs font-bold text-primary uppercase tracking-wider block">Milestone Tracking History</span><div class="space-y-3 pl-1 border-l-2 border-surface-container ml-2.5"><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">✓</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Manifest &amp; Flight Boarding (AI-901)</div><div class="text-on-surface-variant text-[11px] break-words">CSMI Airport Sahar T2, BOM</div><div class="text-[10px] text-secondary font-medium">Today, 14:30 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Export Customs Clearance Passed (CSB-V)</div><div class="text-on-surface-variant text-[11px] break-words">Mumbai Air Customs Hub</div><div class="text-[10px] text-secondary font-medium">Today, 11:15 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Security &amp; X-ray Screening Verified</div><div class="text-on-surface-variant text-[11px] break-words">Sahar Cargo Terminal, Mumbai</div><div class="text-[10px] text-secondary font-medium">Today, 08:45 IST</div></div></div><div class="relative flex items-start gap-2.5 text-xs"><div class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">•</div><div class="min-w-0"><div class="font-bold text-primary text-xs break-words">Picked up &amp; Inward Scanned</div><div class="text-on-surface-variant text-[11px] break-words">IXC Sahar Road Andheri Hub</div><div class="text-[10px] text-secondary font-medium">Yesterday, 19:20 IST</div></div></div></div></div><div class="pt-3 border-t border-surface-container flex flex-col gap-2 text-xs"><span class="text-on-surface-variant">Need direct gateway assistance for this waybill?</span><a class="text-[#25D366] hover:underline font-bold flex items-center gap-1.5 transition-colors" href="https://wa.me/919570821019?text=Hello%20IXC%20Dispatch%2C%20inquiring%20about%20waybill%20" target="_blank"><span class="material-symbols-outlined text-base">chat</span> WhatsApp Dispatch Desk</a></div></div></div>
+
+<div class="transition-all duration-300 w-full overflow-hidden hidden" id="track-result-container"></div>
 </div>
 </div>
 </section>
@@ -818,28 +810,6 @@ tailwind.config={
 </div>
 </div>
 </section>
-
-<!-- SEO LANDING PAGES / POPULAR ROUTES -->
-<section class="w-full py-16 px-4 sm:px-6 bg-white border-y border-surface-container reveal-on-scroll" id="popular-courier-routes">
-  <div class="max-w-7xl mx-auto space-y-7">
-    <div class="text-center space-y-2">
-      <span class="text-xs font-bold text-secondary uppercase tracking-widest">Popular IXC Search Pages</span>
-      <h2 class="text-2xl sm:text-3xl font-black text-primary tracking-tight">International Courier Routes from Mumbai</h2>
-      <p class="text-sm text-on-surface-variant max-w-3xl mx-auto">Choose a destination page for shipment-specific information. Quotes depend on destination, shipment type, weight, dimensions and service level.</p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <a href="international-courier-mumbai.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">International Courier from Mumbai</strong><span class="block text-xs text-on-surface-variant mt-1">Mumbai pickup and worldwide shipment support.</span></a>
-      <a href="mumbai-to-usa-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to USA Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Documents and parcels to the USA.</span></a>
-      <a href="mumbai-to-uk-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to UK Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Shipment support for the UK.</span></a>
-      <a href="mumbai-to-canada-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to Canada Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Shipment-specific quotes to Canada.</span></a>
-      <a href="mumbai-to-dubai-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to Dubai Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Courier options for Dubai, UAE.</span></a>
-      <a href="mumbai-to-australia-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to Australia Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Documents and parcels to Australia.</span></a>
-      <a href="mumbai-to-germany-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to Germany Courier</strong><span class="block text-xs text-on-surface-variant mt-1">International shipment support to Germany.</span></a>
-      <a href="mumbai-to-singapore-courier.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">Mumbai to Singapore Courier</strong><span class="block text-xs text-on-surface-variant mt-1">Courier options for Singapore.</span></a>
-      <a href="international-courier-andheri-east.html" class="p-5 rounded-2xl border border-outline-variant/20 bg-surface-container-lowest hover:border-secondary transition-colors"><strong class="text-primary">International Courier in Andheri East</strong><span class="block text-xs text-on-surface-variant mt-1">Sahar Road / Andheri East Mumbai service page.</span></a>
-    </div>
-  </div>
-</section>
 <!-- FAQ SECTION -->
 <section class="w-full py-16 px-4 sm:px-6 bg-surface scroll-mt-24 reveal-on-scroll" id="faq-section">
 <div class="max-w-4xl mx-auto space-y-6">
@@ -875,7 +845,7 @@ tailwind.config={
 <span class="material-symbols-outlined text-secondary transition-transform duration-300" id="faq-3-icon">expand_more</span>
 </button>
 <div class="hidden px-4 pb-4 text-xs sm:text-sm text-on-surface-variant leading-relaxed" id="faq-3">
-            Simply input your Waybill / Consignment number (e.g.,  or ) into our Track Consignment engine above or contact our Sahar dispatch team on WhatsApp (+91 9570821019) for instant flight status updates.
+            Simply input your Waybill / Consignment number into our Track Consignment engine above or contact our Sahar dispatch team on WhatsApp (+91 9570821019) for shipment assistance.
           </div>
 </div>
 </div>
@@ -902,11 +872,6 @@ tailwind.config={
 <li><a class="hover:text-secondary-fixed transition-colors" href="#weight-volume-guide">Weight &amp; Volume Calculator</a></li>
 <li><button class="hover:text-secondary-fixed transition-colors text-left" onclick="scrollToTracking()">Track Consignment</button></li>
 <li><a class="hover:text-secondary-fixed transition-colors" href="#domestic-quote-calculator">Get Quote</a></li>
-<li><a class="hover:text-secondary-fixed transition-colors" href="international-courier-mumbai.html">International Courier Mumbai</a></li>
-<li><a class="hover:text-secondary-fixed transition-colors" href="mumbai-to-usa-courier.html">Mumbai to USA Courier</a></li>
-<li><a class="hover:text-secondary-fixed transition-colors" href="mumbai-to-uk-courier.html">Mumbai to UK Courier</a></li>
-<li><a class="hover:text-secondary-fixed transition-colors" href="mumbai-to-canada-courier.html">Mumbai to Canada Courier</a></li>
-<li><a class="hover:text-secondary-fixed transition-colors" href="mumbai-to-dubai-courier.html">Mumbai to Dubai Courier</a></li>
 </ul>
 </div>
 <div class="space-y-2">
@@ -1013,19 +978,19 @@ tailwind.config={
 </thead>
 <tbody class="divide-y divide-surface-container">
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary"></td>
+<td class="p-2.5 font-mono font-bold text-primary">—</td>
 <td class="p-2.5">Dubai (DXB)</td>
 <td class="p-2.5">Air Priority</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-bold text-[10px]">In Transit</span></td>
 </tr>
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary"></td>
+<td class="p-2.5 font-mono font-bold text-primary">—</td>
 <td class="p-2.5">Bengaluru (BLR)</td>
 <td class="p-2.5">Domestic Flight</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-green-100 text-green-800 font-bold text-[10px]">In Flight</span></td>
 </tr>
 <tr class="hover:bg-surface transition-colors">
-<td class="p-2.5 font-mono font-bold text-primary"></td>
+<td class="p-2.5 font-mono font-bold text-primary">—</td>
 <td class="p-2.5">London (LHR)</td>
 <td class="p-2.5">International Express</td>
 <td class="p-2.5"><span class="px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 font-bold text-[10px]">Customs Cleared</span></td>
@@ -1081,9 +1046,9 @@ tailwind.config={
 <div class="w-2 h-2 bg-white"></div>
 </div>
 <div class="text-left font-sans">
-<div class="tracking-widest font-black text-sm text-primary font-mono">*  *</div>
+<div class="tracking-widest font-black text-sm text-primary font-mono">* SAMPLE WAYBILL * </div>
 <div class="text-[10px] text-on-surface-variant font-medium">CSMI BOM Airport Gateway Priority Air Cargo</div>
-<div class="text-[9px] text-slate-500">Routing: BOM-DXB • Flight AI-901</div>
+<div class="text-[9px] text-slate-500">Tracking label preview</div>
 </div>
 </div>
 </div>
@@ -1095,12 +1060,12 @@ tailwind.config={
 <button class="flex-1 min-w-[140px] h-10 bg-primary hover:bg-primary-container text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="alert('Exporting IATA Consignee PDF manifest...')">
 <span class="material-symbols-outlined text-base">download</span> Export PDF Manifest
         </button>
-<button class="px-3 h-10 bg-surface-container hover:bg-surface-variant text-on-surface font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="checkThermalPrinterStatus()">
-<span class="material-symbols-outlined text-base text-blue-600">print</span> Thermal Printer Status
+<button class="px-3 h-10 bg-surface-container hover:bg-surface-variant text-on-surface font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors btn-lift" onclick="checkBluetoothPrinter()">
+<span class="material-symbols-outlined text-base text-blue-600">bluetooth</span> Bluetooth Status
         </button>
 </div>
-<div class="hidden p-2.5 rounded-lg bg-blue-50 border border-blue-200 text-[11px] text-blue-800" id="thermal-printer-status">
-        Browser Print Status: <strong>Ready for browser print preview</strong>
+<div class="hidden p-2.5 rounded-lg bg-blue-50 border border-blue-200 text-[11px] text-blue-800" id="bt-printer-status">
+        Bluetooth Direct Thermal Status: <strong>Zebra ZD420 / TSC TE200 Ready (Connected via Sahar Hub BT-01)</strong>
 </div>
 </div>
 <!-- Tab 3: Quotes -->
@@ -1134,6 +1099,7 @@ tailwind.config={
 <script>
 // --- CONSIGNMENT REPOSITORY DICTIONARY ---
 const CONSIGNMENTS_DB = {
+  // Add real production waybills here when they are created.
 };
 
 // --- MOBILE NAVIGATION DRAWER ---
@@ -1177,40 +1143,30 @@ function scrollToTracking() {
 }
 
 // --- TRACKING ENGINE LOGIC ---
-async function handleTrackSearch(e) {
-  if(e) e.preventDefault();
-  const inputEl=document.getElementById('track-input');
-  const query=inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g,'');
-  const container=document.getElementById('track-result-container');
+function handleTrackSearch(e) {
+  if (e) e.preventDefault();
+  const inputEl = document.getElementById('track-input');
+  const query = inputEl.value.trim().toUpperCase().replace(/[^A-Z0-9-]/g, '');
+  const container = document.getElementById('track-result-container');
   container.classList.remove('hidden');
-  if(query.length===0) return;
-  try {
-    const res=await fetch('https://ixc-operations-studio.vercel.app/api/track?awb='+encodeURIComponent(query));
-    if(res.ok===false) throw new Error('not_found');
-    const data=await res.json();
-    const events=Array.isArray(data.events)?data.events:[];
-    const status=String(data.status||'Unknown');
-    const latest=events[0];
-    const found={
-      waybill:data.awbNumber,
-      statusCode:status.toLowerCase().includes('transit')?'transit':status.toLowerCase().includes('deliver')?'delivered':'pending',
-      status,
-      origin:data.origin,
-      destination:data.destination,
-      service:data.serviceType,
-      estimatedDelivery:latest?.eventDate||data.bookingDate,
-      currentLocation:latest?.location||data.origin,
-      progress:status.toLowerCase().includes('deliver')?100:status.toLowerCase().includes('transit')?60:25,
-      milestones:events.map(e=>({
-        title:e.status,
-        location:e.location,
-        time:e.eventDate+' '+e.eventTime+(e.remark?' — '+e.remark:'')
-      }))
-    };
-    renderSuccessTracking(found,container);
-  } catch(err) {
-    renderNotFoundTracking(query,container);
+
+  if (!query) {
+    return;
   }
+
+  const found = CONSIGNMENTS_DB[query];
+
+  if (found) {
+    renderSuccessTracking(found, container);
+  } else {
+    renderNotFoundTracking(query, container);
+  }
+}
+
+function quickFillTrack(num) {
+  const inputEl = document.getElementById('track-input');
+  inputEl.value = num;
+  handleTrackSearch();
 }
 
 function renderSuccessTracking(data, container) {
@@ -1321,8 +1277,7 @@ function renderNotFoundTracking(query, container) {
         <a href="tel:+919570821019" class="px-3.5 py-2 bg-primary hover:bg-secondary text-white rounded-xl font-bold flex items-center gap-1 text-xs btn-lift">
           <span class="material-symbols-outlined text-base">call</span> Call Desk
         </a>
-        <button onclick="quickFillTrack('')" class="text-secondary font-bold underline px-2 py-1 text-xs">
-        </button>
+
       </div>
     </div>
   `;
@@ -1407,7 +1362,9 @@ async function handleAdminLogin(e) {
     
     setTimeout(() => {
       msgBox.classList.add('hidden');
-      window.location.href = "https://ixc-operations-studio.vercel.app/login";
+      document.getElementById('admin-auth-view').classList.add('hidden');
+      document.getElementById('admin-dashboard-view').classList.remove('hidden');
+      document.getElementById('admin-user-badge').textContent = `Logged in: ${emailInput}`;
     }, 600);
   } else {
     msgBox.className = "p-3 rounded-lg text-xs font-medium bg-red-100 text-red-800 border border-red-300";
@@ -1475,11 +1432,11 @@ function selectStudioPiece(pcNum, totalPieces, btn) {
 }
 
 function triggerThermalPrint() {
-  window.print();
+  alert('Sending 4" × 6" label to Direct Thermal printer (Zebra/TSC emulation)...');
 }
 
-function checkThermalPrinterStatus() {
-  const box = document.getElementById('thermal-printer-status');
+function checkBluetoothPrinter() {
+  const box = document.getElementById('bt-printer-status');
   box.classList.toggle('hidden');
 }
 
