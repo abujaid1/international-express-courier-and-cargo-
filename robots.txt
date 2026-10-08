@@ -1,5 +1,14 @@
 User-agent: *
 Allow: /
-Disallow: /admin-stitch.html
+
+# Keep private/admin and backup working files out of search indexing
+Disallow: /admin.html
+Disallow: /admin-awb.html
+Disallow: /admin-
+Disallow: /customer-slip-source.html
+Disallow: /index-backup.html
+Disallow: /index-before-admin-fix.html
+Disallow: /index.before-phase1-audit.html
+Disallow: /index.html.before-stitch
 
 Sitemap: https://international-express-courier-and-c.vercel.app/sitemap.xml
