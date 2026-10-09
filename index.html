@@ -240,6 +240,58 @@ tailwind.config={
       transition-duration: 0.01ms !important;
     }
   }
+
+/* IXC Diwali seasonal hero — existing content and actions preserved */
+.ixc-diwali-hero {
+  isolation: isolate;
+  background-color: #061b45 !important;
+  background-image:
+    linear-gradient(90deg, rgba(4,18,48,.76) 0%, rgba(4,18,48,.52) 54%, rgba(4,18,48,.18) 100%),
+    url("./assets/ixc-diwali-hero.webp") !important;
+  background-size: cover, cover !important;
+  background-position: center, center 45% !important;
+  border-bottom: 1px solid rgba(250,204,21,.55);
+}
+.ixc-diwali-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .18;
+  background-image: radial-gradient(circle, rgba(255,220,130,.9) 0 1px, transparent 2px);
+  background-size: 100px 100px;
+}
+.ixc-diwali-hero::after {
+  content: "🪔 DIWALI SEASON • IXC EXPRESS";
+  position: absolute;
+  top: 12px;
+  right: clamp(16px, 4vw, 56px);
+  z-index: 2;
+  padding: 7px 13px;
+  border: 1px solid rgba(252,211,77,.55);
+  border-radius: 999px;
+  color: #fde68a;
+  background: rgba(4,18,48,.82);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.ixc-diwali-hero > div {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 639px) {
+  .ixc-diwali-hero {
+    background-image:
+      linear-gradient(180deg, rgba(4,18,48,.65) 0%, rgba(4,18,48,.48) 60%, rgba(4,18,48,.38) 100%),
+      url("./assets/ixc-diwali-hero.webp") !important;
+    background-position: center, 62% center !important;
+  }
+  .ixc-diwali-hero::after { display: none; }
+  .ixc-diwali-hero::before { opacity: .1; }
+}
+/* END IXC Diwali seasonal hero */
 </style>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary selection:text-white w-full max-w-full overflow-x-hidden">
@@ -365,7 +417,7 @@ tailwind.config={
 </div>
 </section>
 <!-- HERO SECTION -->
-<section class="relative w-full overflow-hidden bg-primary text-on-primary py-12 sm:py-20" id="home">
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-12 sm:py-20 ixc-diwali-hero" id="home">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 <div class="lg:col-span-7 space-y-6">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container border border-on-primary-container/20 text-secondary-fixed text-xs font-bold tracking-wider uppercase hero-animate-1">
